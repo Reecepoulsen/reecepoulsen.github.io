@@ -1,0 +1,46 @@
+header, main, footer {
+    max-width: 800px;
+    margin: auto;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
+
+header, footer{
+    background-color:rgba(13, 117, 124, .7);
+    color:white;
+    text-align: center;
+    border-radius: 15px;
+}
+
+header{
+    padding: .5px;
+}
+
+footer{
+    padding: 15px;
+}
+
+main{
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    padding-right: 200px;
+}
+
+h2{
+    border-bottom: 1px solid black;
+    max-width: 750px;
+}
+
+#profilepic{
+    width: 180px;
+    position: absolute;
+    right: 300px;
+    top: 25px;
+    box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.6);
+}
