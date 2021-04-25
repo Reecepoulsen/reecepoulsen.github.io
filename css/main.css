@@ -42,3 +42,7 @@ h2{
     float: right;
     box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.6);
 }
+
+#lastUpdated{
+    color: rgb(175, 235, 55);
+}
