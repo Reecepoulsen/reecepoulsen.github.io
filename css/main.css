@@ -1,6 +1,6 @@
 header, main, footer {
     max-width: 800px;
-    margin: auto;
+    margin: 0 auto;
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
 }
@@ -10,14 +10,7 @@ header, footer{
     color:white;
     text-align: center;
     border-radius: 15px;
-}
-
-header{
-    padding: .5px;
-}
-
-footer{
-    padding: 15px;
+    padding: 8px;
 }
 
 main{
@@ -29,7 +22,7 @@ main{
 h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 45px;
-    padding-right: 200px;
+    padding-left: 95px;
 }
 
 h2{
@@ -41,6 +34,18 @@ h2{
     width: 180px;
     float: right;
     box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.6);
+}
+
+footer a, footer a:link, footer a:visited, footer a:active, footer a:focus {
+    color: white;
+}
+
+footer a:hover{
+    color:#DDD;
+}
+
+footer{
+    clear:both;
 }
 
 #lastUpdated{
