@@ -1,0 +1,76 @@
+main{
+    display: grid;
+    background-color: #e6ebf1;
+    max-width: 960px;
+    margin: auto;
+    padding: 80px;
+    text-align: center;
+}
+
+h1{
+    background-color: #12aaea;
+}
+
+h2{
+    color: #12aaea;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    background-color: #d8d8d8;
+}
+
+button:hover{
+    background-color: #ffcd2c
+    ;
+}
+
+#card2{
+
+}
+
+#card1 #card2{
+
+}
+
+.icon{
+
+}
+
+.numDomain{
+
+}
+
+.storageAmount{
+
+}
+
+.domainSpace{
+
+}
+
+.dollarSign{
+    color: #12aaea;
+}
+
+.priceBigNum{
+    color: #12aaea;
+}
+
+.priceLittleNum{
+    color: #12aaea;
+}
+
+.priceText{
+    color: #12aaea;
+}
+
+.btn-signUp{
+
+}
+
