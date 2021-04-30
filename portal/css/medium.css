@@ -2,7 +2,12 @@
     #profilepic{
         float: right;
     }
+
     h1{
         padding-left: 75px;
+    }
+
+    main{
+        padding-left: 50px;
     }
 }
