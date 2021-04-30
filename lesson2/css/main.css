@@ -1,0 +1,9 @@
+body{
+    background-color: yellow;
+    text-align: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+}

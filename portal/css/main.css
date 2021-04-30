@@ -22,7 +22,7 @@ main{
 h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 45px;
-    padding-left: 95px;
+    /* padding-left: 95px; */
 }
 
 h2{
@@ -32,7 +32,6 @@ h2{
 
 #profilepic{
     width: 180px;
-    float: right;
     box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.6);
 }
 

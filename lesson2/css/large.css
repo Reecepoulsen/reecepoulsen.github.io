@@ -1,0 +1,8 @@
+@media only screen and (min-width: 63.5em){
+    body{
+        background-color: green;
+    }
+    main{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
