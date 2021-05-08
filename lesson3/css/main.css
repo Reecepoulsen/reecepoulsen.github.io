@@ -91,17 +91,13 @@ nav{
 * Styling for the color scheme page
 *********************************************************************/
 table, th, td {
-    /* border: 1px solid black;
-    border-collapse: collapse; */
+    border: 1px solid black;
+    border-collapse: collapse;
     text-align: center;
 }
 
-th{
+th, td{
     padding: 20px;
-}
-
-td{
-    padding: 20px 75px;
 }
 
 #grassy-green{
