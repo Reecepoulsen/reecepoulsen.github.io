@@ -1,0 +1,27 @@
+@media only screen and (min-width: 34.5em){
+    nav{
+        max-width: 100%;
+    }
+
+    .nav-bar{
+        grid-template-columns: repeat(4, auto);
+        background-color: white;
+    }
+
+    .nav-bar li{
+        display: block;
+    }
+
+    .nav-bar a{
+        color: #659DBD;
+        text-align: center;
+    }
+
+    .nav-bar a:hover{
+        color: #8D8741;
+    }
+
+    .nav-bar li:first-child{
+        display: none;
+    }
+}

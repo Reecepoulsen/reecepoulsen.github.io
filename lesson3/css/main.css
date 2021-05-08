@@ -1,0 +1,140 @@
+/*********************************************************************
+* General styling
+*********************************************************************/
+body {
+    margin: 0 auto;
+    max-width: 750px;
+    background-color: #659DBD;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+
+.content{
+    background-color: white;
+    padding: 30px;
+}
+
+main{
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+header h1{
+    text-align: center;
+}
+
+footer a{
+    color: #659DBD;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #8D8741;
+}
+
+footer{
+    padding-top: 20px;
+    text-align: center;
+}
+
+/*********************************************************************
+* Styling for the responsive nav bar
+*********************************************************************/
+nav{
+    margin: 0 auto;
+    max-width: 34.5em;
+}
+
+.nav-bar{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #659DBD;
+}
+
+.nav-bar li:first-child{
+    display: block;
+}
+
+.nav-bar li{
+    display: none;
+}
+
+.nav-bar a{
+    display: block;
+    padding: 1rem;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.nav-bar a:hover{
+    color: #FBEEC1;
+}
+
+.nav-bar.responsive li{
+    display: block;
+}
+
+
+
+.logo-example{
+    width: 175px;
+}
+
+
+
+/*********************************************************************
+* Styling for the color scheme page
+*********************************************************************/
+table, th, td {
+    /* border: 1px solid black;
+    border-collapse: collapse; */
+    text-align: center;
+}
+
+th{
+    padding: 20px;
+}
+
+td{
+    padding: 20px 75px;
+}
+
+#grassy-green{
+    background-color: #8D8741;
+}
+
+#sky-blue{
+    background-color: #659DBD;
+
+}
+
+#skin-tan{
+    background-color: #DAAD86;
+
+}
+
+#dirt-brown{
+    background-color: #BC986A;
+
+}
+
+#sandstone-yellow{
+    background-color: #FBEEC1;
+
+}
+
+/*********************************************************************
+* Styling for the typography page
+*********************************************************************/
+#font1{
+    font-family: 'Roboto', sans-serif;
+}
