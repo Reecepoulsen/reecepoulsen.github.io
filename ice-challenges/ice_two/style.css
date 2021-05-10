@@ -1,0 +1,105 @@
+body {
+    background-color: #CFCFCF;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 20px;
+    background-color: white;
+    margin: 0 auto;
+    max-width: 375px;
+    justify-items: center;
+    font-size: 8px;
+}
+
+.top-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-row p{
+    margin-top: -4px;
+    padding-left: 10px;
+    color: #001b3673;
+}
+
+.top-row span {
+    margin: 12px 25px 0;
+    color: #001b3673;
+}
+
+#name{
+    font-size: 10px;
+}
+
+
+.second-row{
+    width: 100%;
+    background: #001B36;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.airports{
+    margin: 20px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.airports span{
+    color: rgba(256, 256, 256, .4);
+    text-align: center;
+}
+
+.airports h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px 0px;
+    text-align: center;
+}
+
+.third-row{
+    width: 100%;
+    text-align: center;
+    background-color: #F1F1F1;
+    color: #001B36;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.third-row p{
+    font-size: 18px;
+    line-height: 0px;
+    margin: 10px;
+    opacity: 0.6;
+}
+
+.info {
+    margin: 30px 10px;
+}
+
+.info span {
+    font-weight: bold;
+}
+
+.bottom-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-row p{
+    text-align: center;
+    color: #001b3673;
+}
+
+#big{
+    margin: 20px;
+}
