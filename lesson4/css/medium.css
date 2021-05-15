@@ -1,4 +1,4 @@
-@media only screen and (min-width: 42.5em){
+@media only screen and (min-width: 47.5em){
     #header-text{
         text-align: center;
     }
@@ -37,7 +37,7 @@
         padding: 10px 40px;
     }
 
-    #article-img{
+    #article-img-large{
         width: 90%;
         margin-left: auto;
         margin-right: auto;
@@ -65,7 +65,7 @@
         padding-left: 40px;
     }
 
-    #map-img{
+    #map-img-large{
         width: 90%;
         margin-left: auto;
         margin-right: auto;

@@ -67,7 +67,7 @@ nav ul.hide{
 }
 
 .active{
-    background-color: #BC986A;
+    background-color: #8D8741;
 }
 
 main{
@@ -122,8 +122,12 @@ h4{
     display: none;
 }
 
-#article-img{
+#article-img-large{
     width: 100%;
+}
+
+#article-img-small{
+    display: none;
 }
 
 #contact-info{
@@ -132,6 +136,7 @@ h4{
 
 #contact-info h4{
     padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 #address{
@@ -158,7 +163,15 @@ h4{
     display: none;
 }
 
-#map-img{
+.info-icon{
+    width: 20px;
+}
+
+#map-img-small{
+    display: none;
+}
+
+#map-img-large{
     padding-top: 10px;
     padding-bottom: 15px;
     width: 100%;
