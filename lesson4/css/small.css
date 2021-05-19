@@ -8,6 +8,18 @@ header{
 
 }
 
+.notification{
+    text-align: center;
+    text-justify: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    color: white;
+}
+
 #top-banner{
     display: grid;
     grid-template-columns: 100px auto 100px;
