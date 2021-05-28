@@ -4,8 +4,8 @@
     grid-template-rows: 153.5px 380px 380px 153.5px;
     max-width: 600px;
     margin: 0 auto;
-    background: rgb(67,130,215);
-background: linear-gradient(0deg, rgba(67,130,215,0.9332326680672269) 17%, rgba(0,212,255,0.5746892507002801) 43%, rgba(255,255,255,0) 70%);
+    background: rgb(50,97,159);
+    background: linear-gradient(0deg, rgba(50,97,159,1) 12%, rgba(0,212,255,0.3302325581395349) 43%, rgba(255,255,255,0) 70%);
 }
 
 #main-img{
@@ -42,6 +42,7 @@ background: linear-gradient(0deg, rgba(67,130,215,0.9332326680672269) 17%, rgba(
 
 #first-name{
     font-size: 60px;
+
     margin: 0px;
 }
 
