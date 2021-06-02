@@ -7,20 +7,46 @@
     <title>Lazy Load Example</title>
     <style>
         .loading{
+            background-color: lightgray;
             width: 400px;
             height: 400px;
-            background-color: lightgrey;
+            position: relative;
+        }
+        .placeholder-loading::before{
+            content:"";
+            display: block;
+            position: absolute;
+            left: -400px;
+            top: 0;
+            height: 100%;
+            width: 400px;
+            background: linear-gradient(to right, transparent 0%, white 50%, transparent 100%);
+            animation: load 2s;
+            z-index: 50;
+        }
+        .placeholder-loading{
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+        @keyframes load{
+            0% {
+                left: -400px;
+            }
+            100% {
+                left: 100%;
+            }
         }
     </style>
 </head>
 <body>
     <h1></h1>
-    <div class="loading"><img data-src="http://unsplash.it/400" alt=""></div>
-    <div class="loading"><img data-src="http://unsplash.it/401" alt=""></div>
-    <div class="loading"><img data-src="http://unsplash.it/402" alt=""></div>
-    <div class="loading"><img data-src="http://unsplash.it/403" alt=""></div>
-    <div class="loading"><img data-src="http://unsplash.it/404" alt=""></div>
-    <div class="loading"><img data-src="http://unsplash.it/405" alt=""></div>
+    <div class="loading placeholder-loading"><img  data-src="http://unsplash.it/400" alt=""></div>
+    <div class="loading placeholder-loading"><img  data-src="http://unsplash.it/401" alt=""></div>
+    <div class="loading placeholder-loading"><img  data-src="http://unsplash.it/402" alt=""></div>
+    <div class="loading placeholder-loading"><img  data-src="http://unsplash.it/403" alt=""></div>
+    <div class="loading placeholder-loading"><img  data-src="http://unsplash.it/404" alt=""></div>
+    <div class="loading placeholder-loading"><img  data-src="http://unsplash.it/405" alt=""></div>
 </body>
     <script>
         const imagesToLoad = document.querySelectorAll("img[data-src]");
