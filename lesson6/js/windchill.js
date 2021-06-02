@@ -1,6 +1,6 @@
 window.addEventListener("load", () => {
     const calcWindChill = (temperature, speed) => {
-        return (temperature >= 50 && speed > 3)
+        return (temperature <= 50 && speed > 3)
         ?
             Math.round(
                 35.74 + (.6215 * temperature) - (35.75 * Math.pow(speed, .16)) 
