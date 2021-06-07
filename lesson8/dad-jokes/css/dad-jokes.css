@@ -10,14 +10,32 @@ body{
     font-family: "Coming Soon", cursive;
     display: grid;
     grid-template-columns: 300px;
+    position: relative;
 }
 
 #dad-joke {
     align-self: center;
-    font-size: 45px;
+    font-size: 35px;
     padding-left: 50px;
 }
 
 #dad-joke.small {
-    font-size: 35px;
+    font-size: 30px;
+}
+
+#new-joke-btn{
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 15px;
+    border-radius: 25px;
+    border: solid black 3px;
+    font-size: 18px;
+}
+
+#new-joke-btn:hover{
+    background-color: rgba(221, 214, 214, 0.9);
+    color: black;
 }

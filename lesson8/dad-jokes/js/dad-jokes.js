@@ -20,8 +20,11 @@ function newJoke() {
     .then(function(j){
         console.log(j);
         dad_id.innerHTML = j['joke'];
-        if(j['joke'].length > 85){
+        if(j['joke'].length > 100){
             dad_id.classList.add('small');
+        }
+        else{
+            dad_id.classList.remove('small');
         }
     })
     .catch(function(e){
