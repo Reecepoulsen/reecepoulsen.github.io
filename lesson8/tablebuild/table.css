@@ -19,7 +19,7 @@ th{
 }
 
 th, td{
-    border: 1px solid lightgray;
+    border: 1px solid lightgrey;
     padding: 8px;
     text-align: center;
 }
@@ -27,11 +27,13 @@ th, td{
 #title{
     background-color: #7fb9c2;
     font-size: 25px;
+    font-weight: bold;
 }
 
 #foot{
     background-color: #7fb9c2;
     font-size: 12px;
+    font-weight: bold;
 }
 
 #header-row{
