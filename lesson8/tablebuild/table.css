@@ -1,5 +1,5 @@
 table{
-    font-family: Ubuntu, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     border-collapse:collapse;
     margin: 0 auto;
     box-shadow: 8px 8px 10px #628ca6;
@@ -27,7 +27,7 @@ th, td{
 #title{
     background-color: #7fb9c2;
     font-size: 25px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 #foot{
