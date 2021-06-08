@@ -1,0 +1,49 @@
+table{
+    font-family: Ubuntu, sans-serif;
+    border-collapse:collapse;
+    margin: 0 auto;
+    box-shadow: 8px 8px 8px #628ca6;
+    margin-top: 200px;
+}
+
+tr:nth-child(odd){
+    background-color:  #e7ffed;
+}
+
+tr:nth-child(even){
+    background-color:  #e7f0ed;
+}
+
+th{
+    font-size: 17px;
+}
+
+th, td{
+    border: 1px solid lightgray;
+    padding: 8px;
+    text-align: center;
+}
+
+#title{
+    background-color: #7fb9c2;
+    font-size: 25px;
+}
+
+#foot{
+    background-color: #7fb9c2;
+    font-size: 12px;
+}
+
+#header-row{
+    background-color: #628ca6;
+    color: white;
+}
+
+#black-friday{
+    font-style: italic;
+}
+
+.goal-met{
+    background-color: #628ca6;
+    color: white;
+}
