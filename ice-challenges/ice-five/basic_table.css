@@ -1,0 +1,89 @@
+.users{
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.head{
+    background-color: #DBE4EA;
+    padding: 0px;
+}
+
+table{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    width: 1000px;
+}
+
+td{
+    border: none;
+    padding: 18px;
+}
+
+th{
+    color: rgb(102, 99, 99);
+    text-align: left;
+    font-size: 20px;
+    padding: 18px;
+}
+
+i{
+    color: rgb(128, 125, 125);
+}
+
+.dropdown{
+    font-size: 17px;
+    color: rgb(97, 5, 97);
+    padding-left: 10px;
+}
+    
+.head tr{
+    border: none;
+}
+.table_content:nth-child(even){
+    background-color: #F5F5F8;
+}
+
+.table_content:nth-child(odd){
+    background-color: white;
+}
+
+.table_content:hover{
+    background-color:#E7F2FD;
+}
+
+img{
+    width: 50px;
+    border-radius: 50px;
+}
+.date{
+    color: #A4A7AB;
+}
+.waiting{
+    background-color: #FEF9E4;
+    border-radius: 20px;
+    padding: 5px;
+}
+.waiting .material-icons{
+    color: #F3BE16;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+.active{
+    background-color: #DDFFF1;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.active .material-icons{
+    color: #34BF76;
+    font-size: 15px;
+}
+.pencil, .trash{
+    padding: 15px;
+    border-radius: 50px;
+}
+.pencil:hover, .trash:hover{
+    color: blue;
+    background-color: #DBE4EA;
+}
