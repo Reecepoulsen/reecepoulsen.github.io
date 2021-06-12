@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../portal/css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Weather-to-Wear | Gallery</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div id="notification" class="hide">
+                <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion!</p>
+            </div>
+            <div id="top-banner">
+                <img id="logo-img" src="images/site-icon.png" alt="weather-to-wear logo">
+                <div id="header-text">
+                    <h1>Weather-to-Wear</h1>
+                    <p id="motto">Never wonder again!</p>
+                </div>
+                <button onclick="toggleMenu()">&#9776;</button>
+            </div>
+            <nav>
+                <ul id="navigation" class="hide">
+                    <li><a id="home-link" href="#">Home</a></li>
+                    <li><a id="preston-link" href="preston-8.html">Preston</a></li>
+                    <li><a id="soda-link" href="#">Soda Springs</a></li>
+                    <li><a id="fish-link" href="#">Fish Haven</a></li>
+                    <li><a id="storm-link" href="stormcenter-8.html">Storm Center</a></li>
+                    <li><a id="gallery-link" href="gallery-8.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Storm Center: Report a Storm</h2>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <h3>Personal Information</h3>
+                    <label class="top required">Full Name *<input class="inputBox" type="text" name="fullname" required minlength="5" pattern="[A-Za-z ]+"></label>
+                    <label class="top">Email<input class="inputBox" type="email" name="email" placeholder="email@example.com"></label>
+                    <label class="top required">Phone Number *<input class="inputBox" type="tel" name="phoneNum" required></label>
+                    <label class="top required">Zip Code *<input class="inputBox" type="number" name="zipCode" required></label>
+                </fieldset>
+
+                <fieldset>
+                    <h3>Storm Details</h3>
+                    <label class="top">Storm Date<input class="inputBox" type="date" name="stormDate"></label>
+
+                    <label class="top">Storm Type<input class="inputBox" list="stormTypes" name="stormType"></label>
+                    <datalist id="stormTypes">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+
+                    <label>Storm Severity: <span id="severityOut">1</span>
+                        <input class="inputBox" type="range" min="1" max="10" value="1" id="severity" oninput="outputSeverity(value)" name="severity"></label>
+                        
+
+                    <label class="top">Storm Region
+                        <select name="region">
+                            <option value="" selected disabled>Select Region...</option>
+                            <option value="preston">Preston</option>
+                            <option value="sodaSprings">Soda Springs</option>
+                            <option value="fishHaven">Fish Haven</option>
+                            <option value="clifton">Clifton</option>
+                            <option value="downey">Downey</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <h3>Urgency</h3>
+                    <div class="label">Are You in Danger?</div>
+                    <label class="sbs"><input type="radio" name="dangerLevel" value="yes"> Yes</label>
+                    <label class="sbs"><input type="radio" name="dangerLevel" value="maybe"> Maybe</label>
+                    <label class="sbs"><input type="radio" name="dangerLevel" value="no"> No</label>
+                    <label class="top">Additional Information or Comments<textarea id="comments" name="comments" rows="4" cols="50"></textarea></label>
+                    <input class="submitBtn" type="submit" value="Send My Report" name="submitBtn">
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <section id="contact-info">
+                <img id="map-img-small" src="https://via.placeholder.com/335x185" alt="">
+                <div id="contact-text">
+                    <h4>Contact Information</h4>
+                    <span id="address"><img class="info-icon" src="images/map-icon.png" alt="Map pin icon">Address</span>
+                    <span id="phone-number"><img class="info-icon" src="images/phone-icon.png" alt="Phone icon">111-222-3333</span>
+                    <span id="primary-email"><img class="info-icon" src="images/email-icon.png" alt="email-icon">email1@email.com</span>
+                    <span id="second-email">email2@email.com</span>
+                    <a href="https://www.facebook.com" target="_blank"><img class="social-icon" id="facebook-icon" src="images/facebook-icon.png" alt="facebook icon"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img class="social-icon" id="insta-icon" src="images/insta-icon.png" alt="instagram icon"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img class="social-icon" id="twitter-icon" src="images/twitter-icon.png" alt="twitter icon"></a>
+                </div>
+                <img id="map-img-large" src="https://via.placeholder.com/335x125" alt="">
+            </section>
+            <section id="footer-bar">
+                <span id="copyright">&copy; <span id="cur-year"></span></span>
+                <span id="cur-date"></span>
+            </section>
+        </footer>
+    </div>
+    <script src="js/preston-page.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/stormcenter.js"></script>
+    <script> WebFont.load({google: {families: ['Roboto']}}); </script>
+</body>
+</html>
