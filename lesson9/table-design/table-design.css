@@ -45,6 +45,10 @@ table{
     grid-column: span 2;
 }
 
+#overall-container tr{
+    height: 50px;
+}
+
 th, td{
     padding: 8px 15px;
     text-align: center;
