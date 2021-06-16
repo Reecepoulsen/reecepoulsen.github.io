@@ -7,6 +7,7 @@
 
 #info-container{
     width: 300px;
+    height: 300px;
     background-color: lightgray;
     border-radius: 0px 20px 20px 0px;
     font-family: Helvetica, sans-serif;

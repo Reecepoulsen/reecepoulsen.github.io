@@ -1,5 +1,9 @@
 window.addEventListener('load', (event) => {getPerson()})
 
+function reload(){
+    reload = location.reload();
+}
+
 function getPerson() { 
     // Get the image
     let image = document.getElementById("person-img")
