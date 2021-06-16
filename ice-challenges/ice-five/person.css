@@ -1,3 +1,55 @@
+#grid-container{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+#info-container{
+    width: 300px;
+    background-color: lightgray;
+    border-radius: 0px 20px 20px 0px;
+    font-family: Helvetica, sans-serif;
+}
+
 #person-img{
-    width: 250px;
+    width: 300px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+h2{
+    margin: 30px 0px 5px 0px;
+    padding-left: 10px;
+    text-decoration: underline;
+    
+}
+
+ul{
+    list-style: none;
+    padding: 10px;
+    margin: 0px;
+}
+
+li{
+    padding: 5px;
+    position: relative;
+    font-weight: bold;
+}
+
+span{
+    position: absolute;
+    left: 110px;
+    padding-right: 10px;
+    font-weight: normal;
+}
+
+#button-container{
+    max-width: 100px;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+button{
+    width: 100px;
+    height: 30px;
 }

@@ -9,16 +9,23 @@
 </head>
 <body>
     <main>
-        <img id="person-img" src="" alt="">
-        <ul>
-            <li>Name: <span id="fullname"></span></li>
-            <li>Password: <span id="password"></span></li>
-            <li>Email: <span id="email"></span></li>
-            <li>Eye Color: <span id="eye-color"></span></li>
-            <li>Location: <span id="cityCountry"></span></li>
-            <li>Children: <span id="children"></span></li>
-            <li>IP Address: <span id="ip"></span></li>
-        </ul>
+        <div id="grid-container">
+            <img id="person-img" src="" alt="">
+            <div id="info-container">
+                <h2 id="fullname"></h2>
+                <ul>
+                    <li>Password: <span id="password"></span></li>
+                    <li>Email: <span id="email"></span></li>
+                    <li>Eye Color: <span id="eye-color"></span></li>
+                    <li>Location: <span id="cityCountry"></span></li>
+                    <li>Children: <span id="children"></span></li>
+                    <li>IP Address: <span id="ip"></span></li>
+                </ul>
+            </div>
+        </div>
+        <div id="button-container">
+            <button onclick="getPerson()">New Person</button>
+        </div>
     </main>
 </body>
 <script src="person.js"></script>
