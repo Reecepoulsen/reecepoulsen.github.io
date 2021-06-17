@@ -1,0 +1,174 @@
+@media only screen and (min-width: 63.5em){
+    body{
+        background-color:#fbeec146;
+    }
+
+    #content{
+        background-color: white;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    header, footer{
+        margin: 0 auto;
+    }
+
+    main{
+        max-width: 850px;
+        margin: 0 auto;
+    }
+
+    #top-banner{
+        display: grid;
+        grid-template-columns: auto 800px auto;
+    }
+    #logo-img{
+        justify-self: right;
+    }
+    #header-text{
+        text-align: left;
+    }
+    #navigation{
+        max-width: 850px;
+        margin: 0 auto;
+    }
+    
+    #overlay{
+        position: relative;
+    }
+
+    #weather-summary{
+        display: block;
+        position: absolute;
+        top: 95px;
+        left: 40px;
+        width: 250px;
+        padding: 25px;
+        background-color: rgba(82, 79, 79, 0.9);
+        color: white;
+    }
+
+    .summary-list{
+        display: block;
+    }
+
+    #summary-list{
+        line-height: 30px;
+        font-weight: bold;
+    }
+
+    #five-day-forecast h3{
+        border: none;
+        background-color: white;
+        color: black;
+        text-align: left;
+        padding: 10px 0px 10px 30px;
+    }
+
+    #five-day-forecast h4{
+        padding-left: 15px;
+        padding-bottom: 0px;
+    }
+
+    #forecast-imgs-container{
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        background-color: rgb(82, 79, 79);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: black solid 1px;
+    }
+    .forecast-img{
+        justify-self: center;
+        display: inline;
+    }
+
+    #five-day-forecast-content{
+        margin-top: 20px;
+    }
+
+    #five-day-forecast p{
+        margin: 0px;
+        text-align: justify;
+    }
+
+    #article-img-large{
+        display: none;
+    }
+
+    #article-img-small{
+        display: block;
+        float: right;
+        padding-left: 10px;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    #contact-info{
+        background-color: #659DBD;
+        color: white;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    #map-img-small{
+        display: block;
+        margin: 0px 50px 0px auto;
+    }
+
+    #map-img-large{
+        display: none;
+    }
+
+    #contact-text{ 
+        margin: 0px auto 0px 50px;
+    }
+
+    #second-email{
+        display: block;
+        padding-left: 80px;
+    }
+
+    .social-icon{
+        display: inline;
+        width: 40px;
+        padding: 15px 10px;
+    }
+
+    #facebook-icon{
+        padding-left: 50px;
+    }
+
+    #footer-bar{
+        padding: 10px;
+    }
+    /*********************************************
+    * Gallery Page styling
+    *********************************************/
+    #gallery-page h1{
+        padding-left: 3%;
+    }
+    #gallery-grid-container{
+        grid-template-columns: repeat(3, 30%);
+    }
+
+    .gallery-card:hover{
+        box-shadow: 0 0 15px #333;
+    }
+    .card-desc{
+        display: block;
+        padding: 8px 10px;
+        font-style: italic;
+    }
+    
+    /*********************************************
+    * Storm Center styling
+    *********************************************/
+
+}

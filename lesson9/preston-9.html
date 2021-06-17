@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../portal/css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Weather-to-Wear | Preston</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div id="notification" class="hide">
+                <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion!</p>
+            </div>
+            <div id="top-banner">
+                <img id="logo-img" src="images/site-icon.png" alt="weather-to-wear logo">
+                <div id="header-text">
+                    <h1>Weather-to-Wear</h1>
+                    <p id="motto">Never wonder again!</p>
+                </div>
+                <button onclick="toggleMenu()">&#9776;</button>
+            </div>
+            <nav>
+                <ul id="navigation" class="hide">
+                    <li><a id="home-link" href="home-9.html">Home</a></li>
+                    <li><a id="preston-link" href="preston-9.html">Preston</a></li>
+                    <li><a id="soda-link" href="#">Soda Springs</a></li>
+                    <li><a id="fish-link" href="#">Fish Haven</a></li>
+                    <li><a id="storm-link" href="stormcenter-9.html">Storm Center</a></li>
+                    <li><a id="gallery-link" href="gallery-9.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Preston Idaho</h2>
+            <div id="overlay">
+                <picture>
+                    <source srcset="images/hero1000px.jpg" media="(min-width: 1015px)">
+                    <source srcset="images/hero800px.jpg" media="(min-width: 760px)">
+                    <img id="hero-img" src="images/hero500px.jpg" alt="Franklin Scenery">
+                </picture>
+                <!-- <img id="hero-img" src="images/hero-img.jpg" alt="Blue and orange"> -->
+                <section id="weather-summary">
+                    <h4>Weather Summary</h4>
+                    <span class="summary-list" id="curr-temp">Currently: <span id="curr-temp-num">49</span>°F</span>
+                    <span class="summary-list" id="high">High: <span id="high-num">70</span>°F</span>
+                    <span class="summary-list" id="low">Low: <span id="low-num">46</span>°F</span>
+                    <span class="summary-list" id="wind-speed">Wind Speed: <span id="wind-speed-num">18</span>mph</span>
+                    <span class="summary-list" id="wind-chill">Feels Like: <span id="wind-chill-num"></span>°F</span>
+                    <span class="summary-list" id="humidity">Humidity: <span id="humidity-num">21</span>%</span>
+                </section>
+            </div>
+            <section id="five-day-forecast">
+                <h3>Five Day Forecast</h3>
+                <div id="forecast-imgs-container">
+                    <img class="forecast-img" src="https://via.placeholder.com/75" alt="#">
+                    <img class="forecast-img" src="https://via.placeholder.com/75" alt="#">
+                    <img class="forecast-img" src="https://via.placeholder.com/75" alt="#">
+                    <img class="forecast-img" src="https://via.placeholder.com/75" alt="#">
+                    <img class="forecast-img" src="https://via.placeholder.com/75" alt="#">
+                </div>
+                <div id="five-day-forecast-content" class="clearfix">
+                    <h4>Article Title</h4>
+                    <p>
+                        <img id="article-img-small" src="https://via.placeholder.com/200x125" alt="#">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Quas harum minus doloremque illum impedit dolorem, cum modi 
+                        voluptatibus nesciunt dolorum fuga reiciendis praesentium 
+                        ipsum incidunt unde velit eius, dicta corporis.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Quas harum minus doloremque illum impedit dolorem, cum modi 
+                        voluptatibus nesciunt dolorum fuga reiciendis praesentium 
+                        ipsum incidunt unde velit eius, dicta corporis.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Quas harum minus doloremque illum impedit dolorem, cum modi 
+                        voluptatibus nesciunt dolorum fuga reiciendis praesentium 
+                        ipsum incidunt unde velit eius, dicta corporis.
+                    </p>
+                    <img id="article-img-large" src="https://via.placeholder.com/335x125" alt="#">                
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section id="contact-info">
+                <img id="map-img-small" src="https://via.placeholder.com/335x185" alt="">
+                <div id="contact-text">
+                    <h4>Contact Information</h4>
+                    <span id="address"><img class="info-icon" src="images/map-icon.png" alt="Map pin icon">Address</span>
+                    <span id="phone-number"><img class="info-icon" src="images/phone-icon.png" alt="Phone icon">111-222-3333</span>
+                    <span id="primary-email"><img class="info-icon" src="images/email-icon.png" alt="email-icon">email1@email.com</span>
+                    <span id="second-email">email2@email.com</span>
+                    <a href="https://www.facebook.com" target="_blank"><img class="social-icon" id="facebook-icon" src="images/facebook-icon.png" alt="facebook icon"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img class="social-icon" id="insta-icon" src="images/insta-icon.png" alt="instagram icon"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img class="social-icon" id="twitter-icon" src="images/twitter-icon.png" alt="twitter icon"></a>
+                </div>
+                <img id="map-img-large" src="https://via.placeholder.com/335x125" alt="">
+            </section>
+            <section id="footer-bar">
+                <span id="copyright">&copy; <span id="cur-year"></span></span>
+                <span id="cur-date"></span>
+            </section>
+        </footer>
+    </div>
+    <script src="js/preston-page.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script> WebFont.load({google: {families: ['Roboto']}}); </script>
+</body>
+</html>
