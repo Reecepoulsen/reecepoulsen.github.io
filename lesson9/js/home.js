@@ -1,50 +1,59 @@
 window.addEventListener("load", (event) => {
-    const dataURL = "https://byui-cit230.github.io/weather/data/towndata.json"
+    requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json'
 
-    fetch(dataURL)
+    fetch(requestURL)
     .then(function (response) {
         return response.json()
     })
-    .then(function (data) {
-        // Get preston HTML elements
-        let preston_motto = document.getElementById("preston-motto")
-        let preston_year = document.getElementById("preston-year")
-        let preston_pop = document.getElementById("preston-pop")
-        let preston_rain = document.getElementById("preston-rain")
- 
-        // Get fish haven HTML elements
-        let fish_motto = document.getElementById("fish-motto")
-        let fish_year = document.getElementById("fish-year")
-        let fish_pop = document.getElementById("fish-pop")
-        let fish_rain = document.getElementById("fish-rain")
+    .then(function (town_data) {
+        let towns = town_data.towns
 
-        // Get soda springs HTML elements
-        let soda_motto = document.getElementById("soda-motto")
-        let soda_year = document.getElementById("soda-year")
-        let soda_pop = document.getElementById("soda-pop")
-        let soda_rain = document.getElementById("soda-rain")
+        for (let i = 0; i < towns.length; i++){
+            if (towns[i].name == 'Preston' || towns[i].name == 'Soda Springs' || towns[i].name == 'Fish Haven'){
+                // set the town checkpoint 
+                let town = towns[i]
 
-        // Set checkpoint
-        preston = data['towns'][6]
-        fishHaven = data['towns'][2]
-        sodaSprings = data['towns'][0]
+                // create a townSection to hold everything 
+                let townSection = document.createElement('section')
 
-        // Set preston content
-        preston_motto.innerHTML = preston['motto']
-        preston_year.innerHTML = preston['yearFounded']
-        preston_pop.innerHTML = preston['currentPopulation']
-        preston_rain.innerHTML = preston['averageRainfall']
+                // create a container for the text for grid simplicity
+                let textContainer = document.createElement('div')
+                textContainer.className = "text-container"
 
-        // Set fish haven content
-        fish_motto.innerHTML = fishHaven['motto']
-        fish_year.innerHTML = fishHaven['yearFounded']
-        fish_pop.innerHTML = fishHaven['currentPopulation']
-        fish_rain.innerHTML = fishHaven['averageRainfall']
+                // create the HTML elements
+                let name = document.createElement('h3')
+                let motto = document.createElement('p')
+                let year = document.createElement('p')
+                let pop = document.createElement('p')
+                let rain = document.createElement('p')
+                let image = document.createElement('img')
 
-        // Set soda springs
-        soda_motto.innerHTML = sodaSprings['motto']
-        soda_year.innerHTML = sodaSprings['yearFounded']
-        soda_pop.innerHTML = sodaSprings['currentPopulation']
-        soda_rain.innerHTML = sodaSprings['averageRainfall']
+                // assign the name of the town to the townSection id
+                townSection.id = town.name
+
+                // set the content of each element
+                name.innerHTML = town.name
+                motto.innerHTML = town.motto
+                year.innerHTML = 'Year Founded: ' + town.yearFounded
+                pop.innerHTML = 'Population: ' + town.currentPopulation
+                rain.innerHTML = 'Average Rainfall: ' + town.averageRainfall
+                image.src = 'images/' + town.photo
+
+                // add all of the text elements into the text-container
+                textContainer.appendChild(name)
+                textContainer.appendChild(motto)
+                textContainer.appendChild(year)
+                textContainer.appendChild(pop)
+                textContainer.appendChild(rain)
+
+                // add the textContainer and the image into the townSection
+                townSection.append(textContainer)
+                townSection.appendChild(image)
+
+                // add the townSection container to the page
+                let regionSection = document.getElementById('region-container')
+                regionSection.appendChild(townSection)
+            }
+        }
     })
 })

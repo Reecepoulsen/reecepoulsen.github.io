@@ -95,4 +95,20 @@
     #comments{
         width: 50%;
     }
+    /*********************************************
+    * Home Page styling
+    *********************************************/
+    #region-container section{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #region-container section:nth-of-type(even) img{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #region-container section:nth-of-type(even) .text-container{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
 }

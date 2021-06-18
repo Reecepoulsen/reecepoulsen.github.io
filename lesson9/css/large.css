@@ -171,4 +171,36 @@
     * Storm Center styling
     *********************************************/
 
+    /*********************************************
+    * Home Page styling
+    *********************************************/
+    #region-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #region-container h2{
+        grid-column: span 3;
+    }
+
+    #region-container section{
+        grid-template-columns: 1fr;
+        padding: 0px;
+    }
+
+    #region-container section:hover{
+        box-shadow: black 0px 0px 10px;
+    }
+
+    #region-container section img, #region-container section:nth-of-type(even) img{
+        grid-row: 1/2;
+        grid-column: 1/2;
+        box-shadow: none;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    #region-container .text-container, #region-container section:nth-of-type(even) .text-container{
+        grid-row: 2/3;
+        grid-column: 1/2;
+        padding: 20px;
+    }
 }
