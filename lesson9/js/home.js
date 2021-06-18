@@ -36,7 +36,7 @@ window.addEventListener("load", (event) => {
                 motto.innerHTML = town.motto
                 year.innerHTML = 'Year Founded: ' + town.yearFounded
                 pop.innerHTML = 'Population: ' + town.currentPopulation
-                rain.innerHTML = 'Average Rainfall: ' + town.averageRainfall
+                rain.innerHTML = 'Annual Rain Fall: ' + town.averageRainfall
                 image.src = 'images/' + town.photo
 
                 // add all of the text elements into the text-container
