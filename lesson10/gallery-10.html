@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../portal/css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Weather-to-Wear | Gallery</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div id="notification" class="hide">
+                <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion!</p>
+            </div>
+            <div id="top-banner">
+                <img id="logo-img" src="images/site-icon.png" alt="weather-to-wear logo">
+                <div id="header-text">
+                    <h1>Weather-to-Wear</h1>
+                    <p id="motto">Never wonder again!</p>
+                </div>
+                <button onclick="toggleMenu()">&#9776;</button>
+            </div>
+            <nav>
+                <ul id="navigation" class="hide">
+                    <li><a id="home-link" href="home-10.html">Home</a></li>
+                    <li><a id="preston-link" href="preston-10.html">Preston</a></li>
+                    <li><a id="soda-link" href="#">Soda Springs</a></li>
+                    <li><a id="fish-link" href="#">Fish Haven</a></li>
+                    <li><a id="storm-link" href="stormcenter-10.html">Storm Center</a></li>
+                    <li><a id="gallery-link" href="gallery-10.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <body id="gallery-page">
+            <h1>Weather Gallery</h1>
+            <div id="gallery-grid-container">
+                <div class="gallery-card">
+                    <img loading="lazy" class="card-img" src="images/autumn-min.jpg" alt="Autumn forest">
+                    <span class="card-desc">Autumn Road in Greenville</span></div>
+                <div class="gallery-card">
+                    <img loading="lazy" class="card-img" src="images/clear-skys-min.jpg" alt="Clear blue skies">
+                    <span class="card-desc">Clear skies over Springfield</span></div>
+                <div class="gallery-card">
+                    <img loading="lazy" class="card-img" src="images/cloudy-min.jpg" alt="Cloudy skies">
+                    <span class="card-desc">Cloudy skies over Greenville</span></div>
+                <div class="gallery-card">
+                    <img loading="lazy" class="card-img" src="images/lightning-min.jpg" alt="Lightning storm">
+                    <span class="card-desc">Lighting storm in Springfield</span></div>
+                <div class="gallery-card">
+                    <img loading="lazy" class="card-img" src="images/rain-min.jpg" alt="Road wet from rain">
+                    <span class="card-desc">Road in Greenville wet from rain</span></div>
+                <div class="gallery-card">
+                    <img loading="lazy" class="card-img" src="images/rainbow-min.jpg" alt="Rainbow over a field of grain">
+                    <span class="card-desc">Rainbow over a field in Springfield</span></div>
+                <div class="gallery-card">
+                    <img loading="lazy" class="card-img" src="images/snow-min.jpg" alt="Trees covered in snow">
+                    <span class="card-desc">Snowy path in Greenville</span></div>
+                <div class="gallery-card">
+                    <img loading="lazy" class="card-img" src="images/storm-min.jpg" alt="Storm clouds">
+                    <span class="card-desc">Storm brews in Springfield</span></div>
+                <div class="gallery-card">
+                    <img loading="lazy" class="card-img" src="images/windy-min.jpg" alt="Wind blowing field of grain">
+                    <span class="card-desc">Wind blows grain field in Greenville</span></div>
+            </div>
+        </body>
+        <footer>
+            <section id="contact-info">
+                <img id="map-img-small" src="https://via.placeholder.com/335x185" alt="">
+                <div id="contact-text">
+                    <h4>Contact Information</h4>
+                    <span id="address"><img class="info-icon" src="images/map-icon.png" alt="Map pin icon">Address</span>
+                    <span id="phone-number"><img class="info-icon" src="images/phone-icon.png" alt="Phone icon">111-222-3333</span>
+                    <span id="primary-email"><img class="info-icon" src="images/email-icon.png" alt="email-icon">email1@email.com</span>
+                    <span id="second-email">email2@email.com</span>
+                    <a href="https://www.facebook.com" target="_blank"><img class="social-icon" id="facebook-icon" src="images/facebook-icon.png" alt="facebook icon"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img class="social-icon" id="insta-icon" src="images/insta-icon.png" alt="instagram icon"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img class="social-icon" id="twitter-icon" src="images/twitter-icon.png" alt="twitter icon"></a>
+                </div>
+                <img id="map-img-large" src="https://via.placeholder.com/335x125" alt="">
+            </section>
+            <section id="footer-bar">
+                <span id="copyright">&copy; <span id="cur-year"></span></span>
+                <span id="cur-date"></span>
+            </section>
+        </footer>
+    </div>
+    <script src="js/preston-page.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script> WebFont.load({google: {families: ['Roboto']}}); </script>
+</body>
+</html>
