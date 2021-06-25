@@ -34,9 +34,9 @@ fetch(requestURL)
         
         // Create a date object with correct format new Date(year, monthIndex, day)
         let date = new Date(dateStringParts[0], dateStringParts[1] - 1, dateStringParts[2])
-        let dateNum = date.getDay()
+        let dayNum = date.getDay()
 
-        switch (dateNum) {
+        switch (dayNum) {
             case 0:
                 name.innerHTML = "Sunday"
                 break;
