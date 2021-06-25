@@ -53,7 +53,8 @@
 }
 
 .week_days{
-    background-color: white;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
     grid-row: 3/4;
     border-radius: 0px 0px 20px 20px;
     /* background-color: lightgray; */
