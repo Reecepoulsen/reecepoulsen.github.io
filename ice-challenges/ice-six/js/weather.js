@@ -76,7 +76,7 @@ fetch(fiveDayURL)
 
         // set the temp
         let main = curDay.main
-        temp.innerHTML = Math.round(main.temp_max)
+        temp.innerHTML = Math.round(main.temp_max) + '°'
 
         // set the icon
         let iconId = curDay.weather[0].icon
