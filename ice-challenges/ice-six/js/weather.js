@@ -1,5 +1,4 @@
 const todayURL = 'https://api.openweathermap.org/data/2.5/weather?zip=83440&appid=96f881dc52b0a77480e60ae03cff87e0&units=imperial'
-
 fetch(todayURL)
 .then(response => {return response.json()})
 .then(todayData => {
@@ -12,8 +11,9 @@ fetch(todayURL)
     temp.innerHTML = Math.round(todayData.main.temp) + '°'
 })
 
-const fiveDayURL = 'https://api.openweathermap.org/data/2.5/forecast?zip=83440&appid=96f881dc52b0a77480e60ae03cff87e0&units=imperial'
 
+
+const fiveDayURL = 'https://api.openweathermap.org/data/2.5/forecast?zip=83440&appid=96f881dc52b0a77480e60ae03cff87e0&units=imperial'
 fetch(fiveDayURL)
 .then((response) => {
     return response.json()
