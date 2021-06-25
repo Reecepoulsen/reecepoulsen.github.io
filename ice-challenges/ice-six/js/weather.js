@@ -1,3 +1,17 @@
+const todayURL = 'https://api.openweathermap.org/data/2.5/weather?zip=83440&appid=96f881dc52b0a77480e60ae03cff87e0&units=imperial'
+
+fetch(todayURL)
+.then(response => {return response.json()})
+.then(todayData => {
+    let description = document.getElementById('description')
+    let temp = document.getElementById('temp')
+
+    let descString = todayData.weather[0].description
+    let capDescString = descString.charAt(0).toUpperCase() + descString.slice(1)
+    description.innerHTML = capDescString
+    temp.innerHTML = Math.round(todayData.main.temp) + '°'
+})
+
 const fiveDayURL = 'https://api.openweathermap.org/data/2.5/forecast?zip=83440&appid=96f881dc52b0a77480e60ae03cff87e0&units=imperial'
 
 fetch(fiveDayURL)
@@ -75,7 +89,4 @@ fetch(fiveDayURL)
         container.appendChild(temp)
         container.appendChild(icon)
     }
-
-
 })
-
