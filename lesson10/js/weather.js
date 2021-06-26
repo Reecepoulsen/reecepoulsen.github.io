@@ -115,7 +115,7 @@ window.addEventListener("load", (event) => {
             dayImg.src = `http://openweathermap.org/img/wn/${iconId}.png`
 
             // Set the value for the day temp
-            dayTemp.innerHTML = Math.round(curDay.main.temp)
+            dayTemp.innerHTML = Math.round(curDay.main.temp) + "°F"
             
             // Add created elements into appropriate spot in HTML document
             let containerId = "forecast-day" + (i + 1)

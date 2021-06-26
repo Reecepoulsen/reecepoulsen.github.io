@@ -73,14 +73,34 @@
     #forecast-imgs-container{
         display: grid;
         grid-template-columns: repeat(5, auto);
-        background-color: rgb(82, 79, 79);
-        padding-top: 10px;
-        padding-bottom: 10px;
+        background-color: #659DBD;
+        padding: 10px 30px;
         border: black solid 1px;
+        color: white;
+        grid-gap: 30px;
     }
-    .forecast-img{
-        justify-self: center;
-        display: inline;
+
+    .day-block{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20px 75px 20px;
+        justify-items: center;
+    }
+
+    .day-block h5 {
+        margin: 0;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .day-block img{
+        width: 75px;
+    }
+
+    .day-block span{
+        display: block;
+        font-size: 20px;
+        text-align: center;
     }
 
     #five-day-forecast-content{
