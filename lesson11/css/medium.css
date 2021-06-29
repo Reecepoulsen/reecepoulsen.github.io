@@ -1,0 +1,114 @@
+@media only screen and (min-width: 47.5em){
+    #header-text{
+        text-align: center;
+    }
+    
+    #header-text h1{
+        font-size: 35px;
+    }
+
+    #motto{
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    button{
+        display: none;
+    }
+
+    nav ul.hide{
+        display: block;
+    }
+
+    #navigation{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    #navigation a{
+        padding: 15px 10px;
+        text-align: center;
+    }
+    
+    #weather-summary{
+        padding: 10px 55px;
+    }
+
+    #five-day-forecast h4, #five-day-forecast p{
+        padding: 10px 40px;
+    }
+
+    #article-img-large{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    #contact-info h4{
+        padding-left: 40px;
+    }
+
+    #address{
+        display: block;
+    }
+
+    #address img{
+        padding-right: 20px;
+        padding-left: 40px;
+    }
+
+    #phone-number img{
+        padding-left: 40px;
+    }
+
+    #primary-email img{
+        padding-left: 40px;
+    }
+
+    #map-img-large{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    /*********************************************
+    * Gallery Page styling
+    *********************************************/
+    #gallery-page h1{
+        padding-left: 4%;
+    }
+
+    #gallery-grid-container{
+        grid-template-columns: 45% 45%;
+    }
+    /*********************************************
+    * Storm Page styling
+    *********************************************/
+    .inputBox{
+        width: 33%;
+    }
+
+    select{
+        width: 36%;
+    }
+
+    #comments{
+        width: 50%;
+    }
+    /*********************************************
+    * Home Page styling
+    *********************************************/
+    #region-container section{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #region-container section:nth-of-type(even) img{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #region-container section:nth-of-type(even) .text-container{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+}
