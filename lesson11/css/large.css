@@ -124,6 +124,7 @@
         display: block;
         float: right;
         padding-left: 10px;
+        max-width: 300px;
     }
 
     .clearfix::after {
