@@ -37,6 +37,10 @@
         position: relative;
     }
 
+    #hero-img{
+        max-height: 455px;
+    }
+
     #weather-summary{
         display: block;
         position: absolute;
