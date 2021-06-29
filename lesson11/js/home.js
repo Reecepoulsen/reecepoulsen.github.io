@@ -38,7 +38,7 @@ window.addEventListener("load", (event) => {
                 pop.innerHTML = 'Population: ' + town.currentPopulation
                 rain.innerHTML = 'Annual Rain Fall: ' + town.averageRainfall
                 image.src = 'images/' + town.photo
-                images.alt = `Outdoors in ${town.name}`
+                image.alt = `Outdoors in ${town.name}`
 
                 // add all of the text elements into the text-container
                 textContainer.appendChild(name)
