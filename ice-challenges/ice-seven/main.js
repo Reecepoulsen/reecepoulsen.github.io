@@ -28,13 +28,6 @@ fetch(requestURL)
         let sum = eventInfo.summary
         let url = eventInfo.url
 
-        console.log(eventType)
-        console.log(name)
-        console.log(location)
-        console.log(organizedBy)
-        console.log(sum)
-        console.log(url)
-
         // change the content of the element to match the data 
         eventType_container.textContent = eventType
         name_container.textContent = name
