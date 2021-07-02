@@ -12,11 +12,28 @@ body {
     row-gap: 1em;
 
 }
-.bigGrid div {
+
+.bigGrid .card1, .card2, .card3, .card4, .card5 {
     background-image: url(https://source.unsplash.com/random/600x600);
     padding:.5em;
-
+}
+.bigGrid .card2 {
+    background-image: url(https://source.unsplash.com/random/601x600);
+    padding:.5em;
+}
+.bigGrid .card3 { 
+    background-image: url(https://source.unsplash.com/random/602x600);
+    padding:.5em;
+}
+.bigGrid .card4 {
+    background-image: url(https://source.unsplash.com/random/603x600);
+    padding:.5em;
+}
+.bigGrid .card5 {
+    background-image: url(https://source.unsplash.com/random/604x600);
+    padding:.5em;
 }
 .text {
-    background-color: rgba(0, 0, 0, 0.678);
+    background-color: rgba(0,0,0,.8);
+    padding: 10px;
 }
