@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Arial',Arial, Helvetica, sans-serif;
+
+}
+
+.bigGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 1em;
+
+}
+.bigGrid div {
+    background-image: url(https://source.unsplash.com/random/600x600);
+    padding:.5em;
+
+}
+.text {
+    background-color: rgba(0, 0, 0, 0.678);
+}
