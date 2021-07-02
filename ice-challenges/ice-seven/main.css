@@ -4,7 +4,10 @@ body {
     font-family: 'Arial',Arial, Helvetica, sans-serif;
 
 }
-
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
 .bigGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -14,26 +17,89 @@ body {
 }
 
 .bigGrid .card1, .card2, .card3, .card4, .card5 {
-    background-image: url(https://source.unsplash.com/random/600x600);
+    background-image: url(https://source.unsplash.com/random/600x600/?sunny);
     padding:.5em;
 }
 .bigGrid .card2 {
-    background-image: url(https://source.unsplash.com/random/601x600);
+    background-image: url(https://source.unsplash.com/random/601x600/?red);
     padding:.5em;
 }
 .bigGrid .card3 { 
-    background-image: url(https://source.unsplash.com/random/602x600);
+    background-image: url(https://source.unsplash.com/random/602x600/?yellow);
     padding:.5em;
 }
 .bigGrid .card4 {
-    background-image: url(https://source.unsplash.com/random/603x600);
+    background-image: url(https://source.unsplash.com/random/603x600/?light);
     padding:.5em;
 }
 .bigGrid .card5 {
-    background-image: url(https://source.unsplash.com/random/604x600);
+    background-image: url(https://source.unsplash.com/random/604x600/?pink);
     padding:.5em;
 }
 .text {
     background-color: rgba(0,0,0,.8);
     padding: 10px;
+    min-height: 245px;
+}
+/* .text span {
+    line-height: 1.5em;
+} */
+
+
+
+p{
+    margin: 0px;
+    /* margin-bottom: 10px; */
+}
+
+a {
+    color: white;
+    display: block;
+}
+a:hover {
+    color: rgb(187, 187, 187);
+    font-style: oblique;
+}
+
+.eventName {
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+.date {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.startTime{
+    margin: 0 auto;
+}
+
+.times {
+    font-style: italic;
+    display:inline-block;
+    font-size: 20px;
+}
+
+.location{
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.organized{
+    margin-top: 5px;
+}
+
+.summary{
+    margin-bottom: 3px;
+}
+
+.eventtype {
+    font-size: .8em;
+    background-color: white;
+    color: black;
+    display:inline-block;
+    padding: 8px;
+    border-radius: 25px;
+    margin-top: 15px;
 }

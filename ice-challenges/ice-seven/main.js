@@ -10,10 +10,7 @@ fetch(requestURL)
     for (let i = 0; i < dataList.length; i++) {
         //  create the HTML elements
         let eventType_container = document.getElementById(`eventtype${i + 1}`)
-        console.log(eventType_container)
         let name_container = document.getElementById(`eventName${i + 1}`)
-        // let start_container = document.getElementById()
-        // let end_container = document.getElementById()
         let location_container = document.getElementById(`location${i + 1}`)
         let organizedBy_container = document.getElementById(`organized${i + 1}`)
         let sum_container = document.getElementById(`summary${i + 1}`)
@@ -26,22 +23,46 @@ fetch(requestURL)
         //  store the data from the json
         let eventType = curEvent.type
         let name = eventInfo.name
-        let start = eventInfo.start
-        let end = eventInfo.end
         let location = eventInfo.location
         let organizedBy = eventInfo.organized_by
         let sum = eventInfo.summary
         let url = eventInfo.url
 
+        console.log(eventType)
+        console.log(name)
+        console.log(location)
+        console.log(organizedBy)
+        console.log(sum)
+        console.log(url)
+
         // change the content of the element to match the data 
-        eventType_container.innerHTMl = eventType
-        name_container.innerHTMl = name
-        // start_container.innerHTMl = start
-        // end_container.innerHTMl = end
-        location_container.innerHTMl = location
-        organizedBy_container.innerHTMl = organizedBy
-        sum_container.innerHTMl = sum
-        url_container.innerHTMl = url
+        eventType_container.textContent = eventType
+        name_container.textContent = name
+        location_container.textContent = location
+        organizedBy_container.textContent = organizedBy
+        sum_container.textContent = sum
+        url_container.textContent = url
+        url_container.href = url
+        url_container.target = "blank"
+
+        // handle dates and time
+        let startDateTimeString = eventInfo.start
+        let endDateTimeString = eventInfo.end
+
+        let startDateTimeStringParts = startDateTimeString.split(" ")
+        let endDateTimeStringParts = endDateTimeString.split(" ")
+
+        let startDate = startDateTimeStringParts[0]
+        let startTime = startDateTimeStringParts[1]
+        let endTime = endDateTimeStringParts[1]
+
+        let date_container = document.getElementById(`date${i + 1}`)
+        let start_container = document.getElementById(`startTime${i + 1}`)
+        let end_container = document.getElementById(`endTime${i + 1}`)
+
+        date_container.textContent = startDate.slice(5, 10)
+        start_container.textContent = startTime.slice(0, 5)
+        end_container.textContent = endTime.slice(0, 5)
 
     }
 })
