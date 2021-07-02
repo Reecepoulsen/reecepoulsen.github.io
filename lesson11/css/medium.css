@@ -1,8 +1,4 @@
 @media only screen and (min-width: 47.5em){
-    #header-text{
-        text-align: center;
-    }
-    
     #header-text h1{
         font-size: 35px;
     }
@@ -33,6 +29,57 @@
         padding: 10px 55px;
     }
 
+    #five-day-forecast h3{
+        display: block;
+        border: none;
+        background-color: white;
+        color: black;
+        text-align: left;
+        padding: 10px 0px 10px 30px;
+    }
+
+    #five-day-forecast h4{
+        padding-left: 15px;
+        padding-bottom: 0px;
+    }
+
+    #forecast-imgs-container{
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        background-color: #659DBD;
+        padding: 10px 30px;
+        border: black solid 1px;
+        color: white;
+        grid-gap: 30px;
+    }
+
+    .day-block{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20px 75px 20px;
+        justify-items: center;
+    }
+
+    .day-block h5 {
+        margin: 0;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .day-block img{
+        width: 75px;
+    }
+
+    .day-block span{
+        display: block;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #five-day-forecast-content{
+        margin-top: 20px;
+    }
+
     #five-day-forecast h4, #five-day-forecast p{
         padding: 10px 40px;
     }
@@ -53,8 +100,9 @@
     }
 
     #address img{
-        padding-right: 20px;
-        padding-left: 40px;
+        padding-right: 17px;
+        padding-left: 35px;
+        width: 30px;
     }
 
     #phone-number img{
@@ -65,19 +113,31 @@
         padding-left: 40px;
     }
 
-    #map-img-large{
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
+    #contact-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mapouter{
+        margin: 0px auto;
+    }
+
+    .social-icon{
+        display: inline;
+        width: 40px;
+        padding: 15px 10px;
+    }
+
+    #facebook-icon{
+        padding-left: 50px;
+    }
+
+    #footer-bar{
+        padding: 10px;
     }
     /*********************************************
     * Gallery Page styling
     *********************************************/
-    #gallery-page h1{
-        padding-left: 4%;
-    }
-
     #gallery-grid-container{
         grid-template-columns: 45% 45%;
     }

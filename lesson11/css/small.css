@@ -5,7 +5,6 @@ body{
 header{
     background-color: #659DBD;
     color: white;
-
 }
 
 #notification{
@@ -26,6 +25,10 @@ header{
 #top-banner{
     display: grid;
     grid-template-columns: 100px auto 100px;
+}
+
+#top-banner a{
+    justify-self: right;
 }
 
 #logo-img{
@@ -90,7 +93,7 @@ main{
 }
 
 h2{
-    margin: 10px 0px;
+    margin: 30px 0px;
     padding-left: 5px;
 }
 
@@ -129,20 +132,14 @@ h2{
     grid-row: 2/3;
 }
 
-#wind-speed{
-
-}
-
-#wind-chill{
-
-}
-
-#humidity{
-
-}
-
 h4{
     margin: 0px;
+}
+
+#weather-summary{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    margin-bottom: 5px;
 }
 
 #weather-summary p{
@@ -156,15 +153,7 @@ h4{
 }
 
 #five-day-forecast h3{
-    text-align: center;
-    margin: 0px;
-    background-color: #659DBD;
-    color: white;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    border-top: black solid 1px;
-    border-left: black solid 1px;
-    border-right: black solid 1px;
+    display: none;
 }
 
 #five-day-forecast p{
@@ -213,22 +202,39 @@ h4{
     padding-right: 20px;
 }
 
-#second-email{
-    display: none;
-}
-
 .info-icon{
     width: 20px;
 }
 
-#map-img-small{
-    display: none;
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:185px;
+    width:335px;
+    padding: 20px 0px;
+    margin: 0 auto;
 }
 
-#map-img-large{
-    padding-top: 10px;
-    padding-bottom: 15px;
-    width: 100%;
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:185px;
+    width:335px;
+}
+
+#contact-info{
+    background-color: #659DBD;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.info-icon{
+    margin-bottom: -5px;
+}
+
+#contact-text span{
+    padding: 5px 0px;
 }
 
 #footer-bar{
@@ -245,17 +251,16 @@ h4{
 /*********************************************
 * Gallery Page styling
 *********************************************/
-#gallery-page h1{
-    padding: 15px 0px 15px 5%;
-    margin: 0px;
-    font-size: 25px;
-}
-
 #gallery-grid-container{
     display: grid;
     grid-template-columns: 90%;
     justify-content: center;
     grid-gap: 20px;
+}
+
+#gallery-page h2{
+    padding-left: 5%;
+    font-size: 25px;
 }
 
 .gallery-card{

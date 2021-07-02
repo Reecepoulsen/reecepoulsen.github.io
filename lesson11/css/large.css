@@ -1,6 +1,6 @@
 @media only screen and (min-width: 63.5em){
     body{
-        background-color:#fbeec146;
+        background-color:#FBEEC1;
     }
 
     #content{
@@ -61,56 +61,6 @@
         font-weight: bold;
     }
 
-    #five-day-forecast h3{
-        border: none;
-        background-color: white;
-        color: black;
-        text-align: left;
-        padding: 10px 0px 10px 30px;
-    }
-
-    #five-day-forecast h4{
-        padding-left: 15px;
-        padding-bottom: 0px;
-    }
-
-    #forecast-imgs-container{
-        display: grid;
-        grid-template-columns: repeat(5, auto);
-        background-color: #659DBD;
-        padding: 10px 30px;
-        border: black solid 1px;
-        color: white;
-        grid-gap: 30px;
-    }
-
-    .day-block{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 20px 75px 20px;
-        justify-items: center;
-    }
-
-    .day-block h5 {
-        margin: 0;
-        text-align: center;
-        font-size: 18px;
-    }
-
-    .day-block img{
-        width: 75px;
-    }
-
-    .day-block span{
-        display: block;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    #five-day-forecast-content{
-        margin-top: 20px;
-    }
-
     #five-day-forecast p{
         margin: 0px;
         text-align: justify;
@@ -123,7 +73,8 @@
     #article-img-small{
         display: block;
         float: right;
-        padding-left: 10px;
+        padding-left: 30px;
+        padding-bottom: 15px;
         max-width: 300px;
     }
 
@@ -133,52 +84,18 @@
         display: table;
     }
 
-    #contact-info{
-        background-color: #659DBD;
-        color: white;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        padding: 20px;
-        margin-top: 20px;
-    }
-
-    #map-img-small{
-        display: block;
+    .mapouter{
         margin: 0px 50px 0px auto;
-    }
-
-    #map-img-large{
-        display: none;
     }
 
     #contact-text{ 
         margin: 0px auto 0px 50px;
     }
 
-    #second-email{
-        display: block;
-        padding-left: 80px;
-    }
 
-    .social-icon{
-        display: inline;
-        width: 40px;
-        padding: 15px 10px;
-    }
-
-    #facebook-icon{
-        padding-left: 50px;
-    }
-
-    #footer-bar{
-        padding: 10px;
-    }
     /*********************************************
     * Gallery Page styling
     *********************************************/
-    #gallery-page h1{
-        padding-left: 3%;
-    }
     #gallery-grid-container{
         grid-template-columns: repeat(3, 30%);
     }

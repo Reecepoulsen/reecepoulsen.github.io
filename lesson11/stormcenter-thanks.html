@@ -20,7 +20,7 @@
                 <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion!</p>
             </div>
             <div id="top-banner">
-                <img id="logo-img" src="images/site-icon.png" alt="weather-to-wear logo">
+                <a href="home-11.html"><img id="logo-img" src="images/site-icon.png" alt="weather-to-wear logo"></a>
                 <div id="header-text">
                     <h1>Weather-to-Wear</h1>
                     <p id="motto">Never wonder again!</p>
@@ -45,19 +45,29 @@
         <img id="checkmark" src="./images/checkmark.png" alt="">
     </main>
     <footer>
-        <section id="contact-info">
-            <img id="map-img-small" src="https://via.placeholder.com/335x185" alt="">
+        <section id="contact-info" >
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe 
+                        width="335" 
+                        height="185" 
+                        id="gmap_canvas" 
+                        src="https://maps.google.com/maps?q=byui&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    </iframe>
+                    <a href="https://123movies-to.org"></a>
+                    <br>
+                </div>
+            </div>
             <div id="contact-text">
-                <h4>Contact Information</h4>
+                <h4>Contact Us!</h4>
                 <span id="address"><img class="info-icon" src="images/map-icon.png" alt="Map pin icon">Address</span>
                 <span id="phone-number"><img class="info-icon" src="images/phone-icon.png" alt="Phone icon">111-222-3333</span>
                 <span id="primary-email"><img class="info-icon" src="images/email-icon.png" alt="email-icon">email1@email.com</span>
-                <span id="second-email">email2@email.com</span>
                 <a href="https://www.facebook.com" target="_blank"><img class="social-icon" id="facebook-icon" src="images/facebook-icon.png" alt="facebook icon"></a>
                 <a href="https://www.instagram.com" target="_blank"><img class="social-icon" id="insta-icon" src="images/insta-icon.png" alt="instagram icon"></a>
                 <a href="https://www.twitter.com" target="_blank"><img class="social-icon" id="twitter-icon" src="images/twitter-icon.png" alt="twitter icon"></a>
             </div>
-            <img id="map-img-large" src="https://via.placeholder.com/335x125" alt="">
         </section>
         <section id="footer-bar">
             <span id="copyright">&copy; <span id="cur-year"></span></span>
