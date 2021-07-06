@@ -45,8 +45,6 @@ if (dayNum == 5) {
 // wayfinding for navbar
 let fileName = location.pathname.split("/").slice(-1)
 let pageName = fileName[0]
-// let pageName = fileString.split("-")[0]
-console.log(pageName)
 switch (pageName) {
     case "preston.html":
         document.getElementById("preston-link").classList.toggle("active")
