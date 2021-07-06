@@ -44,23 +44,26 @@ if (dayNum == 5) {
 
 // wayfinding for navbar
 let fileName = location.pathname.split("/").slice(-1)
-let fileString = fileName[0]
-let pageName = fileString.split("-")[0]
+let pageName = fileName[0]
+// let pageName = fileString.split("-")[0]
 console.log(pageName)
 switch (pageName) {
-    case "preston":
+    case "preston.html":
         document.getElementById("preston-link").classList.toggle("active")
         break;
-    case "sodaSprings":
+    case "sodaSprings.html":
         document.getElementById("soda-link").classList.toggle("active")
         break;
-    case "fishHaven":
+    case "fishHaven.html":
         document.getElementById("fish-link").classList.toggle("active")
         break;
-    case "stormcenter":
+    case "stormcenter.html":
         document.getElementById("storm-link").classList.toggle("active")
-        break;    
-    case "gallery":
+        break;
+    case "stormcenter-thanks.html":
+        document.getElementById("storm-link").classList.toggle("active")
+        break;  
+    case "gallery.html":
         document.getElementById("gallery-link").classList.toggle("active")
         break;
     default:

@@ -171,4 +171,13 @@
         grid-column: 2/3;
         grid-row: 1/2;
     }
+
+    #events-container{
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px 0px;
+    }
+
+    .townEvents{
+        padding: 0px 15px;
+    }
 }

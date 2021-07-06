@@ -54,6 +54,7 @@ window.addEventListener("load", (event) => {
                 // add the townSection container to the page
                 let regionSection = document.getElementById('region-container')
                 regionSection.appendChild(townSection)
+
             }
         }
     })
