@@ -1,0 +1,15 @@
+@media only screen and (min-width: 63.5em){
+    #site_plan_content{
+        main{
+            .wireframes_section{
+                grid-template-columns: repeat(3, 1fr);
+                h2{
+                    grid-column: 1/4;
+                }
+                img{
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+}

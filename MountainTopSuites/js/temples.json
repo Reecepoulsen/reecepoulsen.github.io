@@ -1,0 +1,211 @@
+{
+    "idaho_falls" : {
+        "name" : "Idaho Falls Idaho Temple",
+        "address" : {
+            "street" : "1000 Memorial Dr",
+            "city" : "Idaho Falls",
+            "state_province" : "ID",
+            "zip_postal" : "83402-3410",
+            "country" :  "United States"
+        },
+        "imageURL" : "https://assets.ldscdn.org/90/a0/90a0c0d599f94a2d955930e90fa95b9aa85a5004/idaho_falls_idaho_temple.png",
+        "telephone" : "(1) 208-522-7669",
+        "services" : [
+            "Clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "Distribution center nearby"
+        ],
+        "history" : {
+            "announced" : "3 March 1937",
+            "groundbreaking" : "19 December 1939",
+            "dedicated" : "23 September 1945",
+            "rededicated" : ["4 June 2017"]
+        },
+        "status" : "PHASE 3: TEMPLE OPEN FOR ALL LIVING ORDINANCES AND LIMITED PROXY ORDINANCES",
+        "session_sched" : "By appointment only",
+        "weekly_sched" : [
+            "Sunday: Closed",
+            "Monday: Closed",
+            "Tuesday: 9AM - 5PM",
+            "Wednesday: 9AM - 5PM",
+            "Thursday: 9AM - 5PM",
+            "Friday: 9AM - 5PM",
+            "Saturday: 9AM - 5PM"
+        ],
+        "closure_sched" : [
+            {
+                "year" : "2021",
+                "dates" : [
+                    "Monday, 28 June 2021 - Monday, 12 July 2021", 
+                    "Saturday, 2 October 2021", 
+                    "Wednesday, 24 November 2021 (Limited Operations)",
+                    "Thursday, 25 November 2021",
+                    "Friday, 24 December 2021 - Saturday, 25 December 2021",
+                    "Friday, 31 December 2021 (Limited Operations)"
+                ]
+            },
+            {
+                "year" : "2022",
+                "dates" : [
+                    "Saturday, 1 January 2022",
+                    "Tuesday, 18 January 2022 - Monday, 31 January 2022",
+                    "Saturday, 2 April 2022",
+                    "Monday, 27 June 2022 - Monday, 11 July 2022",
+                    "Wednesday, 23 November 2022 (Limited Operations)",
+                    "Thursday, 24 November 2022",
+                    "Saturday, 24 December 2022",
+                    "Saturday, 31 December 2022"
+                ]
+            }
+        ]
+    },
+    "calgary" : {
+        "name" : "Calgary Alberta Temple",
+        "address" : {
+            "street" : "9802 Rocky Ridge Rd NW",
+            "city" : "Calgary",
+            "state_province" : "AB",
+            "zip_postal" : "T3G 5J7",
+            "country" :  "Canada"
+        },
+        "imageURL" : "https://assets.ldscdn.org/52/a7/52a74562caa3cd7c9eda1a1fb9e894b10367fe49/calgary_alberta_lds_temple.jpeg",
+        "telephone" : "(1) 403-241-4250",
+        "services" : [
+            "No clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "Distribution center nearby"
+        ],
+        "history" : {
+            "announced" : "4 October 2008",
+            "groundbreaking" : "15 May 2010",
+            "dedicated" : "28 October 2012",
+            "rededicated" : []
+        },
+        "status" : "PHASE 3: TEMPLE OPEN FOR ALL LIVING ORDINANCES AND LIMITED PROXY ORDINANCES",
+        "session_sched" : "By appointment only",
+        "weekly_sched" : [
+            "Sunday: Closed",
+            "Monday: Closed",
+            "Tuesday: 9AM - 5PM",
+            "Wednesday: 9AM - 5PM",
+            "Thursday: 9AM - 5PM",
+            "Friday: 9AM - 5PM",
+            "Saturday: 9AM - 5PM"
+        ],
+        "closure_sched" : [
+            {
+                "year" : "2021",
+                "dates" : [
+                    "Saturday, 10 July 2021 (Limited Operations)",
+                    "Tuesday, 13 July 2021 (Limited Operations)",
+                    "Wednesday, 14 July 2021 (Limited Operations)",
+                    "Wednesday, 11 August 2021 (Limited Operations)",
+                    "Monday, 16 August 2021 - Monday, 25 October 2021", 
+                    "Friday, 24 December 2021 - Saturday, 25 December 2021",
+                    "Friday, 31 December 2021 - Saturday, 1 January 2022"
+
+                ]
+            }
+        ]
+    },
+    "san_diego" : {
+        "name" : "San Diego California Temple",
+        "address" : {
+            "street" : "7474 Charmant Dr",
+            "city" : "San Diego",
+            "state_province" : "CA",
+            "zip_postal" : "92122-5000",
+            "country" :  "United States"
+        },
+        "imageURL" : "https://assets.ldscdn.org/4f/eb/4feb5a4e556ec9eee605991da421a198255e058a/san_diego_california_temple.jpeg",
+        "telephone" : "(1) 858-622-0991",
+        "services" : [
+            "No clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "Distribution center nearby"
+        ],
+        "history" : {
+            "announced" : "7 April 1984",
+            "groundbreaking" : "27 February 1988",
+            "dedicated" : "25 April 1993",
+            "rededicated" : []
+        },
+        "status" : "PHASE 3: TEMPLE OPEN FOR ALL LIVING ORDINANCES AND LIMITED PROXY ORDINANCES",
+        "session_sched" : "By appointment only",
+        "weekly_sched" : [
+            "Sunday: Closed",
+            "Monday: Closed",
+            "Tuesday: 9AM - 5PM",
+            "Wednesday: 9AM - 5PM",
+            "Thursday: 9AM - 5PM",
+            "Friday: 9AM - 5PM",
+            "Saturday: 9AM - 5PM"
+        ],
+        "closure_sched" : [
+            {
+                "year" : "2021",
+                "dates" : [
+                    "Monday, 13 September 2021 - Monday, 27 September 2021",
+                    "Saturday, 2 October 2021 - Sunday, 3 October 2021",
+                    "Wednesday, 24 November 2021 - Thursday, 25 November 2021",
+                    "Friday, 24 December 2021 - Saturday, 25 December 2021",
+                    "Friday, 31 December 2021"
+                ]
+            }
+        ]
+    },
+    "rome" : {
+        "name" : "Rome Italy Temple",
+        "address" : {
+            "street" : "Via di Settebagni 376",
+            "city" : "Rome",
+            "state_province" : "RM",
+            "zip_postal" : "None",
+            "country" :  "Italy"
+        },
+        "imageURL" : "https://assets.ldscdn.org/b5/37/b537f20ccdd2f7ba4f3413a055bcaab21fd3e107/rome_italy_temple.png",
+        "telephone" : "(39) 06-9480-5050",
+        "services" : [
+            "Clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "Distribution center nearby" 
+        ],
+        "history" : {
+            "announced" : "4 October 2008",
+            "groundbreaking" : "23 October 2010",
+            "dedicated" : "10 March 2019",
+            "rededicated" : []
+        },
+        "status" : "PHASE 3: TEMPLE OPEN FOR ALL LIVING ORDINANCES AND LIMITED PROXY ORDINANCES",
+        "session_sched" : "By appointment only",
+        "weekly_sched" : [
+            "Sunday: Closed",
+            "Monday: Closed",
+            "Tuesday: 9AM - 5PM",
+            "Wednesday: 9AM - 5PM",
+            "Thursday: 9AM - 5PM",
+            "Friday: 9AM - 5PM",
+            "Saturday: 9AM - 5PM"
+        ],
+        "closure_sched" : [
+            {
+                "year" : "2021",
+                "dates" : [
+                    "Monday, 27 September 2021 - Monday, 4 October 2021",
+                    "Friday, 24 December 2021 - Saturday, 25 December 2021",
+                    "Friday, 31 December 2021 - Saturday, 1 January 2022" 
+                ]
+            },
+            {
+                "year" : "2022",
+                "dates" : [
+                    "Monday, 28 February 2022 - Monday, 9 May 2022"
+                ]
+            }
+        ]
+    }
+}

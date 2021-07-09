@@ -1,0 +1,121 @@
+$paleGold: #C0B283;
+$silk: #DCD0C0;
+$paper: #F4F4F4;
+$charcoal: #373737;
+
+body{
+    background-color: $paper;
+
+    h1, h2, h3, h4, h5, h6, p, ul {
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+    }
+}
+
+#site_plan_content{
+    background-color: $silk;
+    color: $charcoal;
+    width: 95%;
+    margin: 0 auto;
+    border: solid black 2px;
+    font-family: 'Lato', sans-serif;
+
+
+    h2{
+        margin-bottom: 10px;
+        text-decoration: underline;
+    }
+
+    h3{
+        margin: 15px 0px;
+    }
+
+    header{
+        background-color: $paleGold;
+        color: $paper;
+        padding: 40px;
+        border-bottom: solid black 2px;
+
+        h1{
+            text-align: center;
+            font-family: 'Yellowtail', cursive;
+        }
+    }
+    main{
+        padding: 0px 10px;
+
+        section{
+            padding: 10px 0px;
+
+        }
+
+        .site_map_section{
+            img{
+                max-width: 100%;
+            }
+        }
+
+        .color_section{
+            #color_list{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                max-width: 50%;
+                list-style: none;
+                text-align: center;
+
+                li{
+                    border: solid black 1px;
+                    border-collapse: collapse;
+                    padding: 10px
+                }
+
+                #primary{
+                    background-color: $paleGold;
+                    color: $paper;
+                }
+                #secondary{
+                    background-color: $silk;
+                    color: $charcoal;
+                }
+                #accent1{
+                    background-color: $paper;
+                    color: $charcoal;
+                }
+                #accent2{
+                    background-color: $charcoal;
+                    color: $paper;
+                }
+            }
+        }
+
+        .typography_section{
+            #yellowtail{
+                font-family: 'Yellowtail', cursive;
+
+            }
+        }
+
+        .wireframes_section{
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+
+    footer{
+        background-color: $charcoal;
+        color: $paper;
+        padding: 20px;
+        text-align: center;
+
+        a, a:visited{
+            color: $paper;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: $silk;
+        }
+    }
+}
