@@ -1,0 +1,20 @@
+$paleGold: #C0B283;
+$silk: #DCD0C0;
+$paper: #F4F4F4;
+$charcoal: #373737;
+
+@media only screen and (min-width: 63.5em){
+    header{
+        background-color: transparent;
+        nav{
+            ul{
+                display: grid;
+                grid-template-columns: 50px 1fr 1fr 1fr 1fr 50px;
+                .nav-logo{
+                    width: 50px;
+                    filter: invert(70%); 
+                }
+            }
+        }
+    }
+}
