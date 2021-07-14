@@ -16,6 +16,7 @@ body{
         #small-nav-banner{
             display: grid;
             grid-template-columns: 100px auto 100px;
+            padding: 5px 0px;
             background-color: $charcoal;
             color: $silk;
             align-items: center;
@@ -39,6 +40,7 @@ body{
     
             button{
                 background-color: transparent;
+                cursor: pointer;
                 color: $silk;
                 border: none;
                 align-self: center;
@@ -58,6 +60,11 @@ body{
 
                 .large-nav-logo{
                     display: none;
+                }
+
+                a, a:visited{
+                    color: $silk;
+                    text-decoration: none;
                 }
 
                 li{
@@ -199,6 +206,7 @@ body{
                         margin: 0px;
                         font-weight: bold;
                         padding-left: 15px;
+                        list-style: square;
                     }
                 }
             }
@@ -268,6 +276,7 @@ body{
                 padding: 20px 0px;
 
                 button{
+                    font-weight: bold;
                     padding: 15px 45px;
                     background-color: $paleGold;
                     color: $paper;
