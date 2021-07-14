@@ -15,15 +15,20 @@ body{
     header{
         #small-nav-banner{
             display: grid;
-            grid-template-columns: 65px auto 65px;
-            background-color: $silk;
-            color: $charcoal;
+            grid-template-columns: 100px auto 100px;
+            background-color: $charcoal;
+            color: $silk;
             align-items: center;
             justify-items: center;
-    
-            .small-nav-logo{
-                max-width: 50px;
-                filter: brightness(0);
+
+            #logo-circle{
+                background-color: $silk;
+                border-radius: 50%;
+                padding: 4px 6px;
+                .small-nav-logo{
+                    max-width: 50px;
+                    filter: brightness(0);
+                }
             }
 
             h1{
@@ -34,6 +39,7 @@ body{
     
             button{
                 background-color: transparent;
+                color: $silk;
                 border: none;
                 align-self: center;
                 font-size: 1.75em;
@@ -42,8 +48,8 @@ body{
         }
 
         #navigation{
-            background-color: $silk;
-            color: $charcoal;
+            background-color: $charcoal;
+            color: $silk;
 
             ul{
                 list-style: none;
@@ -59,8 +65,8 @@ body{
                 }
 
                 li:hover, .active{
-                    background-color: $charcoal;
-                    color: $silk;
+                    background-color: $silk;
+                    color: $charcoal
                 }
             }
         }
@@ -224,12 +230,33 @@ body{
             }
         
             #slide-card2{
-                h3{}
-        
-                ul{
-                    li{}
+                padding: 5px;
+                margin-top: 30px;
+                background-color: rgba($color: $paleGold, $alpha: .6);
+                border-radius: 50px;
+
+                #card2-text-area{
+                    border: 4px double $paper;
+                    padding: 15px 30px;
+                    border-radius: 50px;
+                    h3{
+                        padding-left: 40px;
+                        margin-bottom: 10px;
+                        border-bottom: $charcoal 3px solid;
+                        padding-bottom: 10px;
+                    }
+            
+                    ul{
+                        list-style: square;
+                        margin: 0px;
+                        padding: 0px 40px;
+    
+                        li{
+                            line-height: 2em;
+                        }
+                    }
                 }
-        
+
                 img{
                     display: none;
                 }
@@ -241,7 +268,7 @@ body{
                 padding: 20px 0px;
 
                 button{
-                    padding: 10px 45px;
+                    padding: 15px 45px;
                     background-color: $paleGold;
                     color: $paper;
                     border: 1px solid $charcoal;
