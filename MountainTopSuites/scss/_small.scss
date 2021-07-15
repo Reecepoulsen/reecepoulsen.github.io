@@ -1,0 +1,291 @@
+/*****************************************************
+* Styling for home page 
+******************************************************/
+body{
+    font-family: 'Lato', sans-serif;
+    color: $charcoal;
+    background-color: $silk;
+
+    .hide{display: none;}
+}
+
+header{
+    #small-nav-banner{
+        display: grid;
+        grid-template-columns: 100px auto 100px;
+        padding: 5px 0px;
+        background-color: $charcoal;
+        color: $silk;
+        align-items: center;
+        justify-items: center;
+
+        #logo-circle{
+            background-color: $silk;
+            border-radius: 50%;
+            padding: 4px 6px;
+            .small-nav-logo{
+                max-width: 50px;
+                filter: brightness(0);
+            }
+        }
+
+        h1{
+            font-family: 'Yellowtail', cursive;
+            letter-spacing: .05em;
+            text-align: center;
+        }
+
+        button{
+            background-color: transparent;
+            cursor: pointer;
+            color: $silk;
+            border: none;
+            align-self: center;
+            font-size: 1.75em;
+            max-width: 50px;
+        }
+    }
+
+    #navigation{
+        background-color: $charcoal;
+        color: $silk;
+
+        ul{
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+
+            .large-nav-logo{display: none;}
+
+            a, a:visited{
+                color: $silk;
+                text-decoration: none;
+            }
+
+            li{padding: 15px 20px;}
+
+            li:hover, .active{
+                background-color: $silk;
+                color: $charcoal
+            }
+        }
+    }
+    
+    .slideshow-container{
+        position: relative;
+        max-width: 100%;
+        margin: 0 auto;
+
+        .slideshow-img{
+            display: none;
+            max-width: 100%;
+
+            img{vertical-align: middle;}
+        }
+
+        .prev, .next{
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            background-color: rgba($color: $charcoal, $alpha: .5);
+            color: $paper;
+            font-weight: bold;
+            font-size: 18px;
+            transition: .6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next{
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover{background-color: rgba(0, 0, 0, .8);}
+
+        .prog-dots{
+            width: fit-content;
+            margin: 0 auto;
+            padding: 15px;
+
+
+            .dot{
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #999999;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+
+            .active-dot, .dot:hover{background-color: #111111;}
+        }
+
+
+        .fade{
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from{opacity: .4}
+            to{opacity: 1;}
+        }
+    }
+}
+
+main{
+    p{line-height: 1.5em;}
+
+    #enjoy-banner{
+        background-color: $charcoal;
+        color:$silk;
+        letter-spacing: .1em;
+        font-size: 1.3em;
+        padding: 10px 0px;
+
+        h2{
+            text-align: center;
+            font-family: 'Yellowtail', cursive;
+            padding: 20px 0px;
+            margin: 0px;
+            border-top: solid $silk 4px;
+            border-bottom: solid $silk 4px;
+        }
+    }
+
+    #main-text-area{
+        max-width: 90%;
+        margin: 0 auto;
+
+        #slide-card1{
+            padding: 5px;
+            margin-top: 15px;
+            background-color: rgba($color: $paleGold, $alpha: .6);
+            border-radius: 50px;
+
+            img{display: none;}
+    
+            h3{margin: 10px 0px;}
+
+            #card1-text-area{
+
+                border: 4px double $paper;
+                padding: 15px 30px;
+                border-radius: 50px;
+
+                ul{
+                    margin: 0px;
+                    font-weight: bold;
+                    padding-left: 15px;
+                    list-style: square;
+                }
+            }
+        }
+
+        #temple-summary{
+            h3{
+                text-align: center;
+                padding-top: 15px;
+            }
+
+
+            #summary{
+                background-color: rgba($color: $charcoal, $alpha: .85);
+                color: $silk;
+                border-radius: 50px 50px 50px 50px;
+                box-shadow: black 0px 0px 10px;
+                
+                img{
+                    border-radius: 50px 50px 0px 0px;
+                    width: 100%;
+                }
+
+                #summary-text{padding: 10px 20px;}
+            }
+        }
+    
+        #slide-card2{
+            padding: 5px;
+            margin-top: 30px;
+            background-color: rgba($color: $paleGold, $alpha: .6);
+            border-radius: 50px;
+
+            #card2-text-area{
+                border: 4px double $paper;
+                padding: 15px 30px;
+                border-radius: 50px;
+                h3{
+                    padding-left: 40px;
+                    margin-bottom: 10px;
+                    border-bottom: $charcoal 3px solid;
+                    padding-bottom: 10px;
+                }
+        
+                ul{
+                    list-style: square;
+                    margin: 0px;
+                    padding: 0px 40px;
+
+                    li{line-height: 2em;}
+                }
+            }
+
+            img{display: none;}
+        }
+
+        #btn-holder{
+            width: fit-content;
+            margin: 0 auto;
+            padding: 20px 0px;
+
+            button{
+                font-weight: bold;
+                padding: 15px 45px;
+                background-color: $paleGold;
+                color: $paper;
+                border: 1px solid $charcoal;
+                border-radius: 20px;
+            }
+
+            button:hover{
+                background-color: $paper;
+                color: $paleGold;
+                box-shadow: 0px 0px 20px $paper;
+
+            }
+        }
+    }
+}
+
+footer{
+    background-color: $charcoal;
+    color:$silk;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+
+    a{
+        color: $silk;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: $paleGold;
+        font-style: italic;
+    }
+}
+
+/*****************************************************
+* Styling for 
+******************************************************/
