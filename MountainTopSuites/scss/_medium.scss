@@ -1,4 +1,91 @@
 /*****************************************************
 * Styling for home page 
 ******************************************************/
+header{
+    #small-nav-banner{display: none;}
+
+    .nav-hide{
+        display: block;
+    }
+
+    .slideshow-container{
+        position: relative;
+
+        #navigation {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            background-color: rgba($color: $charcoal, $alpha: .8);
+            // background-color: transparent;
+            color: $paper;
+    
+            ul{
+                display: grid;
+                grid-template-columns: 100px repeat(4, 1fr) 100px;
+                align-items: center;
+                justify-items: center;
+        
+                #large-logo{
+                    display: block;
+                    max-width: 60px;
+                    filter: brightness(0) invert(100%);
+                }
+                a, a:visited{color: $paper;}
+    
+                li:hover, .active{
+                    color: $paper;
+                    background-color: transparent;
+                    border-bottom: 4px solid $paper;
+                }
+            }
+        }
+        
+        #slide-header{
+            display: block;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            margin: 0px 0px 0px -210px;
+            z-index: 1;
+
+            font-family: 'Yellowtail', cursive;
+            font-size: 3em;
+            letter-spacing: .05em;
+
+            padding: 10px;
+            border-radius: 10px;
+
+            color: $silk;
+            background-color: rgba($color: $charcoal, $alpha: .8);
+        }
+    }
+
+}
+
+main{
+    #main-text-area{
+        max-width: 98%;
+    }
+
+    #slide-card1, #slide-card2{
+        .slide-card-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 30px;
+            align-items: center;
+            justify-items: center;
+        }
+
+        img{
+            display: block;
+            max-width: 100%;
+            border-radius: 20px;
+
+        }
+    }
+
+    #btn-holder button{
+        padding: 20px 100px;
+    }
+}
 

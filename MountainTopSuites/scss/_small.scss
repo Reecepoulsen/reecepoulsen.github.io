@@ -6,7 +6,6 @@ body{
     color: $charcoal;
     background-color: $silk;
 
-    .hide{display: none;}
 }
 
 header{
@@ -19,11 +18,11 @@ header{
         align-items: center;
         justify-items: center;
 
-        #logo-circle{
+        .small-logo-circle{
             background-color: $silk;
             border-radius: 50%;
             padding: 4px 6px;
-            .small-nav-logo{
+            img{
                 max-width: 50px;
                 filter: brightness(0);
             }
@@ -46,6 +45,9 @@ header{
         }
     }
 
+    .nav-hide{display: none;}
+
+
     #navigation{
         background-color: $charcoal;
         color: $silk;
@@ -55,7 +57,7 @@ header{
             padding: 0px;
             margin: 0px;
 
-            .large-nav-logo{display: none;}
+            #large-logo{display: none;}
 
             a, a:visited{
                 color: $silk;
@@ -75,6 +77,8 @@ header{
         position: relative;
         max-width: 100%;
         margin: 0 auto;
+
+        #slide-header{display: none;}
 
         .slideshow-img{
             display: none;
@@ -142,7 +146,7 @@ header{
 }
 
 main{
-    p{line-height: 1.5em;}
+    p, li{line-height: 1.5em;}
 
     #enjoy-banner{
         background-color: $charcoal;
@@ -164,103 +168,106 @@ main{
     #main-text-area{
         max-width: 90%;
         margin: 0 auto;
+    }
 
-        #slide-card1{
-            padding: 5px;
-            margin-top: 15px;
-            background-color: rgba($color: $paleGold, $alpha: .6);
+    #slide-card1{
+        padding: 5px;
+        margin-top: 15px;
+        background-color: rgba($color: $paleGold, $alpha: .6);
+        border-radius: 50px;
+
+        img{display: none;}
+
+        h3{margin: 10px 0px;}
+
+        p{margin: 8px 0px;}
+
+        .slide-card-grid{
+
+            border: 4px double $paper;
+            padding: 15px 30px;
             border-radius: 50px;
 
-            img{display: none;}
-    
-            h3{margin: 10px 0px;}
-
-            #card1-text-area{
-
-                border: 4px double $paper;
-                padding: 15px 30px;
-                border-radius: 50px;
-
-                ul{
-                    margin: 0px;
-                    font-weight: bold;
-                    padding-left: 15px;
-                    list-style: square;
-                }
+            ul{
+                margin: 0px;
+                font-weight: bold;
+                padding-left: 15px;
+                list-style: square;
             }
         }
+    }
 
-        #temple-summary{
+    #temple-summary{
+        h3{
+            text-align: center;
+            padding-top: 15px;
+        }
+
+
+        #summary{
+            background-color: rgba($color: $charcoal, $alpha: .85);
+            color: $silk;
+            border-radius: 50px 50px 50px 50px;
+            box-shadow: black 0px 0px 10px;
+            
+            img{
+                border-radius: 50px 50px 0px 0px;
+                width: 100%;
+            }
+
+            #summary-text{padding: 10px 20px;}
+        }
+    }
+
+    #slide-card2{
+        padding: 5px;
+        margin-top: 30px;
+        background-color: rgba($color: $paleGold, $alpha: .6);
+        border-radius: 50px;
+
+        .slide-card-grid{
+            border: 4px double $paper;
+            padding: 15px 30px;
+            border-radius: 50px;
             h3{
                 text-align: center;
-                padding-top: 15px;
+                margin-bottom: 10px;
+                border-bottom: $charcoal 3px solid;
+                padding-bottom: 10px;
             }
-
-
-            #summary{
-                background-color: rgba($color: $charcoal, $alpha: .85);
-                color: $silk;
-                border-radius: 50px 50px 50px 50px;
-                box-shadow: black 0px 0px 10px;
-                
-                img{
-                    border-radius: 50px 50px 0px 0px;
-                    width: 100%;
-                }
-
-                #summary-text{padding: 10px 20px;}
-            }
-        }
     
-        #slide-card2{
-            padding: 5px;
-            margin-top: 30px;
-            background-color: rgba($color: $paleGold, $alpha: .6);
-            border-radius: 50px;
+            ul{
+                list-style: square;
+                margin: 0px;
+                padding: 0px 40px;
 
-            #card2-text-area{
-                border: 4px double $paper;
-                padding: 15px 30px;
-                border-radius: 50px;
-                h3{
-                    padding-left: 40px;
-                    margin-bottom: 10px;
-                    border-bottom: $charcoal 3px solid;
-                    padding-bottom: 10px;
-                }
-        
-                ul{
-                    list-style: square;
-                    margin: 0px;
-                    padding: 0px 40px;
-
-                    li{line-height: 2em;}
-                }
+                li{line-height: 2em;}
             }
-
-            img{display: none;}
         }
 
-        #btn-holder{
-            width: fit-content;
-            margin: 0 auto;
-            padding: 20px 0px;
+        img{display: none;}
+    }
 
-            button{
-                font-weight: bold;
-                padding: 15px 45px;
-                background-color: $paleGold;
-                color: $paper;
-                border: 1px solid $charcoal;
-                border-radius: 20px;
-            }
+    #btn-holder{
+        width: fit-content;
+        margin: 0 auto;
+        padding: 20px 0px;
 
-            button:hover{
-                background-color: $paper;
-                color: $paleGold;
-                box-shadow: 0px 0px 20px $paper;
+        button{
+            font-weight: bold;
+            padding: 15px 45px;
+            background-color: $paleGold;
+            color: $paper;
+            border: 1px solid $charcoal;
+            border-radius: 20px;
+        }
 
-            }
+        button:hover{
+            cursor: pointer;
+            background-color: $paper;
+            color: $paleGold;
+            box-shadow: 0px 0px 20px $paper;
+
         }
     }
 }
