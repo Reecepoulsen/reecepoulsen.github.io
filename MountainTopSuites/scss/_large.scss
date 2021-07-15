@@ -1,16 +1,33 @@
 /*****************************************************
 * Styling for home page 
 ******************************************************/
-header{
-    background-color: transparent;
-    nav{
-        ul{
-            display: grid;
-            grid-template-columns: 50px 1fr 1fr 1fr 1fr 50px;
-            .nav-logo{
-                width: 50px;
-                filter: invert(70%); 
-            }
-        }
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+
+    h1{
+        font-size: 2em;
     }
+
+    h2{
+        font-size: 1.8em;
+    }
+
+    h3{
+        font-size: 1.6em;
+    }
+
+    p, ul{
+        font-size: 1.3em;
+    }
+}
+
+main{
+    #main-text-area{
+        max-width: 80%;
+    }
+}
+
+footer{
+    max-width: 100%;
 }
