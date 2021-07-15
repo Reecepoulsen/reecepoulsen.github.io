@@ -3,10 +3,16 @@
 ******************************************************/
 body{
     font-family: 'Lato', sans-serif;
-    color: $charcoal;
-    background-color: $silk;
+    background: url("../images/backgroundPattern.png") repeat;
+    background-color: $paper;
+
+    #content{
+        color: $charcoal;
+        background-color: $silk;
+    }
 
 }
+
 
 header{
     #small-nav-banner{
@@ -57,7 +63,7 @@ header{
             padding: 0px;
             margin: 0px;
 
-            #large-logo{display: none;}
+            .large-logo-circle{display: none;}
 
             a, a:visited{
                 color: $silk;
@@ -211,14 +217,13 @@ main{
             color: $silk;
             border-radius: 50px 50px 50px 50px;
             box-shadow: black 0px 0px 10px;
-            font-size: 1.2em;
             
             img{
                 border-radius: 50px 50px 0px 0px;
                 width: 100%;
             }
 
-            #summary-text{padding: 10px 20px;}
+            #summary-text{padding: 0px 50px 20px 50px;}
         }
     }
 

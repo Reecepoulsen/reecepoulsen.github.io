@@ -12,127 +12,131 @@
     <title>Home | Mountain Top Suites </title>
 </head>
 <body>
-    <header>
-        <div id="small-nav-banner">
-            <div class="small-logo-circle">
-                <a href="index.html"><img class="small-nav-logo" src="images/hill_icon.png" alt="Mountain Top Suites Icon"></a>
+    <div id="content">
+        <header>
+            <div id="small-nav-banner">
+                <div class="small-logo-circle">
+                    <a href="index.html"><img class="small-nav-logo" src="images/hill_icon.png" alt="Mountain Top Suites Icon"></a>
+                </div>
+                <h1>Mountain Top Suites</h1>
+                <button onclick="toggleMenu()">&#9776;</button>
             </div>
-            <h1>Mountain Top Suites</h1>
-            <button onclick="toggleMenu()">&#9776;</button>
-        </div>
-        <div class="slideshow-container">
-            <nav id="navigation" class="nav-hide">
-                <ul>
-                    <a href="index.html"><img id="large-logo" src="images/hill_icon.png" alt="Mountain Top Suites Icon"></a>
-                    <a href=""><li class="active">Home</li></a>
-                    <a href=""><li>Locations</li></a>
-                    <a href=""><li>Services</li></a>
-                    <a href=""><li>Contact Us</li></a>
-                </ul>
-            </nav>
-            <h1 id="slide-header">Mountain Top Suites</h1>
-            <img id="slideshow-img1" class="slideshow-img fade" src="images/hero_slides/idahoFallsTemple.jpg" alt="Idaho Falls temple at dusk">
-            <img id="slideshow-img2" class="slideshow-img fade" src="images/hero_slides/romeTemple.png" alt="Rome Italy Temple">
-            <img id="slideshow-img3" class="slideshow-img fade" src="images/hero_slides/calgaryTemple.jpg" alt="Calgary Alberta Temple">
-            <img id="slideshow-img3" class="slideshow-img fade" src="images/hero_slides/sanDiegoTemple.jpeg" alt="San Diego California Temple">
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            <div class="prog-dots">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
+            <div class="slideshow-container">
+                <nav id="navigation" class="nav-hide">
+                    <ul>
+                        <div class="large-logo-circle">
+                            <a href="index.html"><img class="large-logo" src="images/hill_icon.png" alt="Mountain Top Suites Icon"></a>
+                        </div>
+                        <a href="index.html"><li class="active">Home</li></a>
+                        <a href="html/locations.html"><li>Locations</li></a>
+                        <a href="html/reservations.html"><li>Reservations</li></a>
+                        <a href="html/services.html"><li>Services</li></a>
+                        <a href="html/contact.html"><li>Contact</li></a>
+                    </ul>
+                </nav>
+                <h1 id="slide-header">Mountain Top Suites</h1>
+                <img id="slideshow-img1" class="slideshow-img fade" src="images/hero_slides/idahoFallsTemple.jpg" alt="Idaho Falls temple at dusk">
+                <img id="slideshow-img2" class="slideshow-img fade" src="images/hero_slides/romeTemple.png" alt="Rome Italy Temple">
+                <img id="slideshow-img3" class="slideshow-img fade" src="images/hero_slides/calgaryTemple.jpg" alt="Calgary Alberta Temple">
+                <img id="slideshow-img3" class="slideshow-img fade" src="images/hero_slides/sanDiegoTemple.jpeg" alt="San Diego California Temple">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="prog-dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
             </div>
-        </div>
-    </header>
-    <main>
-        <div id="enjoy-banner">
-            <h2>Enjoy the Temple</h2>
-        </div>
-        <div id="main-text-area">
-            <section id="slide-card1">
-                <div class="slide-card-grid">
-                    <img src="images/hotelRoom.jpg" alt="Modern Hotel Room">
-                    <div>
-                        <h3>Who We Are</h3>
-                        <p>
-                            <strong>Traveling to a new place to visit the temple?</strong> 
-                            We've got you covered!
-                            We are here to help you enjoy the temple
-                            without the stress that comes with traveling.    
-                        </p>
-                        <p>
-                            We offer special services that are taylored to your needs, including: 
-                        </p>
-                        <ul>
-                            <li>locations near the temple</li>
-                            <li>a wedding reception hall</li>
-                            <li>and a playroom for the kids!</li>
-                        </ul>
-                        <p>
-                            Not to mention, top of the line accomodations like:
-                        </p>
+        </header>
+        <main>
+            <div id="enjoy-banner">
+                <h2>Enjoy the Temple</h2>
+            </div>
+            <div id="main-text-area">
+                <section id="slide-card1">
+                    <div class="slide-card-grid">
+                        <img src="images/hotelRoom.jpg" alt="Modern Hotel Room">
+                        <div>
+                            <h3>Who We Are</h3>
+                            <p>
+                                <strong>Traveling to visit the temple?</strong> 
+                                We've got you covered!
+                                We are here to help reduce the stress that comes with traveling.    
+                            </p>
+                            <p>
+                                We offer special services that are taylored to your needs, including: 
+                            </p>
                             <ul>
-                                <li>free breakfasts</li>
-                                <li>an indoor swimming pool</li>
-                                <li>and more!</li>
+                                <li>locations near the temple</li>
+                                <li>a wedding reception hall</li>
+                                <li>and a playroom for the kids!</li>
                             </ul>
-                        <p>
-                            Next time you are looking for a place
-                            to stay for your next temple trip, we would be glad to help!
-                        </p>
+                            <p>
+                                Not to mention, top of the line accomodations like:
+                            </p>
+                                <ul>
+                                    <li>free breakfasts</li>
+                                    <li>an indoor swimming pool</li>
+                                    <li>and more!</li>
+                                </ul>
+                            <p>
+                                Next time you are looking for a place
+                                to stay, chose Mountain Top Suites!
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <section id="temple-summary">
-                <h3>Temple Spotlight: Idaho Falls, Idaho</h3>
-                <div id="summary">
-                    <img src="images/idahoFallsTempleOnRiver.jpg" alt="The Idaho Falls Temple along the Snake River">
-                    <div id="summary-text">
-                        <p>
-                            Dedicated on September 23rd, 1945, the Idaho Falls temple sits beautifully
-                            along the snake river. 
-                        </p>
-                        <p>
-                            Having been one of the first buildings of significant
-                            size in the area, a strong community has grown around the temple.
-                            From the peaceful nature path across from the temple to the restaurants
-                            and stores nearby, there is plenty to do and see!
-                        </p>
+                </section>
+                <section id="temple-summary">
+                    <h3>Temple Spotlight: Idaho Falls, Idaho</h3>
+                    <div id="summary">
+                        <img src="images/idahoFallsTempleOnRiver.jpg" alt="The Idaho Falls Temple along the Snake River">
+                        <div id="summary-text">
+                            <p>
+                                Dedicated on September 23rd, 1945, the Idaho Falls temple sits beautifully
+                                along the snake river. 
+                            </p>
+                            <p>
+                                Having been one of the first buildings of significant
+                                size in the area, a strong community has grown around the temple.
+                                From the peaceful nature path across from the temple to the restaurants
+                                and stores nearby, there is plenty to do and see!
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <section id="slide-card2">
-                <div class="slide-card-grid">
-                    <div>
-                        <h3>Here's What Makes Us Different</h3>
-                        <ul>
-                            <li>Free access to changing rooms</li>
-                            <li>A playroom with low-cost, short-term babysitting</li>
-                            <li>A shuttle that regularly goes to and from the temple</li>
-                            <li>A fully staffed family search center</li>
-                            <li>A wedding reception hall that can be easily customized with a catering menu</li>
-                            <li>Long-term stay accomodations in kitchenette suites for full-time temple missionaries</li>
-                        </ul>
+                </section>
+                <section id="slide-card2">
+                    <div class="slide-card-grid">
+                        <div>
+                            <h3>Here's What Makes Us Different</h3>
+                            <ul>
+                                <li>Free access to changing rooms</li>
+                                <li>A playroom with low-cost, short-term babysitting</li>
+                                <li>A shuttle that regularly goes to and from the temple</li>
+                                <li>A fully staffed family search center</li>
+                                <li>A wedding reception hall that can be easily customized with a catering menu</li>
+                                <li>Long-term stay accomodations in kitchenette suites for full-time temple missionaries</li>
+                            </ul>
+                        </div>
+                        <img src="images/receptionHall.jpg" alt="Decorated wedding reception hall">
                     </div>
-                    <img src="images/receptionHall.jpg" alt="Decorated wedding reception hall">
-                </div>
-            </section>
+                </section>
+        
     
-
-    
-            <div id="btn-holder">
-                <button>Book Now</button>
+        
+                <div id="btn-holder">
+                    <button>Book Now</button>
+                </div>
             </div>
-        </div>
-
-    </main>
-    <footer>
-        <a href="sitePlan/sitePlan.html">Site Plan</a>
-        <span>Copyright</span>
-
-        <a href="resources/resources.html">Resources</a>
-    </footer>
+    
+        </main>
+        <footer>
+            <a href="sitePlan/sitePlan.html">Site Plan</a>
+            <span>Copyright</span>
+    
+            <a href="resources/resources.html">Resources</a>
+        </footer>
+    </div>
     <script src="js/toggleMenu.js"></script>
     <script src="js/slideshow.js"></script>
 </body>

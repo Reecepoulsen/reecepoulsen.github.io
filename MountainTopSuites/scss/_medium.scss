@@ -21,21 +21,40 @@ header{
     
             ul{
                 display: grid;
-                grid-template-columns: 100px repeat(4, 1fr) 100px;
+                grid-template-columns: 100px repeat(5, 1fr) 100px;
                 align-items: center;
                 justify-items: center;
         
-                #large-logo{
+                .large-logo-circle{
                     display: block;
-                    max-width: 60px;
-                    filter: brightness(0) invert(100%);
+                    background-color: $silk;
+                    border-radius: 50%;
+                    padding: 4px 6px;
+                    margin: 5px 0px;
+
+                    img{
+                        max-width: 50px;
+                        filter: brightness(0);
+                    }
                 }
                 a, a:visited{color: $paper;}
+
+                li{
+                    padding: 25px;
+                    border-bottom: 4px solid transparent;
+                }
     
-                li:hover, .active{
+                li:hover{
                     color: $paper;
                     background-color: transparent;
                     border-bottom: 4px solid $paper;
+                    transition: .4s ease-in-out;
+                }
+
+                .active{
+                    color: $silk;
+                    background-color: transparent;
+                    border-bottom: 4px solid $silk;
                 }
             }
         }
@@ -72,6 +91,7 @@ main{
     }
 
     #slide-card1, #slide-card2{
+
         .slide-card-grid{
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -87,6 +107,11 @@ main{
             border-radius: 30px;
 
         }
+    }
+
+    #temple-summary{
+        max-width: 70%;
+        margin: 0 auto;
     }
 
     #btn-holder button{
