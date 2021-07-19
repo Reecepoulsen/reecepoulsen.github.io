@@ -5,8 +5,8 @@ switch (fileName[0]) {
     case "index.html":
         document.getElementById("home-link").classList.toggle("active");
         break;
-    case "locations.html":
-        document.getElementById("locations-link").classList.toggle("active");
+    case "temples.html":
+        document.getElementById("temples-link").classList.toggle("active");
     break;
     case "reservations.html":
         document.getElementById("res-link").classList.toggle("active");

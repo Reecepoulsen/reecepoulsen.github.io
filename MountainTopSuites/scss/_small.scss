@@ -301,11 +301,40 @@ footer{
 }
 
 /*****************************************************
-* Styling for locations page 
+* Styling for Temples page 
 ******************************************************/
 header{
     .banner{
         max-width: 100%;
+    }
+}
+
+main{
+    
+    #resizing-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    .resizing-box{
+        background-color: rgba($color: $charcoal, $alpha: .7);
+        color: $paper;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        border: solid $charcoal 2px;
+
+        h3{
+            margin: 0px;
+            margin-bottom: 10px;
+        }
+
+        img{
+            max-width: 100%;
+            border-radius: 10px;
+        }
     }
 }
 
@@ -455,8 +484,77 @@ main{
 /*****************************************************
 * Styling for Contact page 
 ******************************************************/
-header{}
+main{
 
-main{}
+    #contact-form-container{
+        width: 90%;
+        margin: 0 auto;
+    }
 
-footer{}
+    #contact-form{
+        border: 2px solid $charcoal;
+        background-color: rgba($color: $charcoal, $alpha: .7);
+        color: $paper;
+        padding: 20px;
+        border-radius: 10px;
+
+
+        .top, .inputBox, #comments{
+            display: block;
+        }
+
+        .top{
+            margin-bottom: 20px;
+        }
+
+        .inputBox, #comments{
+            margin-top: 5px;
+            width: 90%;
+            padding: 12px;
+            border-radius: 10px;
+        }
+
+        #btn-container{
+            width: fit-content;
+            margin: 0 auto;
+            
+            .submitBtn{
+                font-weight: bold;
+                padding: 15px 20px;
+                background-color: $paleGold;
+                color: $paper;
+                border: 1px solid $charcoal;
+                border-radius: 20px;
+            }
+    
+            .submitBtn:hover{
+                cursor: pointer;
+                background-color: $paper;
+                color: $paleGold;
+                box-shadow: 0px 0px 20px $paper;
+            }
+        }
+
+    }
+
+    #map-container{
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding-bottom: 20px;
+    }
+
+    #contact-info{
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    #info-container{
+        border: 2px solid $charcoal;
+        background-color: rgba($color: $charcoal, $alpha: .7);
+        color: $paper;
+        padding: 20px;
+        border-radius: 10px;
+    }
+}
+

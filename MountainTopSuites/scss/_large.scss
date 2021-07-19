@@ -33,7 +33,7 @@ footer{
 }
 
 /*****************************************************
-* Styling for locations page 
+* Styling for Temples page 
 ******************************************************/
 header{
     
@@ -49,37 +49,41 @@ main{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         margin: 0 auto;
-        width: 800px;
-        height: 200px;
+        width: 760px;
+        height: 220px;
+        max-width: 100%;
         transition: ease .7s;
         justify-items: center;
     }
    
     #resizing-grid:hover{
-        width: 1200px;
-        height: 600px;
+        width: 1180px;
+        height: 630px;
     }
 
     .resizing-box{
-        width: 200px;
-        width: 200px;
+        border-radius: 0px;
+        width: 170px;
+        padding: 10px;
         font-size: .25em;
         transition: ease .7s;
-        color: $silk;
-        background-color: $charcoal;
+        border: none;
 
         h3{
+            margin: 10px;
             text-align: center;
         }
 
         img{
             max-width: 100%;
+            border-radius: 0px;
         }
     }
     .resizing-box:hover{
-        width: 600px;
-        height: 600px;
+        width: 590px;
+        height: 610px;
         font-size: 1em;
+        margin-bottom: 20px;
     }
     
 

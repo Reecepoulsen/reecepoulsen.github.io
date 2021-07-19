@@ -124,7 +124,7 @@ main{
 }
 
 /*****************************************************
-* Styling for locations page 
+* Styling for Temples page 
 ******************************************************/
 header{
 
@@ -163,7 +163,18 @@ main{
 ******************************************************/
 header{}
 
-main{}
+main{
+    #contact-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+
+    #contact-info{margin: 0px;}
+
+    #map-container{margin: 0px;}
+}
 
 footer{}
 
