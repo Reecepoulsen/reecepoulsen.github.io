@@ -4,20 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="">
-    <title>Contact Us | Mountain Top Suites </title>
+    <link rel="stylesheet" href="../scss/styles.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Yellowtail&display=swap" rel="stylesheet"> 
+    <title>Contact | Mountain Top Suites </title>
 </head>
 <body>
-    <header>
-
-    </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
+    <div id="content">
+        <header>
+            <div id="small-nav-banner">
+                <div class="small-logo-circle">
+                    <a href="../index.html"><img class="small-nav-logo" src="../images/hill_icon.png" alt="Mountain Top Suites Icon"></a>
+                </div>
+                <h1>Mountain Top Suites</h1>
+                <button onclick="toggleMenu()">&#9776;</button>
+            </div>
+            <div id="relative-container">
+                <nav id="navigation" class="nav-hide">
+                    <ul>
+                        <div class="large-logo-circle">
+                            <a href="../index.html"><img class="large-logo" src="../images/hill_icon.png" alt="Mountain Top Suites Icon"></a>
+                        </div>
+                        <a href="../index.html"><li id="home-link">Home</li></a>
+                        <a href="locations.html"><li id="locations-link">Locations</li></a>
+                        <a href="reservations.html"><li id="res-link">Reservations</li></a>
+                        <a href="services.html"><li id="services-link">Services</li></a>
+                        <a href="contact.html"><li id="contact-link">Contact</li></a>
+                    </ul>
+                </nav>
+                <img class="banner" src="../images/stayPicture.jpg" alt="Stay awhile decorations on wall">
+            </div>
+        </header>
+        <main>
+            <div class="text-banner">
+                <h1>Contact Us</h1>
+            </div>
+            
+        </main>
+        <footer>
+            <a href="../sitePlan/sitePlan.html">Site Plan</a>
+            <span>Copyright</span>
+    
+            <a href="../resources/resources.html">Resources</a>
+        </footer>
+    </div>
+    <script src="../js/wayfinding.js"></script>
+    <script src="../js/toggleMenu.js"></script>
 </body>
 </html>

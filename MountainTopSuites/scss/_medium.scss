@@ -8,82 +8,86 @@ header{
         display: block;
     }
 
-    .slideshow-container{
+    #relative-container{
         position: relative;
+    }
 
-        #navigation {
-            position: absolute;
-            z-index: 1;
-            width: 100%;
-            background-color: rgba($color: $charcoal, $alpha: .8);
-            // background-color: transparent;
-            color: $paper;
+    #navigation {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        background-color: rgba($color: $charcoal, $alpha: .8);
+        // background-color: transparent;
+        color: $paper;
+
+        ul{
+            display: grid;
+            grid-template-columns: 100px repeat(5, 1fr) 100px;
+            align-items: center;
+            justify-items: center;
     
-            ul{
-                display: grid;
-                grid-template-columns: 100px repeat(5, 1fr) 100px;
-                align-items: center;
-                justify-items: center;
-        
-                .large-logo-circle{
-                    display: block;
-                    background-color: $silk;
-                    border-radius: 50%;
-                    padding: 4px 6px;
-                    margin: 5px 0px;
+            .large-logo-circle{
+                display: block;
+                background-color: $silk;
+                border-radius: 50%;
+                padding: 4px 6px;
+                margin: 5px 0px;
 
-                    img{
-                        max-width: 50px;
-                        filter: brightness(0);
-                    }
-                }
-                a, a:visited{color: $paper;}
-
-                li{
-                    padding: 25px;
-                    border-bottom: 4px solid transparent;
-                }
-    
-                li:hover{
-                    color: $paper;
-                    background-color: transparent;
-                    border-bottom: 4px solid $paper;
-                    transition: .4s ease-in-out;
-                }
-
-                .active{
-                    color: $silk;
-                    background-color: transparent;
-                    border-bottom: 4px solid $silk;
+                img{
+                    max-width: 50px;
+                    filter: brightness(0);
                 }
             }
+            a, a:visited{color: $paper;}
+
+            li{
+                padding: 25px;
+                border-bottom: 4px solid transparent;
+            }
+
+            li:hover{
+                color: $paper;
+                background-color: transparent;
+                border-bottom: 4px solid $paper;
+                transition: .4s ease-in-out;
+            }
+
+            .active{
+                color: $silk;
+                background-color: transparent;
+                border-bottom: 4px solid $silk;
+            }
         }
-        
+    }
+
+    .slideshow-container{
+        position: relative;
         #slide-header{
             display: block;
             position: absolute;
             top: 20%;
             left: 50%;
             margin: 0px 0px 0px -210px;
-            z-index: 1;
-
+            z-index: 2;
+    
             font-family: 'Yellowtail', cursive;
             font-size: 3em;
             letter-spacing: .05em;
-
+    
             padding: 10px;
             border-radius: 10px;
-
+    
             color: $silk;
             background-color: rgba($color: $charcoal, $alpha: .8);
         }
-
+    
         .prev, .next{
             top: 50%;
         }
     }
-
+        
 }
+
 
 main{
     #main-text-area{
@@ -118,4 +122,48 @@ main{
         padding: 20px 100px;
     }
 }
+
+/*****************************************************
+* Styling for locations page 
+******************************************************/
+header{
+
+}
+
+main{}
+
+footer{}
+
+/*****************************************************
+* Styling for Reservations page 
+******************************************************/
+main{
+    #form-container{
+        select{
+            width: 93%;
+        }
+    }
+}
+
+/*****************************************************
+* Styling for Services page 
+******************************************************/
+main{
+    .accordion{
+        .accordion-content{
+            display: grid;
+            grid-template-columns: 1fr 60%;
+            gap: 15px;
+        }
+    }
+}
+
+/*****************************************************
+* Styling for Contact page 
+******************************************************/
+header{}
+
+main{}
+
+footer{}
 

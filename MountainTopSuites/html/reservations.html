@@ -4,20 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../scss/styles.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Yellowtail&display=swap" rel="stylesheet"> 
     <title>Reservations | Mountain Top Suites </title>
 </head>
 <body>
-    <header>
+    <div id="content">
+        <header>
+            <div id="small-nav-banner">
+                <div class="small-logo-circle">
+                    <a href="../index.html"><img class="small-nav-logo" src="../images/hill_icon.png" alt="Mountain Top Suites Icon"></a>
+                </div>
+                <h1>Mountain Top Suites</h1>
+                <button onclick="toggleMenu()">&#9776;</button>
+            </div>
+            <div id="relative-container">
+                <nav id="navigation" class="nav-hide">
+                    <ul>
+                        <div class="large-logo-circle">
+                            <a href="../index.html"><img class="large-logo" src="../images/hill_icon.png" alt="Mountain Top Suites Icon"></a>
+                        </div>
+                        <a href="../index.html"><li id="home-link">Home</li></a>
+                        <a href="locations.html"><li id="locations-link">Locations</li></a>
+                        <a href="reservations.html"><li id="res-link">Reservations</li></a>
+                        <a href="services.html"><li id="services-link">Services</li></a>
+                        <a href="contact.html"><li id="contact-link">Contact</li></a>
+                    </ul>
+                </nav>
+                <img class="banner" src="../images/stayPicture.jpg" alt="Stay awhile decorations on wall">
+            </div>
+        </header>
+        <main>
+            <div class="text-banner">
+                <h1>Reservations</h1>
+            </div>
+            <div id="form-container">
+                <form method="get" action="reservations-thanks.html">
+                    <fieldset id="fieldset1">
+                        <h3>Stay Details</h3>
+                        <label class="top required">Location * 
+                            <select name="locations" required>
+                                <option value="" selected disabled>Select Location...</option>
+                                <option value="Idaho Falls, Idaho">Idaho Falls, Idaho</option>
+                                <option value="San Diego, California">San Diego, California</option>
+                                <option value="Rome Italy">Rome Italy</option>
+                                <option value="Calgary, Alberta, Canada">Calgary, Alberta</option>
+                            </select>
+                        </label>
 
-    </header>
-    <main>
+                        <label class="top required">Start Date *<input class="inputBox" type="date" name="startDate" required></label>
 
-    </main>
-    <footer>
+                        <label class="top required">End Date *<input class="inputBox" type="date" name="endDate" required></label>
 
-    </footer>
+                        <label class="top required">Number of Guests *<input class="inputBox" type="number" required></label>
+
+                        <label class="top required">Room Type * 
+                            <select name="roomType" required>
+                                <option value="" selected disabled>Select Room Type...</option>
+                                <option value="queen">Queen</option>
+                                <option value="king">King</option>
+                                <option value="twin">Twin</option>
+                                <option value="doubleDouble">Double double</option>
+                                <option value="kitchenette">Full Time Missionary Kitchenette</option>
+                            </select>
+                        </label>
+                    </fieldset>
+
+                    <fieldset id="fieldset2">
+                        <h3>Guest Information</h3>
+                        <label class="top required">Full Name *<input class="inputBox" type="text" name="fullname" required></label>
+
+                        <label class="top required">Email *<input class="inputBox" type="email" name="email" required></label>
+
+                        <label class="top">Phone Number<input class="inputBox" type="tel" name="phone"></label>
+
+                        <label class="top">Home State or Country<input class="inputBox" type="text" name="home"></label>
+                        </fieldset>
+
+                    <fieldset id="fieldset3">
+                        <h3>Additional Information</h3>
+                        <div id="comments-container">
+                            <label class="top center">Special Accomodations/Comments<textarea id="comments" name="comments" rows="4" cols="50"></textarea></label>
+                        </div>
+
+                        <div id="btn-container">
+                            <input class="submitBtn" type="submit" value="Book My Room" name="submitBtn">
+                        </div>
+                    </fieldset>
+                </form>
+
+            </div>
+        </main>
+        <footer>
+            <a href="../sitePlan/sitePlan.html">Site Plan</a>
+            <span>Copyright</span>
+    
+            <a href="../resources/resources.html">Resources</a>
+        </footer>
+    </div>
+    <script src="../js/wayfinding.js"></script>
+    <script src="../js/toggleMenu.js"></script>
 </body>
 </html>

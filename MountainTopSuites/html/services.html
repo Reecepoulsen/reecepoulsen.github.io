@@ -4,20 +4,204 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="">
-    <title>Services | Mountain Top Suites </title>
+    <link rel="stylesheet" href="../scss/styles.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Yellowtail&display=swap" rel="stylesheet"> 
+    <title>Reservations | Mountain Top Suites </title>
 </head>
 <body>
-    <header>
-
-    </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
+    <div id="content">
+        <header>
+            <div id="small-nav-banner">
+                <div class="small-logo-circle">
+                    <a href="../index.html"><img class="small-nav-logo" src="../images/hill_icon.png" alt="Mountain Top Suites Icon"></a>
+                </div>
+                <h1>Mountain Top Suites</h1>
+                <button onclick="toggleMenu()">&#9776;</button>
+            </div>
+            <div id="relative-container">
+                <nav id="navigation" class="nav-hide">
+                    <ul>
+                        <div class="large-logo-circle">
+                            <a href="../index.html"><img class="large-logo" src="../images/hill_icon.png" alt="Mountain Top Suites Icon"></a>
+                        </div>
+                        <a href="../index.html"><li id="home-link">Home</li></a>
+                        <a href="locations.html"><li id="locations-link">Locations</li></a>
+                        <a href="reservations.html"><li id="res-link">Reservations</li></a>
+                        <a href="services.html"><li id="services-link">Services</li></a>
+                        <a href="contact.html"><li id="contact-link">Contact</li></a>
+                    </ul>
+                </nav>
+                <img class="banner" src="../images/stayPicture.jpg" alt="Stay awhile decorations on wall">
+            </div>
+        </header>
+        <main>
+            <div class="text-banner">
+                <h1>Services</h1>
+            </div>
+            <div id="accordion-grid">
+                <div id="services-accordion" class="accordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-title">Changing Rooms</h3>
+                        <div class="accordion-content">
+                            <p class="accordion-desc">
+                                Changing rooms are available to all who come visit the
+                                temple, no purchase necessary. Changing rooms include
+                                privacy stalls and lockers that come in individual and
+                                family sizes.
+                            </p>
+    
+                            <img class="accordion-img" src="../images/stayPicture.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-title">Playroom</h3>
+                        <div class="accordion-content">
+                            <p class="accordion-desc">
+                                Short-term babysitting is offered in our playroom at
+                                a low, reasonable cost. Leave your kids with us while 
+                                you go and serve in the house of the Lord.
+                            </p>
+    
+                            <img class="accordion-img" src="" alt="">
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-title">Temple Theme</h3>
+                        <div class="accordion-content">
+                            <p class="accordion-desc">
+                                Each of our locations includes a uniquely themed
+                                sitting room that is based off of the corresponding
+                                temple. 
+                            </p>
+    
+                            <img class="accordion-img" src="" alt="">
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-title">Family Search Center</h3>
+                        <div class="accordion-content">
+                            <p class="accordion-desc">
+                                A fully staffed family history center is also included
+                                for each guest. Need to print off your ordinance card?
+                                We've got you covered with an ordinance card printing
+                                center.
+                            </p>
+    
+                            <img class="accordion-img" src="" alt="">
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-title">Reception Hall</h3>
+                        <div class="accordion-content">
+                            <p class="accordion-desc">
+                                Special arrangements can be made for those who would like
+                                to reserve our reception hall, guest or not. Click on the
+                                link below to learn more!
+                            </p>
+    
+                            <img class="accordion-img" src="" alt="">
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-title">Temple Missionary Rooms</h3>
+                        <div class="accordion-content">
+                            <p class="accordion-desc">
+                                Special rooms are available for those that are serving as
+                                full-time temple missionaries. At an affordable, long-term
+                                cost. Click the link below to learn more!
+                            </p>
+    
+                            <img class="accordion-img" src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion" id="Ammenities-accordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-title">Breakfast Included</h3>
+                        <div class="accordion-content">
+                            <p class="accordion-desc">
+                                Breakfast is included for each guest every morning from
+                                6-9am. Come and enjoy some good food!
+                            </p>
+    
+                            <img class="accordion-img" src="" alt="">
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-title">Exercise Room</h3>
+                        <div class="accordion-content">
+                            <p class="accordion-desc">
+                                A fully equiped exercise room is available for use to
+                                all guests. Equipment included for all different age groups
+                                and experience levels. Open 24/7.
+                            </p>
+    
+                            <img class="accordion-img" src="" alt="">
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-title">Indoor Pool</h3>
+                        <div class="accordion-content">
+                            <p class="accordion-desc">
+                                Come take a load off at the indoor pool included with your
+                                stay! While the kids swim, you can enjoy an evening in the
+                                hot tub!
+                            </p>
+    
+                            <img class="accordion-img" src="" alt="">
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-title">High-Speed Wifi</h3>
+                        <div class="accordion-content">
+                            <p class="accordion-desc">
+                                Access to high speed internet is included with each
+                                reservation. Smart Tvs with streaming capabilities
+                                are included in each room.
+                            </p>
+    
+                            <img class="accordion-img" src="" alt="">
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-title">Temple Shuttle/Parking</h3>
+                        <div class="accordion-content">
+                            <p class="accordion-desc">
+                                Our very own shuttle periodically takes trips to and from 
+                                the temple. We do our best to line up with the ordinance
+                                schedule of the temple to get where you want to go quickly.
+                            </p>
+    
+                            <img class="accordion-img" src="" alt="">
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-title">Family History Consultation</h3>
+                        <div class="accordion-content">
+                            <p class="accordion-desc">
+                                Want to prepare family names before you go to the temple?
+                                Get answers to your questions from our family history
+                                consultants.
+                            </p>
+    
+                            <img class="accordion-img" src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <a href="../sitePlan/sitePlan.html">Site Plan</a>
+            <span>Copyright</span>
+    
+            <a href="../resources/resources.html">Resources</a>
+        </footer>
+    </div>
+    <script src="../js/accordion.js"></script>
+    <script src="../js/wayfinding.js"></script>
+    <script src="../js/toggleMenu.js"></script>
 </body>
 </html>
