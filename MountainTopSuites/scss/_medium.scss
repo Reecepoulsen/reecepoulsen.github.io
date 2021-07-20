@@ -84,10 +84,8 @@ header{
         .prev, .next{
             top: 50%;
         }
-    }
-        
+    }  
 }
-
 
 main{
     #main-text-area{
@@ -109,7 +107,6 @@ main{
             display: block;
             max-width: 100%;
             border-radius: 30px;
-
         }
     }
 
@@ -126,10 +123,6 @@ main{
 /*****************************************************
 * Styling for Temples page 
 ******************************************************/
-header{
-
-}
-
 main{
     #resizing-grid{
         .accordion{
@@ -139,9 +132,6 @@ main{
         }
     }
 }
-
-footer{}
-
 /*****************************************************
 * Styling for Reservations page 
 ******************************************************/
@@ -169,8 +159,6 @@ main{
 /*****************************************************
 * Styling for Contact page 
 ******************************************************/
-header{}
-
 main{
     #contact-grid{
         display: grid;
@@ -183,6 +171,3 @@ main{
 
     #map-container{margin: 0px;}
 }
-
-footer{}
-
