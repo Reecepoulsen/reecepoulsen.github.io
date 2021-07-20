@@ -355,16 +355,9 @@ main{
                 }
 
             }
-
-
         }
     }
-
-
 }
-
-
-
 /*****************************************************
 * Styling for Reservations page 
 ******************************************************/
@@ -503,6 +496,62 @@ main{
             margin: 0px;
             margin-top: 10px;
         }
+    }
+
+    .modal-container{
+        background-color: rgba(0, 0, 0, .3);
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        position: fixed;
+        opacity: 0;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        transition: opacity .3s ease;
+    }
+
+    #open, #close, #open2, #close2{
+        border: none;
+        border-radius: 5px;
+        padding: 10px 25px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+        margin-top: 10px;
+    }
+
+    #open:hover, #close:hover, #open2:hover, #close2:hover{
+        cursor: pointer;
+        background-color: $silk ;
+        color: $charcoal;
+        box-shadow: 0 0 10px rgba($color: $paper, $alpha: .2);
+    }
+
+    .modal{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        background-color: $charcoal;
+        color: $paper;
+        width: 70vw;
+        max-width: 100%;
+        padding: 30px 40px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+        text-align: center;
+
+        h1{
+            margin: 0px;
+        }
+
+        p{
+            opacity: .7;
+        }
+    }
+    .show{
+        opacity: 1;
+        pointer-events: auto;
     }
 }
 
