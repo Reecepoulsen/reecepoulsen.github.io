@@ -5,7 +5,7 @@ accordionTitles.forEach((accordionTitle) => {
         const height = accordionTitle.nextElementSibling.scrollHeight;
         accordionTitle.classList.toggle('active-header');
         if (accordionTitle.classList.contains('active-header')){
-            accordionTitle.nextElementSibling.style.maxHeight = `${height}px`
+            accordionTitle.nextElementSibling.style.maxHeight = `${height}px`;
         }
         else{
             accordionTitle.nextElementSibling.style.maxHeight = '0px';

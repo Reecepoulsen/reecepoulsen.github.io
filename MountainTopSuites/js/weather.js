@@ -25,22 +25,22 @@ for (let i = 0; i < cityIds.length; i++){
         let low = document.createElement('li');
         let humidity = document.createElement('li');
 
-        weatherHeader.innerHTML = 'Weather Forecast'
-        currently.innerHTML = `Currently: ${Math.round(curCityData['main']['temp'])}°F`
-        high.innerHTML = `High: ${Math.round(curCityData['main']['temp_max'])}°F`
-        low.innerHTML = `Low: ${Math.round(curCityData['main']['temp_min'])}°F`
-        humidity.innerHTML = `Humidity: ${curCityData['main']['humidity']}%`
+        weatherHeader.innerHTML = 'Weather Forecast';
+        currently.innerHTML = `Currently: ${Math.round(curCityData['main']['temp'])}°F`;
+        high.innerHTML = `High: ${Math.round(curCityData['main']['temp_max'])}°F`;
+        low.innerHTML = `Low: ${Math.round(curCityData['main']['temp_min'])}°F`;
+        humidity.innerHTML = `Humidity: ${curCityData['main']['humidity']}%`;
 
-        weatherUl.appendChild(currently)
-        weatherUl.appendChild(high)
-        weatherUl.appendChild(low)
-        weatherUl.appendChild(humidity)
+        weatherUl.appendChild(currently);
+        weatherUl.appendChild(high);
+        weatherUl.appendChild(low);
+        weatherUl.appendChild(humidity);
 
-        weatherContainer.appendChild(weatherHeader)
-        weatherContainer.appendChild(weatherUl)
+        weatherContainer.appendChild(weatherHeader);
+        weatherContainer.appendChild(weatherUl);
 
-        boxContainer.appendChild(weatherContainer)
+        boxContainer.appendChild(weatherContainer);
 
-        weatherContainer.classList.add('container', 'weather-container')
+        weatherContainer.classList.add('container', 'weather-container');
     })
 }

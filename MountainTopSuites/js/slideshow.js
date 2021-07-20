@@ -1,5 +1,5 @@
 var slideIndex = 1;
-var numSlides = document.getElementsByClassName("slideshow-img").length
+var numSlides = document.getElementsByClassName("slideshow-img").length;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -25,11 +25,11 @@ function showSlides(n){
   }
 
   if (n < 1){
-    slideIndex = numSlides
+    slideIndex = numSlides;
   }
 
   if (n > numSlides){
-    slideIndex = 1
+    slideIndex = 1;
   }
 
   slides[slideIndex - 1].style.display = "block";
