@@ -46,50 +46,17 @@ main{
     }
 
     #resizing-grid{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        margin: 0 auto;
-        width: 760px;
-        height: 220px;
-        max-width: 100%;
-        transition: ease .7s;
+        max-width: 98%;
+        font-size: .9em;
+        grid-template-columns: 1fr 1fr;
         justify-items: center;
-    }
-   
-    #resizing-grid:hover{
-        width: 1180px;
-        height: 630px;
-    }
+        gap: 10px;
 
-    .resizing-box{
-        border-radius: 0px;
-        width: 170px;
-        padding: 10px;
-        font-size: .25em;
-        transition: ease .7s;
-        border: none;
-
-        h3{
-            margin: 10px;
-            text-align: center;
-        }
-
-        img{
-            max-width: 100%;
-            border-radius: 0px;
-        }
-    }
-    .resizing-box:hover{
-        width: 590px;
-        height: 610px;
-        font-size: 1em;
-        margin-bottom: 20px;
-    }
-    
-
+    }   
 }
 
-footer{}
+footer{
+}
 
 /*****************************************************
 * Styling for Reservations page 

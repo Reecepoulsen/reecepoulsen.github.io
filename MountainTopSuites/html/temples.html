@@ -34,7 +34,7 @@
                         <a href="contact.html"><li id="contact-link">Contact</li></a>
                     </ul>
                 </nav>
-                <img class="banner" src="../images/mapPicture.jpg" alt="Stay awhile decorations on wall">
+                <img class="banner" src="../images/hero_images/mapPicture.png" alt="Stay awhile decorations on wall">
             </div>
         </header>
         <main>
@@ -44,49 +44,37 @@
 
             <section id="temples">
                 <div id="resizing-grid">
-                    <div id="box1" class="resizing-box">
-                        <h3>Idaho Falls, Idaho</h3>
-                        <img src="../images/hero_slides/idahoFallsTemple.jpg" alt="Idaho Falls Temple">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Deleniti animi consectetur dolore sapiente? Eligendi 
-                            officia expedita quae consequatur eum. Aperiam illo, 
-                            architecto laboriosam quod numquam mollitia consequuntur 
-                            repellat sapiente omnis?
-                        </p>
+                    <div id="box1" class="resizing-box accordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-title">Idaho Falls, Idaho</h3>
+                            <div id="box1-content" class="accordion-content">
+                                <img src="../images/hero_slides/idahoFallsTemple.png" alt="Idaho Falls Temple">
+                            </div>
+                        </div>
                     </div>
-                    <div id="box2" class="resizing-box">
-                        <h3>Rome Italy</h3>
-                        <img src="../images/hero_slides/romeTemple.png" alt="Rome Temple">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Deleniti animi consectetur dolore sapiente? Eligendi 
-                            officia expedita quae consequatur eum. Aperiam illo, 
-                            architecto laboriosam quod numquam mollitia consequuntur 
-                            repellat sapiente omnis?
-                        </p>
+                    <div id="box2" class="resizing-box accordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-title">Calgary Alberta, Canada</h3>
+                            <div id="box2-content" class="accordion-content">
+                                <img src="../images/hero_slides/calgaryTemple.png" alt="Calgary Alberta Temple">
+                            </div>
+                        </div>
                     </div>
-                    <div id="box3" class="resizing-box">
-                        <h3>Calgary Alberta, Canada</h3>
-                        <img src="../images/hero_slides/calgaryTemple.jpg" alt="Calgary Alberta Temple">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Deleniti animi consectetur dolore sapiente? Eligendi 
-                            officia expedita quae consequatur eum. Aperiam illo, 
-                            architecto laboriosam quod numquam mollitia consequuntur 
-                            repellat sapiente omnis?
-                        </p>
+                    <div id="box3" class="resizing-box accordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-title">San Diego, California</h3>
+                            <div id="box3-content" class="accordion-content">
+                                <img src="../images/hero_slides/sanDiegoTemple.png" alt="San Diego Temple">
+                            </div>
+                        </div>
                     </div>
-                    <div id="box4" class="resizing-box">
-                        <h3>San Diego, California</h3>
-                        <img src="../images/hero_slides/sanDiegoTemple.jpeg" alt="San Diego Temple">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Deleniti animi consectetur dolore sapiente? Eligendi 
-                            officia expedita quae consequatur eum. Aperiam illo, 
-                            architecto laboriosam quod numquam mollitia consequuntur 
-                            repellat sapiente omnis?
-                        </p>
+                    <div id="box4" class="resizing-box accordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-title">Rome Italy</h3>
+                            <div id="box4-content" class="accordion-content">
+                                <img src="../images/hero_slides/romeTemple.png" alt="Rome Temple">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -99,6 +87,9 @@
             <a href="../resources/resources.html">Resources</a>
         </footer>
     </div>
+    <script src="../js/weather.js"></script>
+    <script src="../js/temples.js"></script>
+    <script src="../js/accordion.js"></script>
     <script src="../js/wayfinding.js"></script>
     <script src="../js/toggleMenu.js"></script>
 </body>

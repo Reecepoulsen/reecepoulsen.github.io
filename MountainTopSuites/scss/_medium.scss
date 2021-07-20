@@ -130,7 +130,15 @@ header{
 
 }
 
-main{}
+main{
+    #resizing-grid{
+        .accordion{
+            .accordion-content{
+                display: block;
+            }
+        }
+    }
+}
 
 footer{}
 

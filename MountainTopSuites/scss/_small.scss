@@ -316,26 +316,50 @@ main{
         grid-template-columns: 1fr;
         max-width: 95%;
         margin: 0 auto;
+
+        .accordion-content{
+            h4, p, ul, li{
+                margin: 0px;
+                list-style: square;
+                padding: 0px;
+            }
+
+            img{
+                grid-column: 1/3;
+            }
+
+            h4{
+                border-bottom: solid 2px $paper;
+                width: fit-content;
+                padding-bottom: 5px;
+                font-size: 1.4em;
+            }
+
+            ul{
+                padding-left: 20px;
+            }
+
+            li{
+                line-height: 1.4em;
+            }
+
+            .container{
+                padding: 10px 0px;
+            }
+
+            .closed-container{
+                p{
+                    margin: 8px 0px 5px 0px;
+                    font-weight: bold;
+                }
+
+            }
+
+
+        }
     }
 
-    .resizing-box{
-        background-color: rgba($color: $charcoal, $alpha: .7);
-        color: $paper;
-        padding: 20px;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        border: solid $charcoal 2px;
 
-        h3{
-            margin: 0px;
-            margin-bottom: 10px;
-        }
-
-        img{
-            max-width: 100%;
-            border-radius: 10px;
-        }
-    }
 }
 
 
