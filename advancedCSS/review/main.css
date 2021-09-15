@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap'); 
+
+/* Add some resets  */
+*{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+/************************************************************
+* Styling for small view 
+* Colors: blue(#6495ED), tan(#FAEBD7)
+*
+* Nav Links: normal and visited #FAEBD7 no underline,
+* active #DEB887, hover: white and underlined
+*
+* Other page links: normal and visited: #6495ED and no underline, 
+* active: #DEB887, hover: underlined
+*
+* Article title Links: and visited: black and no underline, 
+* active: #DEB887, hover: #6495ED and underlined
+************************************************************/
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Lora', serif; 
+} 
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header{
+    background-color: #6495ED;
+    color: #FAEBD7;
+    text-align: right;
+    padding: 50px 35px;
+    font-weight: bold;
+}
+
+header h1{
+    margin: 0px;
+    padding-bottom: 15px;
+}
+
+header h1 a{
+    color: #FAEBD7;
+    text-decoration: none;
+}
+
+header hr{
+    color: #FAEBD7;
+}
+
+header ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+header ul li{
+    padding: 10px 0px;
+}
+
+header ul a, header ul a:visited{
+    color: #FAEBD7;
+    text-decoration: none;
+}
+
+.active{
+    color: #DEB887;
+}
+
+header ul a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+main{
+    padding: 40px 20px;
+    background-color: #FAEBD7;
+    height: fit-content;
+}
+
+article{
+    background-color: white;
+    padding: 30px;
+    margin: 40px 0px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .15);
+    font-size: 1.1em;
+}
+
+article:first-of-type{
+    margin: 0px;
+}
+
+.post-date{
+    color: rgba(0, 0, 0, .5);
+    font-weight: bold;
+}
+
+article h2{
+    margin: 10px 0px;
+}
+
+article h2 a {
+    color: black;
+    text-decoration: none;
+}
+
+article h2 a:hover {
+    color: #6495ED;
+    text-decoration: underline;
+}
+
+article figure{
+    margin-top: 80px;
+    padding-bottom: 5px;
+}
+
+p a, p a:visited {
+    color: #6495ED;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/************************************************************
+* Styling for larger view 
+************************************************************/
+@media only screen and (min-width: 47.5em){
+
+}
