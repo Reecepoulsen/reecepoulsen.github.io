@@ -21,16 +21,16 @@ body{
 
 /************************************************************
 * Styling for small view 
-* Colors: blue(#6495ED), tan(#FAEBD7)
+* Colors: blue(#798DF2), tan(#FAEBD7)
 *
 * Nav Links: normal and visited #FAEBD7 no underline,
 * active #DEB887, hover: white and underlined
 *
-* Other page links: normal and visited: #6495ED and no underline, 
+* Other page links: normal and visited: #798DF2 and no underline, 
 * active: #DEB887, hover: underlined
 *
 * Article title Links: and visited: black and no underline, 
-* active: #DEB887, hover: #6495ED and underlined
+* active: #DEB887, hover: #798DF2 and underlined
 ************************************************************/
 h1, h2, h3, h4, h5, h6{
     font-family: 'Lora', serif; 
@@ -41,7 +41,7 @@ body{
 }
 
 header{
-    background-color: #6495ED;
+    background-color: #798DF2;
     color: #FAEBD7;
     text-align: right;
     padding: 50px 35px;
@@ -119,17 +119,18 @@ article h2 a {
 }
 
 article h2 a:hover {
-    color: #6495ED;
+    color: #798DF2;
     text-decoration: underline;
 }
 
 article figure{
-    margin-top: 80px;
+    padding-top: 80px;
     padding-bottom: 5px;
+    text-align: center;
 }
 
 p a, p a:visited {
-    color: #6495ED;
+    color: #798DF2;
     text-decoration: none;
 }
 
@@ -138,12 +139,30 @@ p a:hover {
 }
 
 
-
-
-
 /************************************************************
-* Styling for larger view 
+* Styling for medium view 
 ************************************************************/
-@media only screen and (min-width: 47.5em){
+@media only screen and (min-width: 45em){
+    header{
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+    }
 
+    main{
+        margin-left: 250px;
+        padding: 40px 8% 40px 8%;
+    }
+
+    article {
+        margin: 60px 0px;
+    }
+
+    article figure{
+        padding-top: 60px;
+    }
 }
