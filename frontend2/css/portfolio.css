@@ -29,7 +29,7 @@ main{
     background-color: white;
     margin: 0 auto;
     padding: 20px 60px;
-    height: 600px;
+    height: 75vh;
 }
 
 #contents-container{
@@ -38,12 +38,12 @@ main{
 
 h2{
     margin: 0px;
-    padding: 20px 0px;
+    padding-top: 10px;
 }
 
 
 ol{
-    padding: 0px;
+    padding: 10px 0px;
     margin: 0px;
 }
 
