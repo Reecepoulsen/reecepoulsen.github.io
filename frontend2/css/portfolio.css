@@ -46,6 +46,7 @@ h2{
 ol{
     padding: 10px 0px;
     margin: 0px;
+    list-style: none;
 }
 
 li{
