@@ -12,7 +12,7 @@ body{
 }
 
 header{
-    max-width: 60%;
+    max-width: 70%;
     margin: 0 auto;
 }
 
@@ -25,7 +25,7 @@ h1 {
 }
 
 main{
-    max-width: 60%;
+    max-width: 70%;
     background-color: white;
     margin: 0 auto;
     padding: 20px 60px;
@@ -61,7 +61,7 @@ li a:hover{
 }
 
 footer{
-    max-width: 60%;
+    max-width: 70%;
     text-align: center;
     background-color: slategrey;
     padding: 40px;
