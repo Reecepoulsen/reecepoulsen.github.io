@@ -108,7 +108,7 @@ footer a{
       rgba(0, 0, 0, .55)
     ),
     /* image that goes under the tint */
-    url("https://cdn.glitch.com/f4a3b7ce-9e91-4f32-b9b3-4ea09aa0309f%2Fblack_and_white_headphones.jpg?v=1604207449240");
+    url("./assets/pictures/black_and_white_headphones.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
@@ -208,7 +208,7 @@ footer a{
 ****************************************************************************/
 #profile-body{
   background-color: #000000;
-  background-image: url("https://cdn.glitch.com/f4a3b7ce-9e91-4f32-b9b3-4ea09aa0309f%2Fbrushed-alum-dark.png?v=1606268444597");
+  background-image: url("./assets/pictures/brushed-alum-dark.png");
   display: fixed;
 }
 
@@ -377,7 +377,7 @@ footer h3{
       rgba(0, 0, 0, .55)
     ),
     /* image that goes under the tint */
-    url("https://cdn.glitch.com/f4a3b7ce-9e91-4f32-b9b3-4ea09aa0309f%2Fblack_and_white_concert.jpg?v=1604207444238");
+    url("./assets/pictures/black_and_white_concert.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
@@ -454,7 +454,7 @@ footer h3{
 ****************************************************************************/
 #login-body{
   background-color: #000000;
-  background-image: url("https://cdn.glitch.com/f4a3b7ce-9e91-4f32-b9b3-4ea09aa0309f%2Fbrushed-alum-dark.png?v=1606268444597");
+  background-image: url("./assets/pictures/brushed-alum-dark.png");
   display: fixed;
 }
 
