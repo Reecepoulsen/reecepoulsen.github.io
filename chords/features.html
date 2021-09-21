@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chords | Features</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="features-content">
+      <header>
+        <nav id="features-navbar" class="navbar">
+          <a href="index.html"><img class="navbar-logo" 
+            src="https://cdn.glitch.com/f4a3b7ce-9e91-4f32-b9b3-4ea09aa0309f%2Fwhite_logo_transparent_background.png?v=1605810007828" 
+            alt="Chords Logo" height="100" ></a>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">My Profile</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main id="features-main">
+        <img id="features-logo-banner" 
+          src="https://cdn.glitch.com/f4a3b7ce-9e91-4f32-b9b3-4ea09aa0309f%2Fwhite_logo_transparent_background.png?v=1605810007828" 
+          alt="Chords Logo" width="700" >
+
+        <h2 id="features-banner-text">Connect with friends through the chords of music</h2>
+        <h2 id="features-list-header">Features</h2>
+
+        <ul id="features-list1">
+          <li>
+            <h3>Friends</h3>
+            <p>
+                This feature would be a mix between a feed and a messaging system. 
+                This is where you would interact with your friends, share new songs 
+                that you found, and visit friend's pages to see their favorites.
+            </p>
+          </li>
+          <li>
+            <h3>Genres</h3>
+            <p>
+                This feature will automatically organize your music into genres. 
+                I've always found it difficult to relate to a genre because I have 
+                no idea what genres the artists I listen to are a part of, this 
+                section should solve that problem.
+            </p>
+          </li>
+          <li>
+            <h3>Discover</h3>
+            <p>
+                Similar to Spotify, I want to include a way for those looking for 
+                new music to discover their next favorites. This section would include 
+                something similar to Spotify's discover weekly. I would also add 2 other 
+                features, the first would suggest new songs based off of the genres you 
+                listen to the most and the second would recommend new music based off of 
+                what your friends are listening to.
+            </p>
+          </li>
+        </ul>
+        <ul id="features-list2">
+            <li>
+              <h3>Activites</h3>
+              <p>
+                We all have music that we listen to specifically when we are working out, 
+                doing homework, relaxing, riding in the car, and just about anything else 
+                you can think of. The idea behind an activity is similar to a hashtag, it 
+                would be a way of connecting a song to an activity. Then you could browse 
+                through the activity top charts and see what other people listen to.
+              </p>
+            </li>
+            <li>
+              <h3>Lyrics</h3>
+              <p>
+                I love learning the lyrics behind songs but I don't like having to hop onto 
+                google to look them up. Chords will have an in-app capability to display lyrics.
+              </p>
+            </li>
+            <li>
+              <h3>Behind The Scenes</h3>
+              <p>
+                I feel like every song has a story to tell but sometimes it can be hard to 
+                tell what that story is. This feature would allow you to look up the 
+                "behind the scenes" information for each song so you can finally figure out 
+                why your favorite song was written.
+              </p>
+            </li>
+          </ul>
+        </main>
+      <footer>
+        <p id="footer-paragraph">
+            &copy; 2020 Chords - Reece Poulsen
+          </p>
+      </footer> 
+    </div>
+  </body>
+</html>
+
+<script>
+  // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()}
+
+// Get the navbar
+let navbar = document.getElementById("features-navbar")
+
+// Get the offset position of the navbar
+var transition_point = navbar.offsetTop
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > transition_point) {
+    navbar.classList.add("navbar-transition")
+  } else {
+    navbar.classList.remove("navbar-transition")
+  }
+} 
+</script>

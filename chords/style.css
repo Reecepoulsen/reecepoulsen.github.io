@@ -1,0 +1,527 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/****************************************************************************
+* General styling
+****************************************************************************/
+body {
+  font-family: "Nunito", Arial, sans-serif;
+  padding: 0px 0px;
+  font-size: 18px;
+  margin: 0;
+  color: #C3C1C1;
+  background-color: #343232;
+  overflow: auto;
+}
+
+h1 {
+  font-family: "Nunito", Arial, sans-serif;
+  font-size: 32px;
+}
+
+/* link styling */
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #A5A1A1;
+}
+
+/* footer styling */
+footer{
+  text-align: center;
+  padding: 40px 0px;
+  background-color: rgba(0, 0, 0, .7);
+  width: 100%;
+}
+
+footer p{
+  display: inline;
+}
+
+footer a{
+  display: inline;
+  color: white;
+  text-decoration: none;
+  padding-left: 100px;
+}
+
+/****************************************************************************
+* home nav bar styling
+****************************************************************************/
+.navbar{
+  display: grid;
+  grid-template-columns: 1fr 850px 1fr;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar-transition{
+  background-color: rgba(0, 0, 0, .7);
+    /* -webkit-transition: background-color 800ms linear;
+    -ms-transition: background-color 800ms linear; */
+  transition: background-color 800ms linear;
+}
+
+.navbar-logo{
+  grid-column: 1/2;
+  justify-self: center;
+  align-self: center;
+}
+
+.navbar ul{
+  grid-column: 2/3;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+}
+
+.navbar ul li:nth-of-type(1){
+  grid-column: 1/2;
+}
+
+.navbar ul li:nth-of-type(2){
+  grid-column: 2/3;
+}
+
+.navbar ul li:nth-of-type(3){
+  grid-column: 3/4;
+}
+
+.navbar ul li:nth-of-type(4){
+  grid-column: 4/5;
+}
+
+/****************************************************************************
+* START HOME PAGE STYLING
+* Home page background
+****************************************************************************/
+#home-body{
+  background: 
+    /* Put a black tint over the background image*/
+    linear-gradient(
+      rgba(0, 0, 0, .55), 
+      rgba(0, 0, 0, .55)
+    ),
+    /* image that goes under the tint */
+    url("https://cdn.glitch.com/f4a3b7ce-9e91-4f32-b9b3-4ea09aa0309f%2Fblack_and_white_headphones.jpg?v=1604207449240");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+
+/****************************************************************************
+*  main styling for home page
+****************************************************************************/
+#home-main{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-gap: 75px;
+}
+
+#home-logo-banner{
+  padding-top: 175px;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: center;
+}
+
+#home-banner-text{
+  text-align: center;
+  padding-bottom: 75px;
+  grid-column: 1/3;
+  grid-row: 2/3;
+  color: white;
+  font-size: 35px;
+}
+
+#home-part1{
+  grid-column: 1/3;
+  grid-row: 3/4;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+}
+
+#home-part1 p{
+  width: 600px;
+}
+
+#black-bar{
+  grid-column: 1/3;
+  grid-row: 3/4;
+  background: black;
+  z-index: -1;
+  padding: 200px 0px;
+}
+
+#home-part2{
+  grid-column: 1/2;
+  grid-row: 4/5;
+  text-align: center;
+  justify-self: right;
+  align-self: center;
+}
+
+#home-part2 p{
+  width: 600px;
+}
+
+#home-part2-img{
+  grid-column: 2/3;
+  grid-row: 4/5;
+  justify-self: left;
+  align-self: center;
+}
+
+#home-part3{
+  grid-column: 2/3;
+  grid-row: 5/6;
+  text-align: center;
+  justify-self: left;
+  align-self: center;
+}
+
+#home-part3 p{
+  width: 600px;
+}
+
+#home-part3-img{
+  grid-column: 1/2;
+  grid-row: 5/6;
+  justify-self: right;
+  align-self: center;
+  padding-bottom: 75px;
+}
+/****************************************************************************
+* END HOME PAGE STYLING
+****************************************************************************/
+
+/****************************************************************************
+* START PROFILE STYLING
+****************************************************************************/
+#profile-body{
+  background-color: #000000;
+  background-image: url("https://cdn.glitch.com/f4a3b7ce-9e91-4f32-b9b3-4ea09aa0309f%2Fbrushed-alum-dark.png?v=1606268444597");
+  display: fixed;
+}
+
+#profile-content{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: .5em 1.5em;
+  /* background-color: #343232; */
+  background-color: rgba(0, 0, 0, .55);
+}
+
+#profile-picture{
+  position: absolute;
+  padding-left: 35px;
+  padding-top: 25px;
+  z-index: 1;
+}
+
+#profile-name{
+  position: absolute;
+  z-index: 1;
+  padding-top: 195px;
+  padding-left: 30px
+}
+
+#profile-settings-icon{
+  position: absolute;
+  z-index: 1;
+  padding-top: 30px;
+  padding-left: 880px;
+}
+
+#profile-banner{
+  z-index: 0;
+}
+
+#profile-navbar ul{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  list-style: none;
+  background-color: rgba(0, 0, 0, .7);
+  height: 100px;
+  align-items: center;
+  justify-items: center;
+}
+
+#fav-artists h2{
+  padding-left: 20px;
+}
+
+#artist-widget1{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 30px auto;
+  background-color: rgba(0, 0, 0, .5);
+  border-left: 2px solid #343232;
+  border-right: 2px solid #343232;
+  border-top: 2px solid #343232;
+  border-bottom: 1px solid #343232;
+}
+
+#artist-widget2{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 30px auto;
+  background-color: rgba(0, 0, 0, .5);
+  border-left: 2px solid #343232;
+  border-right: 2px solid #343232;
+  border-top: 1px solid #343232;
+  border-bottom: 1px solid #343232;
+}
+
+#artist-widget3{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 30px auto;
+  background-color: rgba(0, 0, 0, .5);
+  border-left: 2px solid #343232;
+  border-right: 2px solid #343232;
+  border-top: 1px solid #343232;
+  border-bottom: 2px solid #343232;
+}
+
+.fav-artist-icon{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  padding-top: 25px;
+  padding-left: 25px;
+}
+
+.fav-artist-name{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  justify-self: left;
+  align-self: center;
+  font-size: 20px;
+}
+
+.header-song-list{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  padding-left: 25px;
+}
+
+.artist-song-list{
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+
+.fav-artist-album{
+  grid-column: 3/4;
+  grid-row: 1/4;
+  justify-self: right;
+  padding-bottom: 75px;
+}
+
+#list-section{
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding-bottom: 60px;
+}
+
+#profile-content footer{
+  display: grid;
+  padding: 0px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 75px;
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+#play-button{
+  justify-self: left;
+  align-self: center;
+  padding-left: 25px;
+}
+
+footer h3{
+  justify-self: center;
+  align-self: center;
+}
+
+#provider-icon{
+  justify-self: right;
+  align-self: center;
+  padding-right: 25px;
+}
+
+/****************************************************************************
+* END PROFILE STYLING
+****************************************************************************/
+
+/****************************************************************************
+* START FEATURES STYLING
+* features background styling
+****************************************************************************/
+#features-content{
+  background: 
+    /* Put a black tint over the background image*/
+    linear-gradient(
+      rgba(0, 0, 0, .55), 
+      rgba(0, 0, 0, .55)
+    ),
+    /* image that goes under the tint */
+    url("https://cdn.glitch.com/f4a3b7ce-9e91-4f32-b9b3-4ea09aa0309f%2Fblack_and_white_concert.jpg?v=1604207444238");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+
+/****************************************************************************
+* features main styling
+****************************************************************************/
+#features-main{
+  display: grid;
+  grid-template-columns: 1fr 75px 1fr;
+  grid-template-rows: repeat(4, auto);
+}
+
+#features-logo-banner{
+  padding-top: 175px;
+  padding-bottom: 75px;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: center;
+}
+
+#features-banner-text{
+  text-align: center;
+  padding-bottom: 125px;
+  grid-column: 1/4;
+  grid-row: 2/3;
+  color: white;
+  font-size: 35px;
+}
+
+#features-list-header{
+  grid-column: 1/4;
+  grid-row: 3/4;
+  text-align: center;
+  align-self: center;
+  background-color: black;
+  width: 100%;
+  padding: 100px 0px;
+}
+
+#features-list1{
+  padding-left: 20px;
+  padding-right: 20px;
+  grid-column: 1/2;
+  grid-row: 4/5;
+  list-style: none;
+  width: 90%;
+  justify-self: center;
+  align-self: center;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+#features-list2{
+  padding-left: 20px;
+  padding-right: 20px;
+  grid-column: 3/4;
+  grid-row: 4/5;
+  list-style: none;
+  width: 90%;
+  justify-self: center;
+  align-self: center;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+/****************************************************************************
+* END FEATURES STYLING
+****************************************************************************/
+
+/****************************************************************************
+* START LOGIN STYLING
+* login background styling
+****************************************************************************/
+#login-body{
+  background-color: #000000;
+  background-image: url("https://cdn.glitch.com/f4a3b7ce-9e91-4f32-b9b3-4ea09aa0309f%2Fbrushed-alum-dark.png?v=1606268444597");
+  display: fixed;
+}
+
+/* login banner styling */
+#login-banner{
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+}
+
+/****************************************************************************
+* Login form styling
+****************************************************************************/
+#login-content form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 500px;
+  /* Form outline */
+  padding: 4em 2em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+#login-content label{
+  display: block;
+  padding-top: 25px;
+}
+
+#login-content input{
+  padding: 5px 0;
+  padding-right: 325px;
+}
+
+#login-content button{
+  display: block;
+  margin-left: 410px;
+  padding: 1em 2em;
+}
+
+#login-content h5{
+  display: inline;
+  width: 200px;
+}
+
+/* login footer styling */
+#login-footer{
+  background: none;
+}
+
+/****************************************************************************
+* END LOGIN STYLING
+****************************************************************************/
+@media screen and (max-width: 900px) { 
+  /* beginning of media query */
+      #home-main, #features-main, .navbar{
+      display: block;
+      text-align: center;
+      }
+
+      main img{
+        width: 100%;
+      }
+
+      #black-bar{
+        display: inline;
+      }
+      
+  /* end of media query */ 
+  }

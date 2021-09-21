@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chords | Home</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body id="home-body">
+    <div id="home-content">
+      <header>
+        <nav id="home-navbar" class="navbar">
+          <a href="index.html"><img class="navbar-logo" 
+          src="https://cdn.glitch.com/f4a3b7ce-9e91-4f32-b9b3-4ea09aa0309f%2Fwhite_logo_transparent_background.png?v=1605810007828" 
+          alt="Chords Logo" height="100" ></a>
+          <ul>
+            <li><a href="#home-p1">The Vision</a></li>
+            <li><a href="profile.html">My Profile</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main id="home-main">
+        <img id="home-logo-banner" 
+          src="https://cdn.glitch.com/f4a3b7ce-9e91-4f32-b9b3-4ea09aa0309f%2Fwhite_logo_transparent_background.png?v=1605810007828" 
+          alt="Chords Logo" width="700" >
+
+        <h2 id="home-banner-text">Discover. Connect. Share.</h2>
+        <div id="home-part1">
+          <h2 id="home-header1">Chords That Bind</h2>
+          <p id="home-p1">
+            We all have moments in life when we wish to share our feelings with 
+            someone else in a way that goes deeper than words. Some turn to poetry, 
+            others turn to art, and the rest of us turn to music. Music is meant 
+            to be shared, and when it is, connections happen. Imagine a place where 
+            you can share the music that tells your story. Chords aims to make that 
+            place a reality. My vision is to create a platform in which you can connect 
+            with your favorite people through the chords of your favorite music.
+          </p>
+        </div>
+
+        <div id="black-bar"></div>
+
+        <div id="home-part2">
+          <h2 id="home-header2">The Vision</h2>
+          <p id="home-p2">
+            Chords is a social media platform designed around celebrating the art of 
+            music and its ability to bring people together. Similar to other social media 
+            platforms, each person will have a profile to represent themself and their taste 
+            in music. Chords isn't meant to replace your favorite music streaming app, in 
+            fact, it is designed to work hand in hand with the streaming app of your choice. 
+            Once connected, all of your playlists will be automatically imported to your 
+            Chords account and then you can start building your profile.
+          </p>
+        </div>
+        <img id="home-part2-img"
+            src="https://cdn.glitch.com/f4a3b7ce-9e91-4f32-b9b3-4ea09aa0309f%2Fcolor_concert.jpg?v=1604207455086" 
+            alt="Artist singing at a concert" width="600">
+
+        <div id="home-part3">
+          <h2 id="home-header3">What to Expect</h2>
+          <p id="home-p3">
+            Obviously, this idea is way too big for a student in their first web development class, 
+            but when I stumbled upon it, I realized that its never been done before! Music and 
+            programming are two of my passions, so I figured that I would turn this assignment into 
+            something that I could be passionate about. The purpose of this website is to help you 
+            catch the vision. The other two associated pages demonstrate what a profile could look 
+            like and some of the features I would like to see included in the application. There is
+            also an example of a login page.
+          </p>
+        </div>
+        <img id="home-part3-img"
+            src="https://cdn.glitch.com/f4a3b7ce-9e91-4f32-b9b3-4ea09aa0309f%2Fconcert_hands.jpg?v=1604207463431" 
+            alt="Crowd of people at a concert waiving their hands in the air" width="600">
+      </main>
+      <footer>
+        <p id="footer-paragraph">
+          &copy; 2020 Chords - Reece Poulsen
+        </p>
+        <a id="site-plan-link" href="site-plan.html">Site plan here</a>
+      </footer>
+    </div>
+  </body>
+</html>
+
+<script>
+  // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()}
+
+// Get the navbar
+let navbar = document.getElementById("home-navbar")
+
+// Get the offset position of the navbar
+var transition_point = navbar.offsetTop
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > transition_point) {
+    navbar.classList.add("navbar-transition")
+  } else {
+    navbar.classList.remove("navbar-transition")
+  }
+} 
+</script>
