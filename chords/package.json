@@ -1,0 +1,19 @@
+{
+  "name": "chords",
+  "version": "1.0.0",
+  "description": "Person Site Project\r Use this as a starting point for your Personal site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^9.0.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.53.0",
+    "webpack-cli": "^4.8.0"
+  }
+}
