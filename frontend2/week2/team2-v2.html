@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Project 1</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        
+        main{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 60%;
+            margin: 0 auto;
+        }
+
+        #leftColumn{
+            grid-column: 1/2;
+            justify-self: center;
+            background-color: gray;
+            width: 100%;
+        }
+
+        .blockDiv{
+            padding: 15px 80px;
+        }
+
+        .operation{
+            padding: 8px 10px;
+        }
+
+        #displayArea{
+            grid-column: 2/3;
+            font-size: 6em;
+            text-align: center;
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Team Project: Calculator</h1>
+    </header>
+    <main>
+        <div id="leftColumn">
+            <div class="blockDiv">
+                <input id="dispInput"type="text"/>
+                <button onclick="display()">Display</button>
+            </div>
+    
+            <div class="blockDiv">
+                <input id="sumInput" type="text">
+                <button onclick="sum()">Sum</button>
+            </div>
+    
+            <div class="blockDiv">
+                <button class="operation" onclick="operation('+')">+</button>
+                <button class="operation" onclick="operation('-')">-</button>
+                <button class="operation" onclick="operation('*')">*</button>
+                <button class="operation" onclick="operation('/')">/</button>
+                <button class="operation" onclick="operation('%')">%</button>
+            </div> 
+        </div>
+
+        <div id="displayArea">0</div>
+    </main>
+    <script>
+        const updateDiv = (num) => {
+            document.getElementById("displayArea").innerHTML = num;
+        };
+
+        const display = () => {
+            const num = document.getElementById("dispInput").value;
+            updateDiv(num);
+        }
+
+        const sum = () => {
+            const num = document.getElementById("sumInput").value;
+            let sum = 0;
+            for(let i = 0; i <= num; i++){
+                sum += i;
+            }
+            updateDiv(sum);
+        }
+
+        const operation = (type) => {
+            const num1 = Number(document.getElementById("dispInput").value);
+            const num2 = Number(document.getElementById("sumInput").value);
+
+            let result = 0;
+            switch(type){
+                case '+':
+                    result = num1 + num2;
+                    break;
+                case '-':
+                    result = num1 - num2;
+                    break;
+                case '*':
+                    result = num1 * num2;
+                    break;
+                case '/':
+                    result = (num1 / num2).toFixed(3);
+                    break;
+                case '%':
+                    result = num1 % num2;
+                    break;
+            }
+            updateDiv(result);
+        }
+    </script>
+</body>
+</html>
