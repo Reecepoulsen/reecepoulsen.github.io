@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chords | Login</title>
-    <link rel="stylesheet" href="../style.css">  </head>
+    <link rel="stylesheet" href="../style.css">
+  </head>
   <body id="login-body">
     <div id="login-content">
         <header>
@@ -15,12 +16,16 @@
         <main>
           <form>
             <h3 id="form-header">Login to access your account</h3>
-            <label for="user-name">Username:</label>
-            <input id="user-name" type="email" name="name" required>
-            <label for="user-password">Password:</label>
-            <input id="user-password" type="password" name="password" required>
+
+            <label for="email">Username:</label>
+            <input id="email" type="email" name="name" required>
+
+            <label for="password">Password:</label>
+            <input id="password" type="password" name="password" required>
+
             <h5>New to Chords? Create an account <a href="profile.html">here</a></h5>
-            <button id="login-btn" type="submit" onclick="login()">Login</button>
+
+            <button id="login-btn">Login</button>
           </form>
         </main>
         <footer id="login-footer">
@@ -30,5 +35,6 @@
           <a href="../index.html">Back to Home page</a>
         </footer>
     </div>
+    <script type="module" src="./login.js"></script>
   </body>
 </html>

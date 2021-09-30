@@ -234,11 +234,28 @@ footer a{
   padding-left: 30px
 }
 
-#profile-settings-icon{
+/* #profile-settings-icon{
   position: absolute;
   z-index: 1;
   padding-top: 30px;
   padding-left: 880px;
+} */
+
+#signout-btn{
+  position: absolute;
+  z-index: 1;
+  margin-top: 30px;
+  margin-left: 850px;
+  padding: 10px 15px;
+  color: white;
+  background-color: rgba(0, 0, 0, .3);
+  border: solid white 1px;
+  border-radius: 15px;
+}
+
+#signout-btn:hover{
+  background-color: rgba(94, 89, 89, 0.3);
+
 }
 
 #profile-banner{
