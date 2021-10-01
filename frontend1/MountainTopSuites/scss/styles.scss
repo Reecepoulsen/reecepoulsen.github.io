@@ -1,8 +1,8 @@
-@import "normalize";
+@use "normalize";
 
-@import "variables";
+@use "variables";
 
-@import "small";
+@use "small";
 
 @media only screen and (min-width: 47.5em){
     @import "medium";

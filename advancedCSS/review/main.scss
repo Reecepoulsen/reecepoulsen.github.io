@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap'); 
+
+// Variables
+$tan: #FAEBD7;
+$blue: #798DF2;
+$medium-size: 45em;
+
+// Mixins
+@mixin breakpoint($break) {
+    @if $break == $medium-size {
+        @media (min-width: $medium-size) {@content;}
+    }
+}
+
+@mixin resets{
+    *{
+        box-sizing: border-box;
+    }
+    
+    img{
+        max-width: 100%;
+    }
+    
+    html{
+        height: 100%;
+    }
+    
+    body{
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+    }
+}
+/* Add some resets  */
+@include resets;
+
+/************************************************************
+* Styling for small view 
+* Colors: blue($blue), tan($tan)
+*
+* Nav Links: normal and visited $tan no underline,
+* active #DEB887, hover: white and underlined
+*
+* Other page links: normal and visited: $blue and no underline, 
+* active: #DEB887, hover: underlined
+*
+* Article title Links: and visited: black and no underline, 
+* active: #DEB887, hover: $blue and underlined
+************************************************************/
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Lora', serif; 
+} 
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header{
+    background-color: $blue;
+    color: $tan;
+    text-align: right;
+    padding: 50px 35px;
+    font-weight: bold;
+}
+
+header {
+    h1{
+        margin: 0px;
+        padding-bottom: 15px;
+    }
+    
+        a{
+            color: $tan;
+            text-decoration: none;
+        }
+    
+        hr{
+            color: $tan;
+        }
+    
+        ul{
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+    
+            li{
+                padding: 10px 0px;
+            }
+    
+            a, a:visited{
+                color: $tan;
+                text-decoration: none;
+            }
+    
+            a:hover{
+                color: white;
+                text-decoration: underline;
+           } 
+        }
+}
+
+.active{
+    color: #DEB887;
+}
+
+main{
+    padding: 40px 20px;
+    background-color: $tan;
+    height: fit-content;
+}
+
+article{
+    background-color: white;
+    padding: 30px;
+    margin: 40px 0px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .15);
+    font-size: 1.1em;
+
+    h2{
+        margin: 10px 0px;
+    }
+    
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $blue;
+        text-decoration: underline;
+    }
+
+    figure{
+        padding-top: 80px;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+}
+
+article:first-of-type{
+    margin: 0px;
+}
+
+.post-date{
+    color: rgba(0, 0, 0, .5);
+    font-weight: bold;
+}
+
+p{
+    a, a:visited {
+        color: $blue;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+/************************************************************
+* Styling for medium view 
+************************************************************/
+@include breakpoint($medium-size){
+    header{
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+    }
+
+    main{
+        margin-left: 250px;
+        padding: 40px 8% 40px 8%;
+    }
+
+    article {
+        margin: 60px 0px;
+
+        figure{
+            padding-top: 60px;
+        }
+    }
+}
