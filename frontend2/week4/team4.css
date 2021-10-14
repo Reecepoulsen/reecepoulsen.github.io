@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(212, 212, 212);
+}
+
+main{
+    margin: 0 auto;
+    width: fit-content;
+    padding-top: 50px;
+}
+
+#board{
+    max-width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    justify-items: center;
+    align-items: center;
+}
+
+.cell{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border: 1.5px solid black;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.cell:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.cell:nth-of-type(1){
+    border-top: none;
+    border-left: none;
+}
+
+.cell:nth-of-type(2){
+    border-top: none;
+}
+
+.cell:nth-of-type(3){
+    border-right: none;
+    border-top: none;
+}
+
+.cell:nth-of-type(4){
+    border-left: none;
+}
+
+.cell:nth-of-type(6){
+    border-right: none;
+}
+
+.cell:nth-of-type(7){
+    border-left: none;
+    border-bottom: none;
+}
+
+.cell:nth-of-type(8){
+    border-bottom: none;
+}
+
+.cell:nth-of-type(9){
+    border-right: none;
+    border-bottom: none;
+}
+
+#resetBtn{
+    padding: 10px 15px;
+    border-radius: 12px;
+    box-shadow: none;
+    border: 1px solid white;
+    background-color: rgb(131, 5, 5);
+    color: white;
+    width: 200px;
+    margin: 20px 50px;
+    font-size: 1.2em;
+}
+
+#resetBtn:hover{
+    background-color: rgb(78, 3, 3);
+    cursor: pointer;
+}
