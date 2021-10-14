@@ -39,9 +39,7 @@ export default class Hikes {
                             </div>
             </div>`;
       return item;
-    }
-
-    
+    }    
 }
 
 
