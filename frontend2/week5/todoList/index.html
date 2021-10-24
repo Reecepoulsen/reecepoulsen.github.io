@@ -5,32 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>Todo List</title>
+    <title>task List</title>
 </head>
 <body>
     <main>
         <div class="wrapper">
-            <h1>Todos</h1>
-            <div class="todos-container">
-                <ul class="todos-list">
-                    <div class="todo">
-                        <p>Example task</p>
-                        <button class="delete-btn">X</button>
-                    </div>
-                </ul>
+            <h1>Todo List</h1>
+            <div class="tasks-container">
+                <ul id="tasks-list"></ul>
                 <div class="btn-bar">
-                    <span id="todo-count">tasks left</span>
-                    <button id="all-btn">All</button>
-                    <button id="active-btn">Active</button>
-                    <button id="comp-btn">Completed</button>
+                    <span id="task-count">0 tasks left</span>
+                    <button id="all-btn" onclick="showAll()">All</button>
+                    <button id="todo-btn" onclick="showIncomplete()">Todo</button>
+                    <button id="comp-btn" onclick="showCompleted()">Completed</button>
                 </div>
             </div>
             <div class="input-container">
-                <input type="text" placeholder="Add to your list">
+                <input id="new-task-input" type="text" placeholder="Add to your list">
                 <button id="add-btn">+</button>
             </div>
         </div>
     </main>
-    <script src="todo.js"></script>
+    <script src="task.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 }
 
 .wrapper{
-    background-color: lightgray;
+    // background-color: lightgray;
     display: grid;
     grid-template-rows: 80px 1fr 80px;
     height: 500px;
@@ -11,31 +11,45 @@
     min-width: 450px;
     margin: 0 auto;
     justify-items: center;
+    font-family: sans-serif;
 }
 
-.todos-container{
+button{
+    cursor: pointer;
+}
+
+.tasks-container{
     background-color: white;
     width: 80%;
     display: grid;
-    grid-template-rows: 1fr 50px;
+    grid-template-rows: 300px 50px;
     border: solid black 2px;
     
-    .todos-list{
-        background-color: aquamarine;
+    #tasks-list{
         padding: 0px;
         margin: 0px;
-        overflow: scroll;
-        overflow-x: hidden;
-        overflow-y: hidden;
+        overflow: auto;
+        height: 100%;
     }
 
-    .todo{
+    .task{
         display: flex;
         padding: 8px 10px;
         border-bottom: solid black 1px;
-        background-color: lightblue;
+
     }
 
+    .completed{
+        background-color: lightgray;
+        p{
+            text-decoration: line-through;
+        }
+    }
+
+    .hideTask{
+        display: none;
+    }
+    
     p{
         display: inline;
         margin: 0px;
@@ -87,5 +101,12 @@
         border-radius: 12px;
         border: solid black 1px;
         width: 250px;
+    }
+
+    #add-btn{
+        padding: 8px 12px;
+        border-radius: 12px;
+        border: 1px solid black;
+        margin-left: 10px;
     }
 }
