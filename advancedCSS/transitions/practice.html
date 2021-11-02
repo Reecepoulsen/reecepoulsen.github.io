@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Please select your favorite color of the ones shown below.</h1>
+<form>
+  <ul>
+      <li>
+          <input type="radio" name="favecolor" id="red"><label for="red">Red</label>
+      </li>
+      <li>
+          <input type="radio" name="favecolor" id="yellow"><label for="yellow">Yellow</label>
+      </li>
+      <li>
+          <input type="radio" name="favecolor" id="blue"><label for="blue">Blue</label>
+      </li>
+  </ul>
+  <div id="thanks" hidden>Thank you for selecting your favorite color.</div>
+  <button type="reset">Reset</button>
+</form>
+<script>
+    const changeHandler = function() {
+        // Select unchecked radio buttons. Returns a NodeList.
+        const notfave = document.querySelectorAll('input:not(:checked)');
+
+        // Create a new array from the NodeList
+        notfave.forEach(function(item) {
+            // Find the parent node, and add a 'fade' class
+            item.parentNode.classList.add('fade');
+        });
+    };
+
+    const form = document.querySelector('form');
+    form.addEventListener('change', changeHandler);
+
+    const transitionendHandler = function(domEvent) {
+        domEvent.target.setAttribute('hidden', '');
+        document.getElementById('thanks').removeAttribute('hidden');
+    };
+
+    document.addEventListener('transitionend', transitionendHandler);
+</script>
+</body>
+</html>

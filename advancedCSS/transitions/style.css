@@ -1,0 +1,6 @@
+li {
+    transition: 500ms;
+}
+.fade {
+    opacity: 0;
+}

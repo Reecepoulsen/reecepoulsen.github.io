@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    display: grid;
+    grid-template-rows: 75px 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url("./team/stars.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+header{
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    border-bottom: solid #FEE918 3px;
+}
+
+h1, h2{
+    text-align: center;
+    color: #FEE918;
+}
+
+#content-container{
+    background-color: rgba(0, 0, 0, .6);
+    width: 300px;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+#people-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    color: #FEE918;
+}
+
+#people-list li{
+    padding: 10px 0px;
+}
+
+#people-list li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+#buttons{
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#anotherDiv{
+    color: #FEE918;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#anotherDiv p{
+    margin: 0;
+    padding: 10px 0px;
+}
+
+#anotherDiv h2{
+    grid-column: span 2;
+}
+
+button{
+    background: none;
+    border: solid #FEE918 1px;
+    border-radius: 8px;
+    color: #FEE918; 
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #FEE918;
+    color: black;
+}
