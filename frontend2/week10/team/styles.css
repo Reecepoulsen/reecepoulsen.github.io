@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: cornflowerblue;
     color: white;
 }
@@ -10,7 +10,6 @@ h1, h2{
 
 h1:hover, h2:hover{
     text-align: center;
-    /* width:1000px; */
     transform: scale(5);
     background-color: red;
 }
@@ -52,4 +51,4 @@ p {
         transform: translateY(10px);
         background-color: red;
     }
-}
+} */
