@@ -1,0 +1,55 @@
+$gray: #888;
+
+.card{
+    width: 320px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: $gray 2px 2px 5px;
+    border-radius: 4px;
+    font-family: sans-serif;
+
+    &__content{
+        padding: 1em;
+    }
+
+    &__tagList{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__title{
+        margin-bottom: 5px;
+    }
+
+    &__date{
+        margin:0;
+        margin-bottom: 10px;
+        color: $gray;
+    }
+    
+    a{
+        color: blue;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 500px){
+    .card{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 500px;
+        &__image{
+            width: 90%;
+        }
+        &__content{
+            padding: 1.4em;
+        }
+    }
+
+
+
+}
+

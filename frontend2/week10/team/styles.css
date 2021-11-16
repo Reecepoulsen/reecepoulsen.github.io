@@ -1,0 +1,55 @@
+body {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+h1, h2{
+    text-align: center;
+    transition: all 100ms;
+}
+
+h1:hover, h2:hover{
+    text-align: center;
+    /* width:1000px; */
+    transform: scale(5);
+    background-color: red;
+}
+
+ul {
+    padding: 0.5rem;
+    border: 15px solid gold;
+    border-radius: 50%;
+    background-color: rgba(0,0,0, .7);
+    animation: quake 10ms infinite linear;
+    animation-direction: alternate;
+}
+
+li{
+    padding: 10px 0px;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+p {
+    padding: 10px;
+    background-color: lightgray;
+    color: black;
+    border: 1px dashed red;
+    animation: quake 10ms infinite linear;
+    animation-direction: alternate;
+}
+
+@keyframes quake {
+    0% {
+        transform: translateX(-10px);
+        transform: translateY(-10px);
+        background-color: white;
+    }
+    100% {
+        transform: translateX(10px);
+        transform: translateY(10px);
+        background-color: red;
+    }
+}
