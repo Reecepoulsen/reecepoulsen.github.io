@@ -1,0 +1,479 @@
+@import 'typography';
+@import 'icons';
+
+$sm-break: 48em;
+$med-break: 515px;
+$medLg-break: 785px;
+$lg-break: 1000px;
+// colors
+$dark-gray: #727272;
+$med-gray: #b4b3b5;
+$light-gray: #eaeaea;
+$barely-gray: #F8F9FA;
+$body-font: #020202;
+$link-blue: #0177B9; //why do we have both of these blues?
+$byui-blue: #0176B7;
+$blue-hover: #E1E6EA;
+
+/***********************************************************
+* Utility classes
+***********************************************************/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {max-width: 100%;}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'BYUI Open Sans';
+  overflow-x: hidden;
+}
+
+a, a:visited{
+  text-decoration: none;
+  color: $link-blue;
+}
+
+/***********************************************************
+* Nav/Header styling
+***********************************************************/
+header{background-color: $byui-blue;}
+
+.site-banner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  a{
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+  }
+  
+  &__left{
+    background-color: black;
+    padding: 10px;
+  }
+
+  &__right{
+    margin-right: 4%;
+
+    a{font-size: 2.1em;}
+  }
+
+  form{display: none;}
+}
+
+
+.headerContainer{
+  background-color: $light-gray;
+  border-bottom: solid 1px $dark-gray;
+}
+
+.header{
+  max-width: 1200px;
+  padding: 15px;
+  margin: 0 auto;
+
+  &-text{
+    font-weight: 300;
+    font-size: 1.25em;
+    width: 80%;
+    margin: 0 0 0 22%;
+  }
+}
+
+/***********************************************************
+* Interest Section styling
+***********************************************************/
+.interestGridContainer{
+  display: grid;
+  grid-template-columns: 4% 1fr 4%;
+  row-gap: 35px;
+  margin-top: 35px;
+}
+
+.blueBtn{
+  background-color: $byui-blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 25px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: .95em;
+  width: fit-content;
+
+  &:hover{
+    cursor: pointer;
+    background-color: darken($byui-blue, 8);
+  }
+}
+
+.covidBox{
+  grid-column: 2/3;
+  display: grid;
+  justify-items:center;
+  background-color: black;
+  padding: 20px;
+
+  &-text{
+    color: white;
+    text-align:center;
+    font-weight: 300;
+    width: 60%;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  &-updateBtn{margin: 0 auto;}
+}
+
+.heroContainer{
+  grid-column: 2/3;
+
+  img:hover{cursor: pointer;}
+}
+
+.card{
+  grid-column: 2/3;
+  border: 1px solid $med-gray;
+  cursor: pointer;
+
+  &-textContainer{padding: 5px 15px 8px 15px;}
+}
+
+.linkPlusArrow{
+  display: flex;
+  justify-content: space-between;
+  font-size: .95em;
+
+  span{
+    font-size: .7em;
+    font-weight: lighter;
+    transform: translateY(25%);
+  }
+}
+
+/***********************************************************
+* Links section styling
+***********************************************************/
+.linksGridContainer{
+  display: grid;
+  grid-template-columns: 4% 1fr 4%;
+  row-gap: 35px;
+  margin-top: 35px;
+}
+
+.getInfoBtn{
+  grid-column: 2/3;
+  display: flex;
+  justify-content: space-between;
+  background-color: $light-gray;
+  border-radius: 4px;
+  border: 1px solid $med-gray;
+  padding: 10px 25px;
+  text-align: left;
+  font-weight: bold;
+  font-size: .95em;
+
+  &:hover{cursor: pointer;}
+}
+
+.linkList{
+  grid-column: 2/3;
+  height: fit-content;
+
+  h2{
+    margin: 0;
+    padding: 8px 20px;
+    background-color: $dark-gray;
+    color: white;
+    font-weight: lighter;
+    font-size: 1.3em;
+  }
+
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li{
+      padding: 8px 20px;
+      border-bottom: solid 1px $med-gray;
+    }
+  }
+
+  &__structured{
+    background-color: $barely-gray;
+
+    li{
+      border: 1px solid $med-gray;
+      border-top: none;
+
+      &:hover{background-color: $blue-hover;}
+    }
+  }
+
+  &__floating{
+    h2{background-color: $byui-blue;}
+
+    a{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+      color: $body-font;
+      font-size: .8em;
+    }
+
+    li:hover{
+      background-color: $light-gray;
+
+      a{color: $link-blue;}
+    }
+
+    &-date{font-weight: bold;}
+
+    &-dash{
+      text-align: right;
+      width: 10%;
+    }
+
+    &-activity{width: 65%;}
+  }
+}
+
+/***********************************************************
+* Newsroom section styling
+***********************************************************/
+.newsroomGridContainer{
+  display: grid;
+  grid-template-columns: 4% 1fr 4%;
+  margin-top: 35px;
+}
+
+.articleSnippet{
+  grid-column: 2/3;
+  border-top: solid 1px $med-gray;
+  padding-top: 15px;
+  padding-bottom: 20px;
+
+  &-img{display: none;}
+
+  &-date{
+    font-size: .65em;
+    font-weight: bold;
+  }
+
+  &-title{
+    margin: 5px 0px;
+    font-size: 1.1em;
+    line-height: 1em;
+  }
+
+  &-text{color: $dark-gray;}
+}
+
+.newsroomBtn{
+  grid-column: 2/3;
+  justify-self: right;
+  margin-bottom: 10px;
+}
+
+/***********************************************************
+* Devo section styling
+***********************************************************/
+.devo{
+  display: grid;
+  grid-template-columns: 4% 1fr 4%;
+  margin-top: 35px;
+}
+
+.devoCard{
+  border-radius: 8px;
+  overflow: hidden;
+
+  img:hover{cursor: pointer;}
+
+  &:hover{cursor: default;}
+
+  &-textContainer{padding: 20px;}
+
+  &-title{margin: 0;}
+
+  &-date{
+    font-weight: bold;
+    font-size: .8em;
+  }
+
+  &-text{font-size: .75em;}
+
+  &-btn{margin-top: 0;}
+}
+
+.contactBtn{
+  height: 65px;
+  width: 65px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border: solid 1px darken($byui-blue, 5);
+  border-radius: 50%;
+  background-color: $byui-blue;
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2em;
+}
+
+footer{
+  margin-top: 100px;
+  display: grid;
+  justify-items: center;
+
+  .taylor-graphic{margin: 0 auto;}
+
+  .footer-bar{
+    height: 65px;
+    width: 100%;
+    border-top: solid 1px $med-gray;
+  
+    &__gray{
+      background-color: $light-gray;
+      grid-row: 2/3;
+    }
+  
+    &__blue{background-color: $byui-blue;}
+  }
+}
+
+/***********************************************************
+* Medium View styling
+***********************************************************/
+@media screen and (min-width: $med-break) {
+  .card{
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+/***********************************************************
+* Medium/Large View styling
+***********************************************************/
+@media screen and (min-width: $medLg-break) {
+  .site-banner{
+    height: 63.5px;
+
+    &__left{
+      margin-left: 35px;
+      padding: 20px 14px;
+      transform: translateY(10px);
+    }
+  }
+
+  .headerContainer{border: none;}
+
+  .header{
+    &-text{
+      margin-top: 15px;
+      margin-left: 20px;
+      font-size: 1.8em;
+    }
+  }
+
+  main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 35px;
+    padding: 0px 35px;
+  }
+
+  .interestGridContainer{
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 35px;
+  }
+
+  .covidBox{
+    grid-column: span 3;
+    align-items: center;
+
+    &-text{width: fit-content;}
+  }
+
+  .heroContainer{grid-column: span 3;}
+
+  .card{
+    grid-column: span 1;
+    grid-row: 3/4;
+  }
+
+  .newsroomGridContainer{grid-template-columns: 1fr;}
+
+  .articleSnippet{
+    display: flex;
+    &-img{
+      display: block;
+      max-width: 25%;
+      height: fit-content;
+      margin-right: 30px
+    }
+  }
+
+  .linksGridContainer{
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 270px 1fr;
+  }
+
+  .getInfoBtn{grid-column: 1/2;}
+
+  .linkList{grid-column: 1/2;}
+
+  .devo{
+    grid-template-columns: 1fr;
+
+    &Card{
+      grid-row: 1/2;
+      height: fit-content;
+    }
+  }
+}
+
+/***********************************************************
+* Large View styling
+***********************************************************/
+@media screen and (min-width: $lg-break) {
+  main{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .covidBox{
+    grid-template-columns: 2fr 1fr;
+    &-text{font-size: 2em;}
+  }
+
+  .getInfoBtn{height: fit-content;}
+}
