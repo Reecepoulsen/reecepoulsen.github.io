@@ -48,6 +48,10 @@ body{
   overflow-x: hidden;
 }
 
+main{
+  padding: 35px 0px;
+}
+
 a, a:visited{
   text-decoration: none;
   color: $link-blue;
@@ -62,7 +66,7 @@ header{background-color: $byui-blue;}
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1225px;
   margin: 0 auto;
   
   a{
@@ -92,7 +96,7 @@ header{background-color: $byui-blue;}
 }
 
 .header{
-  max-width: 1200px;
+  max-width: 1225px;
   padding: 15px;
   margin: 0 auto;
 
@@ -111,7 +115,7 @@ header{background-color: $byui-blue;}
   display: grid;
   grid-template-columns: 4% 1fr 4%;
   row-gap: 35px;
-  margin-top: 35px;
+  // margin-top: 35px;
 }
 
 .blueBtn{
@@ -136,7 +140,7 @@ header{background-color: $byui-blue;}
   display: grid;
   justify-items:center;
   background-color: black;
-  padding: 20px;
+  padding: 15px 20px;
 
   &-text{
     color: white;
@@ -183,14 +187,14 @@ header{background-color: $byui-blue;}
   display: grid;
   grid-template-columns: 4% 1fr 4%;
   row-gap: 35px;
-  margin-top: 35px;
+  // margin-top: 35px;
 }
 
 .getInfoBtn{
   grid-column: 2/3;
   display: flex;
   justify-content: space-between;
-  background-color: $light-gray;
+  background-color: $barely-gray;
   border-radius: 4px;
   border: 1px solid $med-gray;
   padding: 10px 25px;
@@ -271,7 +275,6 @@ header{background-color: $byui-blue;}
 .newsroomGridContainer{
   display: grid;
   grid-template-columns: 4% 1fr 4%;
-  margin-top: 35px;
 }
 
 .articleSnippet{
@@ -350,7 +353,7 @@ header{background-color: $byui-blue;}
 }
 
 footer{
-  margin-top: 100px;
+  margin-top: 80px;
   display: grid;
   justify-items: center;
 
@@ -408,7 +411,7 @@ footer{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 35px;
-    padding: 0px 35px;
+    padding: 35px;
   }
 
   .interestGridContainer{
@@ -453,6 +456,7 @@ footer{
 
   .devo{
     grid-template-columns: 1fr;
+    margin-top: 0px;
 
     &Card{
       grid-row: 1/2;
@@ -466,7 +470,7 @@ footer{
 ***********************************************************/
 @media screen and (min-width: $lg-break) {
   main{
-    max-width: 1200px;
+    max-width: 1225px;
     margin: 0 auto;
   }
 
