@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 11 Team Activity</title>
+    <style>
+        form input {
+            margin: 0.5em 0;
+            font-size: 1.4em;
+            background-image: linear-gradient(blue, red);
+            width: 300px;
+          }
+          form button {
+            font-size: 1.2em;
+            padding: 0.4em;
+            background-image: linear-gradient(red, blue);
+            border: 1px solid gray;
+            border-radius: 15px;
+          }
+          form button:hover {
+              background-image: linear-gradient(blue, red);
+              cursor: pointer;
+          }
+          input:invalid {
+            box-shadow: 0 0 5px 1px red;
+          }
+          .hidden{
+              display: none;
+          }
+    </style>
+</head>
+<body>
+    <h1>Week 11 Team Activity</h1>
+    <div id="errors" class="errors hidden"></div>
+    <main>
+        <!-- http://127.0.0.1:3000/login -->
+        <div id="login">
+            <form>
+                <label for="email-input">Email</label>
+                <input id="email-input" type="email" placeholder="Email">
+                <label for="password-input">Password</label>
+                <input  id="password-input" type="password" placeholder="Password">
+                <button class="submit-btn" type="button">Login</button>
+            </form>
+        </div>
+        <ul id="post-list"></ul>
+    </main>
+    <script src="./week11.js" type="module"></script>
+    <script src="./auth.js" type="module"></script>
+</body>
+</html>
