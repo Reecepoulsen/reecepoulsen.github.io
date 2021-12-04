@@ -1,0 +1,99 @@
+/*************************************************************
+* A block is a skeletal component or organisational structure. 
+* To compare it to common user interface elements: it is a 
+* card element or a button element.
+* A block is skeletal because by the time you get to the 
+* block-level in CUBE CSS, most of the work has already been 
+* done by the global CSS, composition and utility layers.
+* This creates a light, but specific group of rules that only 
+* apply in that context.
+*************************************************************/
+
+.b-logo, .b-main-nav__toggle{
+    position: fixed;
+    top: 75px;
+    left: 50%;
+}
+
+// Logo
+.b-logo{
+    background-color: $scarlett;
+    height: $logo-size;
+    width: $logo-size;
+    border-radius: $logo-size / 2.4;
+    transform: translate(-50%) rotate(30deg);
+    z-index: 3;
+}
+
+.b-main-nav__toggle{
+    z-index: 4;
+    height: $logo-size;
+    width: $logo-size;
+    opacity: 0;
+    margin: 0;
+    transform: translate(-50%) rotate(30deg);
+    cursor: pointer;
+}
+
+.b-main-nav{
+    display: none;
+    a:link, a:visited{
+        color: $light;
+    }
+
+    ul{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        list-style: none;
+        li{
+            padding: 5px 0px;
+        }
+    }
+    &__nav{
+        font-size: calc(var(--s1) * 1.15);
+        transform: translateY(75px);
+    }
+    &__alt-nav{
+        transform: translateY(-80px);
+    }
+}
+
+.b-main-nav__toggle:checked{
+    & ~ .b-main-nav__logo .b-logo {
+        background-color: $light;
+    }
+    & ~ .b-main-nav{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background-color: $scarlett;
+    }
+}
+
+
+.b-art-nav{
+    a:link{
+        color: $font-color;
+    }
+    a:hover{
+        color: $scarlett;
+    }
+}
+
+// picture card
+// Art tiles: portrait is 35vw wide, landscape is 50vw wide,
+// border: 2vw (mobile), 1.4vw (large). And I'll give you 
+// this as well...box-shadow: -4px 4px 17px 13px rgb(0 0 0 / 8%);
+.b-art-tile{
+    background-color: $light;
+    margin: 0;
+    padding: 1.4vw;
+    box-shadow: -4px 4px 17px 13px rgba(0, 0, 0, .08);
+}

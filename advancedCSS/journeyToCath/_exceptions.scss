@@ -1,0 +1,29 @@
+/*************************************************************
+* The last part of CUBE CSS is exceptions. An exception is a 
+* deviation from the rules outlined in a block.
+* Usually, an exception is related to a state change. 
+* For example: you might have a “reversed” state or an 
+* “inactive” state.
+*************************************************************/
+
+// Add Series
+.e-add-series{
+    @include breakpoint(medium){
+        position: relative;
+        &:after{
+            content: 'Series';
+            font-family: $body-font;
+            font-size: var(--s1);
+            font-weight: lighter;
+            position: absolute;
+            top: 0;
+            right: -100px;
+        }
+    }
+}
+
+// active
+.e-active{
+    padding: 0px 5px 15px 5px;
+    border-bottom: solid black 1px;
+}

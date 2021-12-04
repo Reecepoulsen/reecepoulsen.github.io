@@ -1,0 +1,25 @@
+/*************************************************************
+* A utility, in the context of CUBE CSS, 
+* is a CSS class that does one job and does that one job well.
+* This CSS class—more often than not—will have only one 
+* CSS property defined, such as a background colour. 
+* It might also have a few CSS properties defined, 
+* in a concise group
+*************************************************************/
+
+// Flexbox with right spacing
+// span full length of grid
+// box-shadow
+// center in grid
+
+.u-portrait{
+    width: 35vw;
+}
+
+.u-landscape{
+    width: 50vw;
+}
+
+.u-horizontal-list{
+    @include horizontal-list();
+}

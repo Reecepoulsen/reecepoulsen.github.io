@@ -1,0 +1,335 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+:root {
+  --ratio: 1.5;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+}
+
+/*************************************************************
+* Global Styles
+*************************************************************/
+html {
+  font-size: 18px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica", "Arial", "sans-serif";
+  font-weight: 100;
+  color: #222;
+  background-color: #FDFBFB;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+h1, h2, h3 {
+  font-family: "Old Standard TT", serif;
+  font-weight: normal;
+  letter-spacing: -1px;
+}
+
+h1 {
+  font-size: var(--s3);
+  text-align: center;
+  margin: 0;
+}
+
+@media (min-width: 31em) {
+  h1 {
+    font-size: 10vw;
+  }
+}
+
+@media (min-width: 60em) {
+  h1 {
+    font-size: var(--s5);
+  }
+}
+
+a:link, a:visited {
+  color: #222;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FE3233;
+}
+
+footer {
+  font-size: calc(var(--s-1) * 1.2);
+}
+
+/*************************************************************
+* What should the composition layer do?
+*   Provide high-level, flexible layouts
+*   Determine how elements interact with each other
+*   Create consistent flow and rhythm
+*
+* What shouldn’t the composition layer do?
+*   Provide visual treatment such as colour or font style
+*   Provide decorative styles such as shadows and patterns
+*   Force a browser to generate a pixel-perfect layout instead of a flexible, progressive layout
+**************************************************************/
+.c-main-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 80vw 1fr;
+      grid-template-columns: 1fr 80vw 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 200px;
+}
+
+.c-span-screen {
+  grid-column: 1/-1;
+}
+
+main {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.c-img-grid {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  margin-top: 50px;
+  -ms-grid-columns: (1fr)[9];
+      grid-template-columns: repeat(9, 1fr);
+}
+
+@media (min-width: 60em) {
+  .c-img-grid {
+    margin-top: 117px;
+    -webkit-transform: translate(-30px);
+            transform: translate(-30px);
+  }
+}
+
+.c-img-grid .b-art-tile:nth-of-type(1) {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-column: 3/7;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  grid-row: 1/6;
+}
+
+.c-img-grid .b-art-tile:nth-of-type(2) {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-column: 5/9;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 5;
+  grid-row: 5/10;
+}
+
+@media (min-width: 60em) {
+  .c-img-grid .b-art-tile:nth-of-type(2) {
+    -webkit-transform: translate(-40px);
+            transform: translate(-40px);
+  }
+}
+
+.c-img-grid .b-art-tile:nth-of-type(3) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 6;
+  grid-column: 2/8;
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 3;
+  grid-row: 9/12;
+  z-index: 1;
+}
+
+footer {
+  margin-top: 15vh;
+  margin-bottom: 10vh;
+}
+
+/*************************************************************
+* A utility, in the context of CUBE CSS, 
+* is a CSS class that does one job and does that one job well.
+* This CSS class—more often than not—will have only one 
+* CSS property defined, such as a background colour. 
+* It might also have a few CSS properties defined, 
+* in a concise group
+*************************************************************/
+.u-portrait {
+  width: 35vw;
+}
+
+.u-landscape {
+  width: 50vw;
+}
+
+.u-horizontal-list {
+  list-style-type: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.u-horizontal-list > * + * {
+  margin-left: var(--s0);
+  margin-top: 0;
+}
+
+/*************************************************************
+* A block is a skeletal component or organisational structure. 
+* To compare it to common user interface elements: it is a 
+* card element or a button element.
+* A block is skeletal because by the time you get to the 
+* block-level in CUBE CSS, most of the work has already been 
+* done by the global CSS, composition and utility layers.
+* This creates a light, but specific group of rules that only 
+* apply in that context.
+*************************************************************/
+.b-logo, .b-main-nav__toggle {
+  position: fixed;
+  top: 75px;
+  left: 50%;
+}
+
+.b-logo {
+  background-color: #FE3233;
+  height: 54px;
+  width: 54px;
+  border-radius: 22.5px;
+  -webkit-transform: translate(-50%) rotate(30deg);
+          transform: translate(-50%) rotate(30deg);
+  z-index: 3;
+}
+
+.b-main-nav__toggle {
+  z-index: 4;
+  height: 54px;
+  width: 54px;
+  opacity: 0;
+  margin: 0;
+  -webkit-transform: translate(-50%) rotate(30deg);
+          transform: translate(-50%) rotate(30deg);
+  cursor: pointer;
+}
+
+.b-main-nav {
+  display: none;
+}
+
+.b-main-nav a:link, .b-main-nav a:visited {
+  color: #FEFFFE;
+}
+
+.b-main-nav ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  list-style: none;
+}
+
+.b-main-nav ul li {
+  padding: 5px 0px;
+}
+
+.b-main-nav__nav {
+  font-size: calc(var(--s1) * 1.15);
+  -webkit-transform: translateY(75px);
+          transform: translateY(75px);
+}
+
+.b-main-nav__alt-nav {
+  -webkit-transform: translateY(-80px);
+          transform: translateY(-80px);
+}
+
+.b-main-nav__toggle:checked ~ .b-main-nav__logo .b-logo {
+  background-color: #FEFFFE;
+}
+
+.b-main-nav__toggle:checked ~ .b-main-nav {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #FE3233;
+}
+
+.b-art-nav a:link {
+  color: #222;
+}
+
+.b-art-nav a:hover {
+  color: #FE3233;
+}
+
+.b-art-tile {
+  background-color: #FEFFFE;
+  margin: 0;
+  padding: 1.4vw;
+  -webkit-box-shadow: -4px 4px 17px 13px rgba(0, 0, 0, 0.08);
+          box-shadow: -4px 4px 17px 13px rgba(0, 0, 0, 0.08);
+}
+
+/*************************************************************
+* The last part of CUBE CSS is exceptions. An exception is a 
+* deviation from the rules outlined in a block.
+* Usually, an exception is related to a state change. 
+* For example: you might have a “reversed” state or an 
+* “inactive” state.
+*************************************************************/
+@media (min-width: 31em) {
+  .e-add-series {
+    position: relative;
+  }
+  .e-add-series:after {
+    content: 'Series';
+    font-family: "Helvetica", "Arial", "sans-serif";
+    font-size: var(--s1);
+    font-weight: lighter;
+    position: absolute;
+    top: 0;
+    right: -100px;
+  }
+}
+
+.e-active {
+  padding: 0px 5px 15px 5px;
+  border-bottom: solid black 1px;
+}
+/*# sourceMappingURL=styles.css.map */

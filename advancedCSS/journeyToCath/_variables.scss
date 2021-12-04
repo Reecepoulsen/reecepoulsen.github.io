@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+$base-font-size: 18px;
+$headline-font: 'Old Standard TT', serif;
+$body-font: "Helvetica", "Arial", "sans-serif";
+$font-color: #222;
+$logo-size: 54px;
+
+$scarlett: #FE3233;
+$eggshell: #FDFBFB;
+$light: #FEFFFE;
+
+$break-small: 26em;
+$break-medium: 31em;
+$break-large: 60em;
+
+@mixin breakpoint($break) {
+    @if $break == large {
+      @media (min-width: $break-large) {
+        @content;
+      }
+    } @else if $break == medium {
+      @media (min-width: $break-medium) {
+        @content;
+      }
+    } @else if $break == small {
+      @media (min-width: $break-small) {
+        @content;
+      }
+    } @else {
+      @media ($break) {
+        @content;
+      }
+    }
+}
+
+// utility mixins
+@mixin horizontal-list($spacing: var(--s0)) {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    & > *+* {
+        margin-left: $spacing;
+        margin-top: 0;
+    }
+}
+
+@mixin vertical-list($spacing: var(--s-3)){
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > *+*{
+        margin-top: $spacing;
+        margin-left: 0;
+    }
+}
+
+// establish sizing ratios from https://every-layout.dev/rudiments/modular-scale/
+:root {
+    --ratio: 1.5;
+    --s-5: calc(var(--s-4) / var(--ratio));
+    --s-4: calc(var(--s-3) / var(--ratio));
+    --s-3: calc(var(--s-2) / var(--ratio)); // 5px
+    --s-2: calc(var(--s-1) / var(--ratio)); // 8px
+    --s-1: calc(var(--s0) / var(--ratio)); // 12px
+    --s0: 1rem; // 18px
+    --s1: calc(var(--s0) * var(--ratio)); // 27px
+    --s2: calc(var(--s1) * var(--ratio)); // 40px
+    --s3: calc(var(--s2) * var(--ratio)); // 60px
+    --s4: calc(var(--s3) * var(--ratio));
+    --s5: calc(var(--s4) * var(--ratio));
+}
+
