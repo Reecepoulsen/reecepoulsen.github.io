@@ -68,7 +68,7 @@ export class TileBuilder{
                 <div class="tile_info-biography">
                     <h3>Biography</h3>
                     <ul class="tile_info-list">
-                        <li>Name: <span id="${charData.id}_name-inp" class="data-inp">${charData.name}</span></li>
+                        <li>Full Name: <span id="${charData.id}_name-inp" class="data-inp">${charData.biography['full-name']}</span></li>
                         <li>Alter Egos: <span id="${charData.id}_alterEgo-inp" class="data-inp">${charData.biography['alter-egos']}</span></li>
                         <li>Birth Place: <span id="${charData.id}_birthPlace-inp" class="data-inp">${charData.biography['place-of-birth']}</span></li>
                         <li>Alignment: <span id="${charData.id}_alignment-inp" class="data-inp">${charData.biography.alignment}</span></li>

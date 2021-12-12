@@ -231,6 +231,10 @@ $logo-size: 30px;
             border-bottom: solid 3px $white;
             width: 125px;
         }
+        &-biography .data-inp{
+            display: block;
+            margin-left: 10px;
+        }
         &-list{
             padding-left: 10px;
             li{

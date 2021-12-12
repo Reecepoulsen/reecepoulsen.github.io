@@ -317,6 +317,11 @@ img {
   width: 125px;
 }
 
+.tile_info-biography .data-inp {
+  display: block;
+  margin-left: 10px;
+}
+
 .tile_info-list {
   padding-left: 10px;
 }
