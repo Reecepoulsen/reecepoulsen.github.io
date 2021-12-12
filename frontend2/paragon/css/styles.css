@@ -35,10 +35,10 @@ h1 {
 }
 
 button {
-  padding: 16px;
+  padding: 10px 12px;
   border-radius: 20px;
   color: #FBFBFB;
-  border: none;
+  border: solid 2px #FBFBFB;
   background-color: #24272C;
   font-size: var(--s0);
 }
@@ -46,6 +46,7 @@ button {
 button:hover {
   background-color: #5263fc;
   color: #FBFBFB;
+  border: solid 2px #5263fc;
 }
 
 a {
@@ -131,11 +132,17 @@ img {
 
 .header-nav #show-all-btn {
   width: 35vw;
+  padding: 16px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
+  border: none;
+}
+
+.header-nav #show-all-btn:hover {
+  border: none;
 }
 
 .header-nav .searchBar {
@@ -339,8 +346,8 @@ img {
 }
 
 .tile .fav-btn {
-  margin-top: 15px;
   grid-column: 1/-1;
+  margin-top: 15px;
   width: 100px;
   -ms-grid-column-align: right;
       justify-self: right;

@@ -22,15 +22,16 @@ h1{
 }
 
 button{
-    padding: 16px;
+    padding: 10px 12px;
     border-radius: 20px;
     color: $white;
-    border: none;
+    border: solid 2px $white;
     background-color: $light-black;
     font-size: var(--s0);
     &:hover{
         background-color: $purple-accent;
         color: $white;
+        border: solid 2px $purple-accent;
     }
 }
 
@@ -98,8 +99,13 @@ $logo-size: 30px;
 
     #show-all-btn{
         width: 35vw;
+        padding: 16px;
         align-self: center;
         justify-self: center;
+        border: none;
+        &:hover{
+            border: none;
+        }
     }
 
     .searchBar{
@@ -249,8 +255,8 @@ $logo-size: 30px;
         }
     }
     .fav-btn{
-        margin-top: 15px;
         grid-column: 1/-1;
+        margin-top: 15px;
         width: 100px;
         justify-self: right;
     }
