@@ -9,7 +9,7 @@ export class TileBuilder{
     async showAll(){
         let container = document.getElementById('tile-grid');
         container.innerHTML = `
-            <p class="loading">Loading Character Data <i class="icofont-spinner-alt-3"></i></p>
+            <p class="loading message">Loading <i class="icofont-spinner-alt-3"></i></p>
         `;
         let charList = await charAPI.getAllCharacters();
         this.buildColumnGrids(charList, container);
