@@ -35,10 +35,10 @@ h1 {
 }
 
 button {
-  padding: 10px 12px;
-  border-radius: 25px;
+  padding: 16px;
+  border-radius: 20px;
   color: #FBFBFB;
-  border: solid 2px #FBFBFB;
+  border: none;
   background-color: #24272C;
   font-size: var(--s0);
 }
@@ -46,7 +46,6 @@ button {
 button:hover {
   background-color: #5263fc;
   color: #FBFBFB;
-  border: solid 2px #5263fc;
 }
 
 a {
@@ -131,6 +130,7 @@ img {
 }
 
 .header-nav #show-all-btn {
+  width: 35vw;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -149,7 +149,7 @@ img {
 }
 
 .header-nav .searchBar input {
-  width: 200px;
+  width: 35vw;
   background: #24272C;
   border: none;
   padding: 16px 50px 16px 25px;

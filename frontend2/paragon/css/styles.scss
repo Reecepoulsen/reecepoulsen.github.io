@@ -22,16 +22,15 @@ h1{
 }
 
 button{
-    padding: 10px 12px;
-    border-radius: 25px;
+    padding: 16px;
+    border-radius: 20px;
     color: $white;
-    border: solid 2px $white;
+    border: none;
     background-color: $light-black;
     font-size: var(--s0);
     &:hover{
         background-color: $purple-accent;
         color: $white;
-        border: solid 2px $purple-accent;
     }
 }
 
@@ -98,6 +97,7 @@ $logo-size: 30px;
     }
 
     #show-all-btn{
+        width: 35vw;
         align-self: center;
         justify-self: center;
     }
@@ -108,7 +108,7 @@ $logo-size: 30px;
         margin: 0 auto;
         position: relative;
         input{
-            width: 200px;
+            width: 35vw;
             background: $light-black;
             border: none;
             padding: 16px 50px 16px 25px;
