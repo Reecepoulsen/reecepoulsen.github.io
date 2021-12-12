@@ -1,6 +1,8 @@
 const TOKEN = 1094500731363376;
 const BASEURL = `https://superheroapi.com/api.php/${TOKEN}/`;
 
+const idSet = new Set(['166', '179', '254'])
+
 export class CharacterAPI{
     constructor(){
         this.characterCount = 731;
@@ -25,8 +27,7 @@ export class CharacterAPI{
         let response = await this.getJSON(BASEURL + `search/${name}`);
         for (let i in response.results){
             let char = response.results[i];
-            if (char.appearance.gender != "Female" && 
-                    char.id != 166 && char.id != 179){
+            if (char.appearance.gender != "Female" && idSet.has(char.id) == false) {
                     results.push(char);
             }
         }
@@ -60,8 +61,7 @@ export class CharacterAPI{
         for(let t in threads){
             let char = await threads[t];
             if (char != undefined){
-                if (char.appearance.gender != "Female" && 
-                    char.id != 166 && char.id != 179){
+                if (char.appearance.gender != "Female" && idSet.has(char.id) == false){
                     results.push(char);
                 }
             }

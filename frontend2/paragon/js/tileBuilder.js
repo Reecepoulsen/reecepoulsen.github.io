@@ -6,17 +6,12 @@ export class TileBuilder{
         this.test = 'blah';
     };
 
-    loading(){
-
-    }
-
     async showAll(){
         let container = document.getElementById('tile-grid');
         container.innerHTML = `
             <p class="loading">Loading Character Data <i class="icofont-spinner-alt-3"></i></p>
         `;
         let charList = await charAPI.getAllCharacters();
-        // this.buildTiles(charList, container);
         this.buildColumnGrids(charList, container);
     }
 
@@ -136,7 +131,6 @@ export class TileBuilder{
             curAccordion.nextElementSibling.style.maxHeight = height;
             flip ? curAccordion.children[2].classList.remove("icofont-rotate-180") :  
                    curAccordion.children[2].classList.add("icofont-rotate-180");
-            
         }
     }
 
@@ -155,6 +149,7 @@ export class TileBuilder{
     }
 
     selectUniverse(charData){
+        // console.log("Select universe for:", charData);
         document.getElementById("marvel").classList.remove("selected-universe")
         document.getElementById("dc").classList.remove("selected-universe")
         document.getElementById("other").classList.remove("selected-universe")
