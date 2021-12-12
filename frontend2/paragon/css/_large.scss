@@ -1,0 +1,25 @@
+@media screen and (min-width: 1400px){
+
+    // body{
+    //     grid-template-columns: 12vw 88vw;
+    // }
+
+    .tile{
+        &_content{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        &_info{
+            &-biography{
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+            &-stats{
+                grid-column: 2/3;
+                grid-row: 1/2;
+                .tile_info-list{
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+}

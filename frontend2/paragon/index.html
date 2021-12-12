@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/icofont/icofont.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Paragon | Home</title>
+</head>
+<body>
+    <aside class="options">
+        <div class="options-catalog">
+            <h3>Catalog</h3>
+            <ul>
+                <li>
+                    <a id="show-all-link">
+                        <i class="icofont-listing-box"></i>Show All
+                    </a>
+                </li>
+                <li>
+                    <a id="refresh-link">
+                        <i class="icofont-spinner-alt-3"></i>Refresh Data
+                    </a>
+                </li>
+            </ul>
+            <h3>Quick Actions</h2>
+            <ul>
+                <li>
+                    <a id="expand-link">
+                        <i class="icofont-expand"></i>Expand All
+                    </a>
+                </li>
+                <li>
+                    <a id="collapse-link">
+                        <i class="icofont-collapse"></i>Collapse All
+                    </a>
+                </li>
+                <li>
+                    <a href="#top">
+                        <i class="icofont-bubble-up"></i>Go to Top
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="options-fav">
+            <h3>Favorites</h2>
+            <ul class="fav-list">
+                <li class="fav"><a href="#">Test</a></li>
+            </ul>
+        </div>
+    </aside>
+    <header>
+        <div class="title-container">
+            <div class="logo">
+                <div class="diamond d-top"></div>
+                <div class="diamond d-left"></div>
+                <div class="diamond d-bottom"></div>
+                <div class="diamond d-right"></div>
+            </div>
+            <h1>Paragon</h1>
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li id="marvel">Marvel</li>
+                <li id="dc">DC</li>
+                <li id="other">Other</li>
+            </ul>
+            <button id="show-all-btn">Show All</button>
+            <div class="searchBar">
+                <input id="search-input" type="text" placeholder="Search">
+                <i class="icofont-search-1"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="tile-grid-wrapper">
+            <div id="tile-grid">
+                <p class="message">Search for a Character or click Show All</p>
+            </div>
+        </section>
+    </main>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>
