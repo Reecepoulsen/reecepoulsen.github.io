@@ -3,8 +3,8 @@ const BASEURL = `https://superheroapi.com/api.php/${TOKEN}/`;
 
 export class CharacterAPI{
     constructor(){
-        // this.characterCount = 731;
-        this.characterCount = 25;
+        this.characterCount = 731;
+        // this.characterCount = 25;
     };
 
     async searchById(id, retry=0){
