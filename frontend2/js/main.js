@@ -44,7 +44,7 @@ const links = [
     {
         label: "Week 11",
         url: "./week11/index.html"
-    }
+    },
     {
         label: "Final Project: Paragon",
         url: "./paragon/index.html"
