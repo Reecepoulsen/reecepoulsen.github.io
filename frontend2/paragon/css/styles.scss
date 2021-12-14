@@ -5,6 +5,18 @@
 *************************************************/
 *{
     box-sizing: border-box;
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    &::-webkit-scrollbar-track {
+    background: $med-black; 
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: $light-black;
+        border-radius: 20px;
+    }
 }
 
 body{
@@ -15,6 +27,8 @@ body{
     color: $white;
     background-color: $med-black;
 }
+
+
 
 h1{
     font-size: var(--s4);
@@ -38,6 +52,7 @@ button{
 a{
     color: $light-gray;
     text-decoration: none;
+    transition: .2s ease color;
     &:visited{
         color: $light-gray;
     }
@@ -170,6 +185,11 @@ $logo-size: 30px;
     i{
         padding-left: 10px;
     }
+}
+
+@keyframes fade-in{
+    from {opacity: 0%;}
+    to {opacity: 100%;}
 }
 
 .tile{

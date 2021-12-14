@@ -20,6 +20,19 @@
           box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #191A1F;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #24272C;
+  border-radius: 20px;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -52,6 +65,8 @@ button:hover {
 a {
   color: #848586;
   text-decoration: none;
+  -webkit-transition: .2s ease color;
+  transition: .2s ease color;
 }
 
 a:visited {
@@ -233,6 +248,24 @@ img {
   padding-left: 10px;
 }
 
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
 .tile {
   background: #24272C;
   padding: 0px 20px;
@@ -403,6 +436,32 @@ img {
   }
   .options li {
     padding: 8px 0px;
+  }
+  .options-fav-header {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .options-fav-header span {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .options-fav-header i {
+    color: #848586;
+    margin: 0;
+  }
+  .options-fav-header i:hover {
+    color: #FBFBFB;
+    cursor: pointer;
+  }
+  .options-fav ul {
+    height: 48vh;
+    overflow-y: scroll;
   }
   header {
     -ms-grid-row: 1;

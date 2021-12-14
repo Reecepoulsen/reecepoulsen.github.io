@@ -1,20 +1,36 @@
 import {CharacterAPI} from './characterAPI.js';
-const charAPI = new CharacterAPI();
+import { ParagonLS } from './localStorage.js';
 
+/************************************************************ 
+* This class handles building and interacting with
+* tiles 
+************************************************************/
 export class TileBuilder{
     constructor(){
-        this.test = 'blah';
+        this.charAPI = new CharacterAPI();
+        this.LS = new ParagonLS();
+        this.favSet = this.LS.initializeFavList();
     };
 
-    async showAll(){
+    /************************************************************ 
+    * Gets all results from api and builds tiles for them
+    ************************************************************/
+    async showAll(refresh=false){
         let container = document.getElementById('tile-grid');
         container.innerHTML = `
             <p class="loading message">Loading <i class="icofont-spinner-alt-3"></i></p>
         `;
-        let charList = await charAPI.getAllCharacters();
+
+        await this.LS.createCharacterCatalog(refresh);
+        let charList = this.LS.getValue('catalog');
         this.buildColumnGrids(charList, container);
     }
 
+    /************************************************************ 
+    * Builds two seperate column grids that live next to each
+    * other in the same parent grid container.
+    * This allows one grid to expand freely from the other
+    ************************************************************/
     buildColumnGrids(charList, container){
         container.innerHTML = '';
         let leftList = [];
@@ -43,14 +59,21 @@ export class TileBuilder{
         this.buildFavListeners();
     }
 
+    /************************************************************ 
+    * Loops through a list of character objects and builds
+    * a tile for each one
+    ************************************************************/
     buildTiles(charList, container) {      
         for (let i in charList){
             let curChar = charList[i]
-            // console.log("Building tile for", curChar);
             this.renderTile(curChar, container);
         }
     }
 
+    /************************************************************ 
+    * Creates an HTMl element that represents a tile for the
+    * Character it is given.
+    ************************************************************/
     renderTile(charData, container){
         // console.log("Render Tile for: ", charData.name);
         let tile = document.createElement('div');
@@ -89,14 +112,26 @@ export class TileBuilder{
             <button class="fav-btn" type="button">Favorite</button>
         </div>
         `;
+        tile.style.opacity = 0;
+        tile.style.animation = "fade-in ease .4s";
+        tile.style.opacity = 100;
         container.appendChild(tile);
+
+        // If a tile is clicked on, choose the appropriate universe
         tile.addEventListener("click", () => this.selectUniverse(charData));
     }
 
+    /************************************************************ 
+    * Attaches accordion functionality once every tile is
+    * built
+    ************************************************************/
     buildAccordions(){
         const accordions = document.querySelectorAll('.accordion');
     
         accordions.forEach((accordion) => {
+            // Important for propogating fav star
+            this.recreateFavorites(accordion);
+
             accordion.addEventListener('click', () => {
                 accordion.classList.toggle('open-accordion');
                 if (accordion.classList.contains('open-accordion')){
@@ -113,6 +148,9 @@ export class TileBuilder{
         });
     }
 
+    /************************************************************ 
+    * Helper for accordions, toggle expand or collapse all
+    ************************************************************/
     expandOrCollapseAll(command){
         let displayType = 'grid';
         let height = 'fit-content'
@@ -134,6 +172,11 @@ export class TileBuilder{
         }
     }
 
+
+    /************************************************************ 
+    * attaches an event listener to each tile's favorite
+    * button
+    ************************************************************/
     buildFavListeners(){
         const stars = document.querySelectorAll(".star");
         const favBtns = document.querySelectorAll(".fav-btn");
@@ -142,12 +185,86 @@ export class TileBuilder{
             let curStar = stars[i];
             let curFavBtn = favBtns[i];
 
-            curFavBtn.addEventListener("click", () => {
-                curStar.classList.toggle('fav');
+            curFavBtn.addEventListener("click", (event) => {
+                this.handleFavorites(curFavBtn, curStar);
             })
         } 
     }
 
+    /************************************************************ 
+    * Handles if someone favorites a character. Uses a set
+    * to determine if it should add or remove from fav list
+    ************************************************************/
+    handleFavorites(curFavBtn, curStar){
+        let charName = curFavBtn.parentElement.previousElementSibling.children[1].textContent
+        let charId = curFavBtn.parentElement.parentElement.id.split("-")[0]
+
+        if (this.favSet.has(charId) == false){
+            curStar.classList.add('fav');
+            this.favSet.add(charId);
+
+            let li = this.renderFavorite(charId, charName)
+
+            document.getElementById('fav-list').append(li);
+            this.LS.updateFavList("add", charId, charName);
+        }
+        else {
+            curStar.classList.remove('fav');
+            this.favSet.delete(charId);
+            document.getElementById(`${charId}-fav-link`).remove();
+            this.LS.updateFavList("delete", charId, charName);
+        }
+
+    }
+
+    renderFavorite(charId, charName){
+        let li = document.createElement('li');
+        li.setAttribute("id", `${charId}-fav-link`);
+        li.setAttribute("class", "fav-link");
+        li.innerHTML = `<a>${charName}</a>`;
+        li.addEventListener("click", async () => this.targetFavorite(charId))
+        return li
+    }
+
+    buildTargetListeners(){
+        let favorites = document.querySelectorAll(".fav-link");
+        for (let i = 0; i < favorites.length; i++){
+            // console.log(favorites[i]);
+            favorites[i].addEventListener("click", () => {
+                let id = favorites[i].id.split("-")[0];
+                this.targetFavorite(id);
+            });
+        }
+    }
+
+    /************************************************************ 
+    * Restars all favorites after each rebuild of tile-grid
+    ************************************************************/
+    recreateFavorites(tileTitle){
+        let charId = tileTitle.parentElement.id.split("-")[0];
+        if (this.favSet.has(charId)){
+            // console.log("rebuild for:", charId);
+            tileTitle.children[0].classList.toggle('fav');
+        }
+    }
+
+    /************************************************************ 
+    * If someone clicks a favorite link, it will search for
+    * that character specifically
+    ************************************************************/
+    async targetFavorite(charId){
+        let container = document.getElementById('tile-grid');
+        let result = await this.charAPI.searchById(charId);
+        // console.log(result);
+        this.buildColumnGrids([result], container);
+        this.expandOrCollapseAll();
+    }
+
+
+    /************************************************************ 
+    * If a user clicks on a tile, this will display the correct
+    * universe for that character
+    ************************************************************/
     selectUniverse(charData){
         // console.log("Select universe for:", charData);
         document.getElementById("marvel").classList.remove("selected-universe")
@@ -163,5 +280,5 @@ export class TileBuilder{
         else {
             document.getElementById("other").classList.add("selected-universe")
         }
-    }
+    }  
 }

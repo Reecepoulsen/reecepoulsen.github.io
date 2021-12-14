@@ -32,6 +32,28 @@
         h3 {margin: 12px 0px;}
         ul {padding-left: 5px; margin-bottom: 30px;}
         li {padding: 8px 0px;}
+        &-fav{
+            &-header{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                span{
+                    flex-grow: 1;
+                }
+                i{
+                    color: $light-gray;
+                    margin: 0;
+                    &:hover{
+                        color: $white;
+                        cursor: pointer;
+                    }
+                }
+            }
+            ul{
+                height: 48vh;
+                overflow-y: scroll;
+            }
+        }
     }
 
     header{
