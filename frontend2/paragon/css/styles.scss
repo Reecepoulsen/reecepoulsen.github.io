@@ -28,8 +28,6 @@ body{
     background-color: $med-black;
 }
 
-
-
 h1{
     font-size: var(--s4);
     letter-spacing: 2px;
@@ -108,9 +106,7 @@ $logo-size: 30px;
     column-gap: 20px;
     width: 90vw;
 
-    ul{
-        display: none;
-    }
+    ul{display: none;}
 
     #show-all-btn{
         width: 35vw;
@@ -118,9 +114,7 @@ $logo-size: 30px;
         align-self: center;
         justify-self: center;
         border: none;
-        &:hover{
-            border: none;
-        }
+        &:hover{border: none;}
     }
 
     .searchBar{
@@ -151,11 +145,8 @@ $logo-size: 30px;
     }
 }
 
-
 // main
-.options{   
-    display: none;
-}
+.options{display: none;}
 
 .tile-grid-wrapper{
     max-width: 90%;
@@ -182,9 +173,7 @@ $logo-size: 30px;
 
 .loading{
     grid-column: 1/-1;
-    i{
-        padding-left: 10px;
-    }
+    i{padding-left: 10px;}
 }
 
 @keyframes fade-in{
@@ -200,16 +189,10 @@ $logo-size: 30px;
     border: solid 2px $light-black;
     transition: all .2s ease;
 
-    &:hover{
-        border: solid 2px $light-gray;
-    }
+    &:hover{border: solid 2px $light-gray;}
 
-    &:last-child{
-        margin: 0;
-    }
-    &:first-child{
-        margin: 30px 0px;
-    }
+    &:last-child{margin: 0;}
+    &:first-child{margin: 30px 0px;}
 
     &_title{
         display: flex;
@@ -231,9 +214,7 @@ $logo-size: 30px;
             // margin: 12px 0px;
             margin: 0;
         }
-        .dropdown{
-            font-size: var(--s2);
-        }
+        .dropdown{font-size: var(--s2);}
     }
     &_content{
         display: none;
@@ -265,14 +246,10 @@ $logo-size: 30px;
             padding-left: 10px;
             li{
                 padding-bottom: 10px;
-                .data-inp{
-                    color: $light-gray;
-                }
+                .data-inp{color: $light-gray;}
             }
         }
-        &-biography, &-stats{
-            grid-column: 1/-1;
-        }
+        &-biography, &-stats{grid-column: 1/-1;}
     }
     .fav-btn{
         grid-column: 1/-1;

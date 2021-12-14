@@ -9,15 +9,6 @@ $dark-gray: #55565A;
 $light-gray: #848586;
 $white: #FBFBFB;
 
-// Potential Light mode 
-// $purple-accent: #5263fc;
-// $dark-black: #0F0F10;
-// $med-black: #cccccc; 
-// $light-black: #ddddddd0;
-// $dark-gray: #848586;
-// $light-gray: #55565A;
-// $white: #191A1F;
-
 // font variables
 $font: 'Roboto', sans-serif;
 $base-font-size: 18px;
@@ -35,3 +26,12 @@ $base-font-size: 18px;
     --s3: calc(var(--s2) * var(--ratio));
     --s4: calc(var(--s3) * var(--ratio));
 }
+
+// Potential Light mode color scheme
+// $purple-accent: #5263fc;
+// $dark-black: #0F0F10;
+// $med-black: #cccccc; 
+// $light-black: #ddddddd0;
+// $dark-gray: #848586;
+// $light-gray: #55565A;
+// $white: #191A1F;

@@ -47,6 +47,7 @@ function clearFavs(){
         favTiles[i].classList.remove("fav");
     }
     LS.initializeFavList();
+    tb.favSet = new Set();
 }
 
 function handleSearch(inputElement){
