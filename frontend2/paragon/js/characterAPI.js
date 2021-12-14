@@ -1,5 +1,5 @@
 /************************************************************ 
-* Handls communication with the superhero api which can
+* Handels communication with the superhero api which can
 * found at "https://superheroapi.com/". There are currently
 * 731 entries, thus the characterCount in the constructor 
 ************************************************************/
@@ -20,9 +20,9 @@ export class CharacterAPI{
         // console.log(`response for ${id} is: `, response)
         if (response != undefined){
             if (response.response == 'error' && retry <= 5){
-                console.log(`retry #${retry} for: `, id)
+                // console.log(`retry #${retry} for: `, id)
                 response = await this.searchById(id, retry + 1);
-                console.log(`new response for ${id} is: `, response.response)
+                // console.log(`new response for ${id} is: `, response.response)
             }
         }
         return response;
